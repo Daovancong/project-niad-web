@@ -28,6 +28,19 @@ export default function RootLayout({
         description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
       };
     }
+    const commonMeta = {
+      title: "Giới Thiệu - NiDA Giải Pháp Kiosk Y Tế Thông Minh",
+      description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
+    };
+
+    const validPaths = [
+      "/introduce/structure",
+      "/introduce/corevalues",
+      "/introduce/partandcust"
+    ];
+    if (validPaths.includes(path)) {
+      return commonMeta;
+    }
 
     return {
       title: "NiDA Giải Pháp Kiosk Y Tế Thông Minh",
@@ -39,7 +52,7 @@ export default function RootLayout({
     setIsLoading(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    },);
     return () => clearTimeout(timer);
   }, [pathname]);
 
@@ -48,6 +61,8 @@ export default function RootLayout({
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="stylesheet" href="/styles/globals.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"></link>
       </head>
       <body>

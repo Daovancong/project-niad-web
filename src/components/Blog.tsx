@@ -70,14 +70,14 @@ export default function Blog() {
                                 data-tab="promotion"
                                 onClick={() => onTabClick("promotion")}
                             >
-                                Tin khuyến mãi
+                                Tin tức
                             </li>
                             <li
                                 style={{ width: "50%" }}
                                 data-tab="technology"
                                 onClick={() => onTabClick("technology")}
                             >
-                                Tin công nghệ
+                                Blog
                             </li>
                         </ul>
                     </div>

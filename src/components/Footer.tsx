@@ -13,73 +13,63 @@ export default function Footer() {
                         <h4> Giới thiệu </h4>
                         <ul>
                             <li>
-                                <Link href={'#'}>
+                                <Link href={'/introduce'}>
                                     Về chúng tôi
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'#'}>
+                                <Link href={'/introduce/structure'}>
                                     Cơ cấu tổ chức
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'#'}>
+                                <Link href={'/introduce/corevalues'}>
                                     Giá trị cốt lõi
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'#'}>
+                                <Link href={'/introduce/partandcust'}>
                                     Đối tác/Khách hàng
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div className={`${style.item}`}>
-                        <h4> Giới thiệu </h4>
+                        <h4> Sản Phẩm </h4>
                         <ul>
                             <li>
                                 <Link href={'#'}>
-                                    Về chúng tôi
+                                    AI trong hệ thống quản trị
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Cơ cấu tổ chức
+                                    Phần mềm quản trị bệnh viện
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Giá trị cốt lõi
+                                    Phần mềm chăm sóc bệnh nhân online
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Đối tác/Khách hàng
+                                    Giải pháp bảo mật CSDL
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div className={`${style.item}`}>
-                        <h4> Giới thiệu </h4>
+                        <h4> Tin tức </h4>
                         <ul>
                             <li>
                                 <Link href={'#'}>
-                                    Về chúng tôi
+                                    Tin tức
                                 </Link>
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Cơ cấu tổ chức
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={'#'}>
-                                    Giá trị cốt lõi
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={'#'}>
-                                    Đối tác/Khách hàng
+                                    Blog
                                 </Link>
                             </li>
                         </ul>
@@ -88,7 +78,7 @@ export default function Footer() {
             </div>
             {/*  */}
             <div className={`${style.top} pt-[30px] bg-[#005db2]`}>
-                <div className={`${style.container} flex`}>
+                <div className={`${style.container} flex !justify-around`}>
                     <div className={`${style.logo}`}>
                         <Link href={'#'}>
                             <Image width={150} height={150} src="/logo.png" alt="Logo" />

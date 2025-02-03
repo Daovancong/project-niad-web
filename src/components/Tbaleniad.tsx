@@ -30,7 +30,6 @@ export default function Tbaleniad() {
                                         <span>770.000 ₫</span>
                                         <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
                                     </div>
-
                                     <Link className={`${style.viewGia}`} href="#">
                                         <span className="ml-[50px]">Đặt mua</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
@@ -39,7 +38,6 @@ export default function Tbaleniad() {
                             </div>
                         </div>
                     </div>
-                    {/*  */}
                     <div className={`${style.item}`}>
                         <div className={`${style.in}`}>
                             <div className={`${style.hot}`}>
@@ -62,7 +60,6 @@ export default function Tbaleniad() {
                                         <span>770.000 ₫</span>
                                         <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
                                     </div>
-
                                     <Link className={`${style.viewGia}`} href="#">
                                         <span className="ml-[50px]">Đặt mua</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
@@ -71,7 +68,6 @@ export default function Tbaleniad() {
                             </div>
                         </div>
                     </div>
-                    {/*  */}
                     <div className={`${style.item}`}>
                         <div className={`${style.in}`}>
                             <div className={`${style.hot}`}>
@@ -102,7 +98,6 @@ export default function Tbaleniad() {
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div className={`${style.infoTb} w-[291px]`}>
                     <div className="text-[40px] ml-[2px] mt-12">

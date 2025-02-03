@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Contact() {
     return (
         <section className={`${style.contact} py-[1.125rem] overflow-hidden relative`}>
-            <div className={`${style.container} max-w-[1170px] w-full m-auto`}>
+            <div className={`${style.container} max-w-[1170px] w-full !ml-[38px]`}>
                 <div className={`${style.title} text-[40px] ml-[2px] mt-10`}>
                     <div className="flex w-[20%] h-[2.9px]">
                         <div className="flex-[5] bg-[#e91e1e]"></div>
