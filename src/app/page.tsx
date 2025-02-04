@@ -12,51 +12,51 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 export default function Home() {
-  const items = [
-    {
-      id: 1,
-      title: 'Product 01',
-      cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Cloud_Service.png'
-    },
-    {
-      id: 2,
-      title: 'Product 02',
-      cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Data_Service.png'
-    },
-    {
-      id: 3,
-      title: 'Product 03',
-      cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Data_Service.png'
-    },
-    {
-      id: 4,
-      title: 'Product 04',
-      cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Cloud_Service.png'
-    },
-  ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % items.length);
-  };
+  // const items = [
+  //   {
+  //     id: 1,
+  //     title: 'Product 01',
+  //     cpu: 'Intel® Xeon® E5-26XX',
+  //     image: '/Cloud_Service.png'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Product 02',
+  //     cpu: 'Intel® Xeon® E5-26XX',
+  //     image: '/Data_Service.png'
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Product 03',
+  //     cpu: 'Intel® Xeon® E5-26XX',
+  //     image: '/Data_Service.png'
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Product 04',
+  //     cpu: 'Intel® Xeon® E5-26XX',
+  //     image: '/Cloud_Service.png'
+  //   },
+  // ];
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const handleNext = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 2) % items.length);
+  // };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 2 + items.length) % items.length);
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 2 + items.length) % items.length);
+  // };
 
-  const visibleItems = [
-    items[currentIndex],
-    items[(currentIndex + 1) % items.length],
-  ];
+  // const visibleItems = [
+  //   items[currentIndex],
+  //   items[(currentIndex + 1) % items.length],
+  // ];
 
   return (
     <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] mt-[105.5px] flex flex-col shadow-md`}>
       <Navigation />
       <BannerSlider />
-      <section className={`${style.service} flex items-center justify-center overflow-hidden relative z-[9999] pb-[3.125rem]`}>
+      {/* <section className={`${style.service} flex items-center justify-center overflow-hidden relative z-[9999] pb-[3.125rem]`}>
         <div
           className={`${style.hoverContainer} flex justify-center w-14 h-28 items-center rounded-[100px] border-solid border-[#39353557] cursor-pointer border-[2px] hover:border-[#00000057] group`}
           onClick={handlePrev}
@@ -159,37 +159,38 @@ export default function Home() {
                         <div className={`${style.gia} flex justify-center items-center font-bold mt-6`}>
                           <span className='text-lg font-bold text-[#005db2] mr-2'>770.000 ₫</span>
                           <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
-                        </div>
-                        {/* <Link className={`${style.viewGia}`} href="#">
+                        </div> */}
+      {/* <Link className={`${style.viewGia}`} href="#">
                           <span className="ml-[50px]">Đặt mua</span>
                           <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
-                        </Link> */}
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div
-          className="flex justify-center w-14 h-28 items-center rounded-[100px] border-solid border-[#39353557] hover:border-[#00000057] border-[2px] cursor-pointer group"
-          onClick={handleNext}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-10 opacity-30 group-hover:opacity-65"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
-        </div>
-      </section>
+                        </Link>
+    </form>
+                    </div >
+                  </div >
+                </div >
+              </div >
+            ))
+}
+          </div >
+        </div >
+  <div
+    className="flex justify-center w-14 h-28 items-center rounded-[100px] border-solid border-[#39353557] hover:border-[#00000057] border-[2px] cursor-pointer group"
+    onClick={handleNext}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className="size-10 opacity-30 group-hover:opacity-65"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+    </svg>
+  </div>
+      </section > */}
       <Boxcpn />
-      {/* <Tbaleniad /> */}
+      <Tbaleniad />
       <Partners />
       <Contact />
       <Blog />

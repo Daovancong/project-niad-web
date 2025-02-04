@@ -56,10 +56,15 @@ export default function Navigation() {
                                     <Link className='text-white' href={'/product'}> (AI) Trong hệ thống quản trị </Link>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white' href={'/product/hospital'}>
+                                    <Link className='text-white justify-between' href={'/product/hospital'}>
                                         phần mềm quản trị bệnh viện
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                        </svg>
+
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[222px] !w-[335px] !hidden group-hover:!block`} >
+
+                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[222px] !w-[340px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
@@ -72,8 +77,13 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white' href={'/product/online-patient-care'}>Phần mềm chăm sóc bệnh nhân online</Link>
-                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[269px] !w-[335px] !hidden group-hover:!block`} >
+                                    <Link className='text-white' href={'/product/online-patient-care'}>
+                                        Phần mềm chăm sóc bệnh nhân online
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </Link>
+                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[269px] !w-[340px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white' href={'/product/online-patient-care'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
                                         </li>
@@ -116,7 +126,7 @@ export default function Navigation() {
                     Menu
                 </div>
             </div>
-        </nav>
+        </nav >
 
     )
 }
