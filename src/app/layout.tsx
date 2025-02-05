@@ -1,5 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useState, useEffect } from "react";
 import "./globals.css";
 import BanderHeader from "@/components/bannder/BanderHeader";
