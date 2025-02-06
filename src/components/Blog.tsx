@@ -4,6 +4,13 @@ import Image from "next/image";
 import style from "@/app/style/styles.module.css";
 import Link from 'next/link';
 export default function Blog() {
+    const images = [
+        "/blog/img-itTP-01.png",
+        "/blog/img-itTP-02.png",
+        "/blog/img-itTP-03.png",
+        "/blog/img-itTP-04.png",
+        "/blog/img-itTP-05.png",
+    ]
 
     const getActiveTab = () => {
         return localStorage.getItem("selectedTab") || "promotion";
@@ -35,32 +42,42 @@ export default function Blog() {
     return (
         <section className={`${style.blog}`}>
             <div className={`${style.container} max-w-[1170px] w-full m-auto`}>
-                <div className={`${style.title} text-[40px] ml-[2px] mt-10`}>
+                <div className={`${style.title} text-[40px] ml-[2px] mt-10 pb-4`}>
                     <div className="flex w-[20%] h-[2.9px]">
                         <div className="flex-[6] bg-[#e91e1e]"></div>
                         <div className="flex-[4] bg-[#f8b133]"></div>
                     </div>
-                    <div className='relative px-12 mt-12 opacity-0 invisible'>
-                        <div> CÔNG NGHÊ TIÊN PHONG </div>
-                    </div>
                 </div>
-                <div className={`${style.firstBlog} flex items-center justify-between mt-5`} >
-                    <div className={`${style.item} `}>
-                        <p>
-                            <strong>Đăng kí để nhận thông tin mới</strong>
-                        </p>
+                <div className="relative py-10">
+                    <h2 className="text-gray-200 text-5xl font-bold absolute inset-0 flex items-start leading-[5rem] uppercase">
+                        Công Nghệ Tiên Phong
+                    </h2>
+                    <h1 className="text-black text-4xl font-bold relative uppercase">
+                        Công Nghệ Tiên Phong
+                    </h1>
+                </div>
+                <div className="relative py-6">
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-red-600 to-transparent h-2/3"></div> */}
+                    <div className="max-w-6xl mx-auto grid grid-cols-5 gap-4">
+                        {images.map((src, index) => (
+                            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md z-20">
+                                <Image
+                                    src={src}
+                                    alt={`Technology ${index + 1}`}
+                                    width={300}
+                                    height={300}
+                                    className="w-full h-auto object-cover"
+                                />
+                                <div className='group-hover:!flex' style={{ display: 'none', position: 'absolute', background: '##000000B2', width: '100%', top: '0', height: '100%', padding: '0.5rem' }}>
+                                    <p className='text-white font-[500] ml-4'> Cái gì đó </p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                    <div className={`${style.item} `}>
-                        <form action="">
-                            <span>
-                                <input type="email" placeholder="Email của bạn" required />
-                            </span>
-                            <button type="submit" name="btn">
-                                Nhận tin tức
-                                <Image className="ml-3" width={35} height={35} src="/icon/iconLeft.png" alt="...icon" />
-                            </button>
-                        </form>
+                    <div className='absolute to-transparent w-[115%] top-[-12px] left-[-40px]'>
+                        <Image width={300} height={300} src="/blog/backgroud-red.png" alt="" className='absolute to-transparent w-full top-16 left-[-38px]' />
                     </div>
+                    <div className='bg-red-600 w-full'></div>
                 </div>
                 <div className={`${style.listBlog}`}>
                     <div className={`${style.nav} w-full mt-10`}>

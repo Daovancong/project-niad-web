@@ -58,7 +58,7 @@ export default function Home() {
       <BannerSlider />
       <section className={`${style.service} flex items-center justify-center overflow-hidden relative z-[9999] pb-[3.125rem]`}>
         <div
-          className={`${style.hoverContainer} flex justify-center w-14 h-28 items-center rounded-[100px] border-solid border-[#39353557] cursor-pointer border-[2px] hover:border-[#00000057] group`}
+          className={`${style.hoverContainer} flex justify-center w-8 h-12 items-center rounded-[100px] border-solid border-[#39353557] cursor-pointer border-[2px] hover:border-[#00000057] group`}
           onClick={handlePrev}
         >
           <svg
@@ -90,83 +90,6 @@ export default function Home() {
                       alt={item.title}
                     />
                   </div>
-                  <div className="p-7 text-left pb-[75px] relative">
-                    <div className={`${style.detail}`}>
-                      <form action="">
-                        <h4 className="text-2xl font-mono font-bold not-italic leading-[1.32] tracking-normal mt-[-20px]">{item.title}</h4>
-                        <ul className="m-0 p-0 lists">
-                          <li className="min-h-[30.4px] text-sm not-italic font-sans text-justify tracking-normal mt-4"
-                            style={{
-                              fontFamily: "Roboto",
-                              fontSize: "12px",
-                              fontWeight: "normal",
-                              fontStretch: "normal",
-                              fontStyle: "normal",
-                              letterSpacing: "normal",
-                              textAlign: "left",
-                              color: "#707070"
-                            }}
-                          >CPU: {item.cpu}</li>
-                          <li className="min-h-[30.4px] text-sm not-italic font-sans text-justify tracking-normal"
-                            style={{
-                              fontFamily: "Roboto",
-                              fontSize: "12px",
-                              fontWeight: "normal",
-                              fontStretch: "normal",
-                              fontStyle: "normal",
-                              letterSpacing: "normal",
-                              textAlign: "left",
-                              color: "#707070"
-                            }}
-                          >CORE: 4 cores</li>
-                          <li className="min-h-[30.4px] text-sm not-italic font-sans text-justify tracking-normal"
-                            style={{
-                              fontFamily: "Roboto",
-                              fontSize: "12px",
-                              fontWeight: "normal",
-                              fontStretch: "normal",
-                              fontStyle: "normal",
-                              letterSpacing: "normal",
-                              textAlign: "left",
-                              color: "#707070"
-                            }}
-                          >HDD: 100GB</li>
-                          <li className="min-h-[30.4px] text-sm not-italic font-sans text-justify tracking-normal"
-                            style={{
-                              fontFamily: "Roboto",
-                              fontSize: "12px",
-                              fontWeight: "normal",
-                              fontStretch: "normal",
-                              fontStyle: "normal",
-                              letterSpacing: "normal",
-                              textAlign: "left",
-                              color: "#707070"
-                            }}
-                          >RAM: 4GB</li>
-                          <li className="min-h-[30.4px] text-sm not-italic font-sans text-justify tracking-normal"
-                            style={{
-                              fontFamily: "Roboto",
-                              fontSize: "12px",
-                              fontWeight: "normal",
-                              fontStretch: "normal",
-                              fontStyle: "normal",
-                              letterSpacing: "normal",
-                              textAlign: "left",
-                              color: "#707070"
-                            }}
-                          >IP: 01</li>
-                        </ul>
-                        <div className={`${style.gia} flex justify-center items-center font-bold mt-6`}>
-                          <span className='text-lg font-bold text-[#005db2] mr-2'>770.000 ₫</span>
-                          <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
-                        </div>
-                        <Link className={`${style.viewGia}`} href="#">
-                          <span className="ml-[50px]">Đặt mua</span>
-                          <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
-                        </Link>
-                      </form>
-                    </div >
-                  </div >
                 </div >
               </div >
             ))
@@ -174,7 +97,7 @@ export default function Home() {
           </div >
         </div >
         <div
-          className="flex justify-center w-14 h-28 items-center rounded-[100px] border-solid border-[#39353557] hover:border-[#00000057] border-[2px] cursor-pointer group"
+          className="flex justify-center w-8 h-12 items-center rounded-[100px] border-solid border-[#39353557] hover:border-[#00000057] border-[2px] cursor-pointer group"
           onClick={handleNext}
         >
           <svg
