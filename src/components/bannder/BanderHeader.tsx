@@ -15,39 +15,39 @@ export default function BanderHeader() {
             imgAlt: 'Banner Top 2025',
         },
         {
-            id: 1,
+            id: 3,
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
-            id: 2,
+            id: 4,
             imageSrc: '/banner/banner-top-20012025.png',
             imgAlt: 'Banner Top 2025',
         }, {
-            id: 1,
+            id: 5,
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
-            id: 2,
+            id: 6,
             imageSrc: '/banner/banner-top-20012025.png',
             imgAlt: 'Banner Top 2025',
         }, {
-            id: 1,
+            id: 7,
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
-            id: 2,
+            id: 8,
             imageSrc: '/banner/banner-top-20012025.png',
             imgAlt: 'Banner Top 2025',
         }, {
-            id: 1,
+            id: 9,
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
-            id: 2,
+            id: 10,
             imageSrc: '/banner/banner-top-20012025.png',
             imgAlt: 'Banner Top 2025',
         },
@@ -100,6 +100,7 @@ export default function BanderHeader() {
                     transform: `translateX(-${currentIndex * 100}%)`,
                     transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
                     width: `${extendedBanners.length * 100}%`,
+                    alignItems:'center'
                 }}
             >
                 {extendedBanners.map((banner, index) => (
@@ -108,7 +109,7 @@ export default function BanderHeader() {
                         className="relative w-full flex-shrink-0 overflow-hidden px-2"
                     >
                         <Image
-                            className={`${style.bannerG} object-cover max-h-[5.75rem] w-[1595px]`}
+                            className={`${style.bannerG} object-cover max-h-[5.75rem] w-full`}
                             width={400}
                             height={50}
                             src={banner.imageSrc}

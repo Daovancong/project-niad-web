@@ -40,11 +40,11 @@ export default function Blog() {
                         <div className="flex-[6] bg-[#e91e1e]"></div>
                         <div className="flex-[4] bg-[#f8b133]"></div>
                     </div>
-                    <h2 className="mt-4">
-                        TIN TỨC
-                    </h2>
+                    <div className='relative px-12 mt-12 opacity-0 invisible'>
+                        <div> CÔNG NGHÊ TIÊN PHONG </div>
+                    </div>
                 </div>
-                <div className={`${style.firstBlog} flex items-center justify-between mt-5`}>
+                <div className={`${style.firstBlog} flex items-center justify-between mt-5`} >
                     <div className={`${style.item} `}>
                         <p>
                             <strong>Đăng kí để nhận thông tin mới</strong>
@@ -341,6 +341,6 @@ export default function Blog() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

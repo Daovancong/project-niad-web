@@ -9,7 +9,7 @@ import Blog from "@/components/Blog";
 
 export default function news() {
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] mt-[105.5px] flex flex-col shadow-md`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
             <Navigation />
             <section className={`${style.slider} py-[1.125rem] overflow-hidden relative"`}>
                 <div className={`${style.niadContainer} w-full h-full relative overflow-hidden list-none p-0 z-[1]`}>

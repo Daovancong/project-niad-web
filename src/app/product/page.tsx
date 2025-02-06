@@ -80,7 +80,7 @@ export default function product() {
     const pathname = usePathname();
 
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] mt-[105.5px] flex flex-col shadow-md`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
             <Navigation />
             <BannerSlider />
             <section className={`${style.mainIntro} py-[3.125rem]`}>

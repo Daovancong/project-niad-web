@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function contact() {
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] mt-[105.5px] flex flex-col shadow-md bg-[]`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
             <Navigation />
             <div className={`${style.contactPage}`}>
                 <div className={`${style.container} px-5`}>

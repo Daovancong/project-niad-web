@@ -7,7 +7,7 @@ import Partners from "@/components/Partners";
 import BannerSlider from '@/components/BannerSlider';
 export default function partner() {
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] mt-[105.5px] flex flex-col shadow-md`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
             <Navigation />
             <BannerSlider />
             <Partners />
