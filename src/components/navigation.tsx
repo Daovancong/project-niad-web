@@ -34,16 +34,16 @@ export default function Navigation() {
                             </Link>
                             <ul className={`${style.subMenu} z-[99999]`}>
                                 <li>
-                                    <Link className='text-white' href={'/introduce'}> Về chúng tôi </Link>
+                                    <Link className='text-white !text-left' href={'/introduce'}> Về chúng tôi </Link>
                                 </li>
                                 <li>
-                                    <Link className='text-white' href={'/introduce/structure'}>Cơ cấu tổ chức</Link>
+                                    <Link className='text-white !text-left' href={'/introduce/structure'}>Cơ cấu tổ chức</Link>
                                 </li>
                                 <li>
-                                    <Link className='text-white' href={'/introduce/corevalues'}>Giá trị cốt lõi</Link>
+                                    <Link className='text-white !text-left' href={'/introduce/corevalues'}>Giá trị cốt lõi</Link>
                                 </li>
                                 <li>
-                                    <Link className='text-white' href={'/introduce/partandcust'}>Đối tác/Khách hàng</Link>
+                                    <Link className='text-white !text-left' href={'/introduce/partandcust'}>Đối tác/Khách hàng</Link>
                                 </li>
                             </ul>
                         </li>
@@ -51,49 +51,48 @@ export default function Navigation() {
                             <Link href="/product" className="hover:text-blue-700 transition duration-300 font-bold">
                                 Sản phẩm
                             </Link>
-                            <ul className={`${style.subMenu} z-[99999] !w-[300px]`}>
+                            <ul className={`${style.subMenu} z-[99999]`}>
                                 <li>
-                                    <Link className='text-white' href={'/product'}> (AI) Trong hệ thống quản trị </Link>
+                                    <Link className='text-white !text-left' href={'/product'}> (AI) Trong hệ thống quản trị </Link>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white justify-between' href={'/product/hospital'}>
+                                    <Link className='text-white justify-between !text-left' href={'/product/hospital'}>
                                         phần mềm quản trị bệnh viện
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
-
                                     </Link>
 
-                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[222px] !w-[340px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[261px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white' href={'/product/hospital'}>Phần mềm quản lý bệnh nhân,bệnh án điện tử</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm quản lý bệnh nhân,bệnh án điện tử</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white' href={'/product/online-patient-care'}>
+                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>
                                         Phần mềm chăm sóc bệnh nhân online
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[845px] !top-[269px] !w-[340px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[323px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white' href={'/product/online-patient-care'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
+                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white' href={'/product/online-patient-care'}>Kiosk tự động phục vụ hành chính công</Link>
+                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Kiosk tự động phục vụ hành chính công</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link className='text-white' href={'/product/online-patient-care'}>Giải pháp bảo mật cơ sở dữ liệu</Link>
+                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>Giải pháp bảo mật cơ sở dữ liệu</Link>
                                 </li>
                             </ul>
                         </li>
