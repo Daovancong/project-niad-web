@@ -267,7 +267,6 @@ main .slider .info form button.btnAdvise {
 .inNiad {
     box-shadow: 0 0 15px 0 rgb(171 159 159);
     transition: 0.3s;
-    border-radius: 60px;
     background-color: #ffffff;
     -ms-transform-origin: center;
 }

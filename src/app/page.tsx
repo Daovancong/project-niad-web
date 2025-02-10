@@ -29,13 +29,19 @@ export default function Home() {
       id: 3,
       title: 'Product 03',
       cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Data_Service.png'
+      image: '/home-slider-images02.jpg'
     },
     {
       id: 4,
-      title: 'Product 04',
+      title: 'Product 03',
       cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Cloud_Service.png'
+      image: '/home-slider-images04.jpg'
+    },
+    {
+      id: 5,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images05.jpg'
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,68 +76,87 @@ export default function Home() {
 
               </Link>
             </li>
-            {/* <li className='cursor-pointer h-full items-center py-4 relative'>
-              <Link href={'#'}>  </Link>
-            </li> */}
           </ul>
         </div>
       </div>
       <Navigation />
       <BannerSlider />
-      <section className={`${style.service} flex items-center justify-center overflow-hidden relative z-[9999] pb-[3.125rem]`}>
-        <div
-          className={`${style.hoverContainer} flex justify-center w-8 h-12 items-center rounded-[100px] border-solid border-[#39353557] cursor-pointer border-[2px] hover:border-[#00000057] group`}
-          onClick={handlePrev}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-10 opacity-30 group-hover:opacity-65"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
+      <section className={`${style.partners} p-0`}>
+        <div className={`${style.customers} max-w-[1170px] w-full m-auto`}>
+          <div className={`${style.title} text-[40px] ml-[2px] mt-11`}>
+            <div className="flex w-[20%] h-[2.9px]">
+              <div className="flex-[1] bg-[#e91e1e]"></div>
+              <div className="flex-[9] bg-[#f8b133]"></div>
+            </div>
+            <h2 className="mt-4">
+              Dự án tiêu biểu của chúng tôi
+            </h2>
+          </div>
         </div>
-        <div className="flex justify-center items-center max-w-[1170px] w-full m-auto overflow-hidden relative">
+      </section>
+      <section className='pb-[3.125rem] pt-[3.125rem] overflow-hidden'>
+        <div className='w-full flex justify-center'>
+          <div className="flex w-[5%] h-[3.2px]">
+            <div className="flex-[10] bg-[#e91e1e]"></div>
+            {/* <div className="flex-[0] bg-[#f8b133]"></div> */}
+          </div>
+        </div>
+        <div className={`${style.service} flex items-center justify-center  relative z-[9999]`}>
           <div
-            className={`${style.mediaFlx} flex w-[calc(100%+30px)] justify-center transition-all duration-500 ease-in-out`}
-            style={{
-              // transform: `translateX(-${currentIndex * 100}%)`,
-            }}
+            className="flex justify-center w-12 h-3/4 items-center float-left left-3 cursor-pointer group absolute z-50"
+            onClick={handlePrev}
           >
-            {visibleItems.map((item) => (
-              <div key={item.id} className={`${style.cloud}flex-shrink-0 p-5 w-full transition-transform duration-700 ease-in-out`}>
-                <div className={`${style.inNiad} rounded-[60px] bg-[#ffffff] hover:scale-y-105 hover:rounded-[60px] transform transition-transform duration-300 ease-in-out`}>
-                  <div className="flex justify-center text-center">
-                    <Image
-                      src={item.image}
-                      width={300}
-                      height={300}
-                      alt={item.title}
-                    />
-                  </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-12 opacity-100 group-hover:opacity-65 text-[#9c9c9c] hover:text-[#5f5e5efa]"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+          </div>
+          <div className="flex justify-center items-center max-w-[1170px] w-full m-auto overflow-hidden relative">
+            <div
+              className={`${style.mediaFlx} flex w-[calc(100%+30px)] justify-center transition-all duration-500 ease-in-out`}
+              style={{
+                // transform: `translateX(-${currentIndex * 100}%)`,
+              }}
+            >
+              {visibleItems.map((item) => (
+                <div key={item.id} className={`${style.cloud}flex-shrink-0 p-5 w-full transition-transform duration-700 ease-in-out`}>
+                  <div className={`${style.inNiad} bg-[#ffffff] hover:scale-y-105 transform transition-transform duration-300 ease-in-out`}>
+                    <div className="flex justify-center text-center">
+                      <Image
+                        className='w-full max-h-[300px]'
+                        src={item.image}
+                        width={300}
+                        height={300}
+                        alt={item.title}
+                      />
+                    </div>
+                  </div >
                 </div >
-              </div >
-            ))
-            }
+              ))
+              }
+            </div >
           </div >
-        </div >
-        <div
-          className="flex justify-center w-8 h-12 items-center rounded-[100px] border-solid border-[#39353557] hover:border-[#00000057] border-[2px] cursor-pointer group"
-          onClick={handleNext}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="size-10 opacity-30 group-hover:opacity-65"
+          <div
+            className="flex justify-center w-12 h-3/4 items-center float-right right-3 cursor-pointer group absolute"
+            onClick={handleNext}
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-12 opacity-100 group-hover:opacity-65 text-[#9c9c9c] hover:text-[#5f5e5efa]"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
         </div>
       </section >
       <Boxcpn />
