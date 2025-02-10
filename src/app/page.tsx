@@ -17,13 +17,13 @@ export default function Home() {
       id: 1,
       title: 'Product 01',
       cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Cloud_Service.png'
+      image: '/home-slider-images01.jpg'
     },
     {
       id: 2,
       title: 'Product 02',
       cpu: 'Intel® Xeon® E5-26XX',
-      image: '/Data_Service.png'
+      image: '/home-slider-images03.jpg'
     },
     {
       id: 3,

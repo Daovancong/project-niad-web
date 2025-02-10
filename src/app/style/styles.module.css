@@ -123,9 +123,10 @@ ul.afHover li:after {
 
 .menuMain ul.afHover li ul.subMenu {
     display: none;
-    position: fixed;
+    position: absolute;
     width: 225px;
-    top: 219px;
+    top: 75px;
+    z-index: 999999999;
     background-color: #005db2;
 }
 
@@ -1342,7 +1343,6 @@ main .whyBox .firstLine .content {
         justify-content: center;
         width: 1290px;
         margin: 0 !important;
-        height: 4.75rem;
     }
 
     header.bannerHeader {

@@ -25,7 +25,7 @@ export default function Navigation() {
                 </div>
                 <div className='flex-grow-[1]'></div>
                 <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${style.menuMain} ${menuVisible ? "!block" : ""} transition-all duration-500 ease-in-out`}
+                    className={`overflow-visible transition-all duration-500 ease-in-out ${style.menuMain} ${menuVisible ? "!block" : ""} transition-all duration-500 ease-in-out`}
                 >
                     <ul className={`${style.afHover}`}>
                         <li className='pb-7 pt-7 cursor-pointer'>
@@ -58,7 +58,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[219px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/online-patient-care'}> Giám sát an ninh </Link>
                                         </li>
@@ -81,7 +81,7 @@ export default function Navigation() {
                                         </svg>
                                     </Link>
 
-                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[280px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
@@ -100,7 +100,7 @@ export default function Navigation() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
-                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[342px] !w-[225px] !hidden group-hover:!block`} >
+                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/online-patient-care'}> Chat AI tư vấn bệnh nhân </Link>
                                         </li>
@@ -113,8 +113,13 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>Kios tự phục vụ thông minh</Link>
-                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[405px] !w-[225px] !hidden group-hover:!block`} >
+                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>
+                                        Kios tự phục vụ thông minh
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </Link>
+                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/online-patient-care'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
                                         </li>
@@ -124,8 +129,10 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>Big data</Link>
-                                    <ul className={`${style.subMenu} absolute !left-[770px] !top-[448px] !w-[225px] !hidden group-hover:!block`} >
+                                    <Link className='text-white justify-between !text-left' href={'/product/online-patient-care'}>Big data <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg></Link>
+                                    <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/online-patient-care'}> Bảo mật an toàn TT cơ sở dữ liệu </Link>
                                         </li>

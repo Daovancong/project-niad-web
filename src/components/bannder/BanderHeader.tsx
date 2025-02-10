@@ -100,7 +100,7 @@ export default function BanderHeader() {
                     transform: `translateX(-${currentIndex * 100}%)`,
                     transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
                     width: `${extendedBanners.length * 100}%`,
-                    alignItems:'center'
+                    alignItems: 'center'
                 }}
             >
                 {extendedBanners.map((banner, index) => (
@@ -109,8 +109,8 @@ export default function BanderHeader() {
                         className="relative w-full flex-shrink-0 overflow-hidden px-2"
                     >
                         <Image
-                            className={`${style.bannerG} object-cover max-h-[5.75rem] w-full`}
-                            width={400}
+                            className={`${style.bannerG} object-cover max-h-full h-[14vh] w-full`}
+                            width={800}
                             height={50}
                             src={banner.imageSrc}
                             alt={banner.imgAlt}
