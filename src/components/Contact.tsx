@@ -60,12 +60,12 @@ export default function Contact() {
                 </div>
                 <div className={`${style.form} relative`}>
                     <form onSubmit={(e) => e.preventDefault()}>
-                        <ul>
+                        <ul className='space-y-4'>
                             <li> <input type="text" placeholder="Họ Và Tên(*)" required /> </li>
                             <li> <input type="text" placeholder="Số điện thoại(*)" maxLength={10} required /> </li>
                             <li>
                                 <input type="email" placeholder="Email(*)" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                                <button type="button" onClick={sendOtp} className="ml-2 bg-blue-500 text-white px-2 py-1 rounded">
+                                <button type="button" onClick={sendOtp} className="mt-2 bg-blue-500 text-white px-2 py-1 rounded">
                                     Gửi OTP
                                 </button>
                             </li>

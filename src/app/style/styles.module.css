@@ -1351,10 +1351,6 @@ main .whyBox .firstLine .content {
 }
 
 @media screen and (max-width: 1200px) {
-    main .service .mediaFlx {
-        flex-wrap: wrap !important;
-    }
-
     main .service {
         margin-top: 0px !important;
     }
@@ -1458,8 +1454,7 @@ main .whyBox .firstLine .content {
 
     main .service .mediaFlx {
         display: flex;
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
         padding-top: 30px;
     }
 
@@ -1602,6 +1597,25 @@ main .whyBox .firstLine .content {
         padding-bottom: 20px;
     }
 
+    .contact ul {
+        width: 100%;
+    }
+
+    .contact ul li:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .contact ul li:nth-child(2) {
+        width: 100% !important;
+    }
+
+    .contact ul li:nth-child(3) {
+        width: 100% !important;
+    }
+
+    .contact ul li:nth-child(4) {
+        width: 100% !important;
+    }
 
 }
 
@@ -1949,6 +1963,19 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
 @media screen and (max-width: 600px) {
     main .slider .info {
         padding: 10px;
+    }
+
+    .banerRight {
+        display: none;
+    }
+
+    .mainIndex {
+        width: 85%;
+        top: 11vh !important;
+    }
+
+    .banerLeft {
+        top: 11vh !important;
     }
 }
 

@@ -13,7 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'xxl': '1200px',
+        'max-1200': { 'max': '1200px' },
+        'max-700': { 'max': '700px' },
+        'max-500': { 'max': '500px' },
       }
     },
   },

@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import style from "@/app/style/styles.module.css";
 
 export default function BannderLeft() {
     return (
-        <aside className='w-[15%] top-[15%] bg-gray-100 fixed left-0 h-[100vh] z-[99]'>
+        <aside className={`${style.banerLeft} w-[15%] top-[15%] bg-gray-100 fixed left-0 h-[100vh] z-[99]`}>
             <div>
                 <div className='p-2 !pt-0'>
                     <Link href={'#'}>
