@@ -1430,12 +1430,11 @@ main .whyBox .firstLine .content {
         position: absolute;
         width: 70%;
         margin-left: 35%;
-        /* margin-right: 20%; */
         background: rgba(0, 93, 178, 1);
-        top: 81px;
+        top: 15vh;
         left: -5%;
         display: none;
-        z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+        z-index: 1000;
     }
 
     .slider .niadSlider img {
