@@ -11,6 +11,7 @@ import Tbaleniad from "@/components/Tbaleniad";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
+
 export default function Home() {
   const items = [
     {
@@ -48,16 +49,13 @@ export default function Home() {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 2) % items.length);
   };
-
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 2 + items.length) % items.length);
   };
-
   const visibleItems = [
     items[currentIndex],
     items[(currentIndex + 1) % items.length],
   ];
-
   return (
     <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15vh] flex flex-col shadow-md`}>
       <div className='w-full h-10 bg-[#005db2] flex items-center'>
@@ -101,7 +99,7 @@ export default function Home() {
             {/* <div className="flex-[0] bg-[#f8b133]"></div> */}
           </div>
         </div>
-        <div className={`${style.service} flex items-center justify-center  relative z-[9999]`}>
+        <div className={`${style.service} flex items-center justify-center  relative z-[999]`}>
           <div
             className="flex justify-center w-12 h-3/4 items-center float-left left-3 cursor-pointer group absolute z-50"
             onClick={handlePrev}
@@ -119,13 +117,13 @@ export default function Home() {
           </div>
           <div className="flex justify-center items-center max-w-[1170px] w-full m-auto overflow-hidden relative">
             <div
-              className={`${style.mediaFlx} flex w-[calc(100%+30px)] justify-center transition-all duration-500 ease-in-out`}
+              className={`${style.mediaFlx} flex w-[calc(100%+30px)] max-500:w-full transition-all duration-500 ease-in-out`}
               style={{
                 // transform: `translateX(-${currentIndex * 100}%)`,
               }}
             >
               {visibleItems.map((item) => (
-                <div key={item.id} className={`${style.cloud}flex-shrink-0 p-5 w-full transition-transform duration-700 ease-in-out`}>
+                <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-5 w-full transition-transform duration-700 ease-in-out`}>
                   <div className={`${style.inNiad} bg-[#ffffff] hover:scale-y-105 transform transition-transform duration-300 ease-in-out`}>
                     <div className="flex justify-center text-center">
                       <Image

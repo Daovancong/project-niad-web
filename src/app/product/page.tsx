@@ -8,7 +8,6 @@ import Link from 'next/link';
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
-
 export default function product() {
     const products = [
         {
@@ -80,9 +79,49 @@ export default function product() {
     const pathname = usePathname();
 
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15vh] flex flex-col shadow-md`}>
+            <div className='w-full h-10 bg-[#005db2] flex items-center'>
+                <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
+                    <ul className='p-0 m-0 h-full list-none flex items-center'>
+                        <li className='cursor-pointer h-full items-center py-2 relative mr-4'>
+                            <Link href={'#'} className='whitespace-nowrap font-sans text-lg text-left flex items-center' id='login' style={{ fontFamily: 'inherit', lineHeight: '1.29', letterSpacing: 'normal', fontWeight: 'normal', fontStretch: 'normal', color: '#ffffff', textDecoration: 'none', }}>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>Đăng Nhập<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 ml-2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <Navigation />
-            <BannerSlider />
+            {/* <BannerSlider /> */}
+            <section className='px-[15px] py-[3.125rem] mx-auto bg-[#f3f4f8] pb-[100px] p-12 relative overflow-hidden'>
+                <div className='container w-full max-w-[1200px] m-auto'>
+                    <div className='mx-[-15px]'>
+                        <div className='m-auto relative min-h-0.5 px-4 w-[70%] float-left max-930:w-full'>
+                            <h1 className='text-lg mb-12 font-bold'>
+                                Dịch vụ sản phẩm tài liệu và hướng dẫn
+                            </h1>
+                            <p className='text-sm mb-5 font-medium'>
+                                MobiFone Cloud Managed Service cung cấp công cụ giám sát 24/24 tài nguyên tải CPU, tải RAM, Disk IO, Network của toàn bộ các máy ảo mà khách hàng quản lý thông qua giao diện đồ họa. Hơn thế nữa, khách hàng có thể thiết lập các ngưỡng cảnh báo và nhận cảnh báo khi các tham số/tải vượt ngưỡng thông qua đa dạng các kênh như Email, SMS hoặc Telegram.
+                            </p>
+                            <div className='mt-12 mr-[-15px]'>
+                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                                    Download now
+                                </button>
+                                <button className="bg-white hover:bg-slate-200 text-slate-500 font-bold py-2 px-4 rounded-full">
+                                    video hướng dẫn
+                                </button>
+                            </div>
+                        </div>
+                        <div className='text-center relative min-h-0.5 px-4 w-[30%] m-auto float-right max-930:w-full'>
+                            <Image width={300} height={300} src={'/product/slider.png'} alt='' />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className={`${style.mainIntro} py-[3.125rem]`}>
                 <div className={`${style.container}`}>
                     <div className={`${style.leftIntro}`}>
@@ -126,7 +165,7 @@ export default function product() {
                             <div className='flex flex-wrap'>
                                 {/* items  */}
                                 {products.map((product) => (
-                                    <div key={product.id} className='relative rounded-xl items-center justify-between w-1/3 group'>
+                                    <div key={product.id} className='relative rounded-xl items-center justify-between w-1/3 max-500:w-full group'>
                                         <div className='p-4 w-full'>
                                             <div className='rounded-md' style={{ border: "1px solid #ececec" }}>
                                                 <div className='flex items-center'>

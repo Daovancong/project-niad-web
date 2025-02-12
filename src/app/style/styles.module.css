@@ -1916,6 +1916,10 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
         margin-left: 0;
     }
 
+    .rightIntro {
+        width: 100% !important;
+    }
+
     main .mainIntro .container .leftIntro .textIntro {
         justify-content: left;
     }
@@ -1968,9 +1972,10 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
         display: none;
     }
 
-    .mainIndex {
-        width: 85%;
+    main.mainIndex {
+        width: 82%;
         top: 11vh !important;
+        margin-right: 4px !important;
     }
 
     .banerLeft {
@@ -2015,5 +2020,9 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
 
     .togglerMenu {
         font-size: 14px;
+    }
+
+    .service {
+        overflow: hidden;
     }
 }
