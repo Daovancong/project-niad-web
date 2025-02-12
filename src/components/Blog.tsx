@@ -103,7 +103,7 @@ export default function Blog() {
                             <article>
                                 <div className={`${style.img}`}>
                                     <Link href={'#'}>
-                                        <Image className={`${style.mobileImg}`} width={300} height={200} src={'/sale/sale-happy-new-year.png'} alt="sale" />
+                                        <Image className={`${style.mobileImg}`} width={500} height={200} src={'/sale/sale-happy-new-year.png'} alt="sale" />
                                     </Link>
                                 </div>
                                 <div className={`${style.content}`}>
