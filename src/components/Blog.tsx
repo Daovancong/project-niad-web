@@ -74,7 +74,7 @@ export default function Blog() {
                             </div>
                         ))}
                     </div>
-                    <div className='absolute to-transparent w-[115%] top-[-12px] left-[-40px]'>
+                    <div className='absolute to-transparent w-[115%] top-[-12px] left-[-40px] max-500:left-0'>
                         <Image width={300} height={300} src="/blog/backgroud-red.png" alt="" className='absolute to-transparent w-full top-16 left-[-38px]' />
                     </div>
                     <div className='bg-red-600 w-full'></div>
@@ -103,7 +103,7 @@ export default function Blog() {
                             <article>
                                 <div className={`${style.img}`}>
                                     <Link href={'#'}>
-                                        <Image className={`${style.mobileImg}`} width={500} height={200} src={'/sale/sale-happy-new-year.png'} alt="sale" />
+                                        <Image className={`${style.mobileImg}`} width={300} height={200} src={'/sale/sale-happy-new-year.png'} alt="sale" />
                                     </Link>
                                 </div>
                                 <div className={`${style.content}`}>

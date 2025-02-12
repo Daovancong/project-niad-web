@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import style from "@/app/style/styles.module.css";
-import intro from "@/app/style/intro.module.css"
+// import intro from "@/app/style/intro.module.css"
 import Navigation from "@/components/navigation";
 import Footer from "@/components/Footer";
 import Link from 'next/link';

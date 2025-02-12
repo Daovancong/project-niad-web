@@ -1972,10 +1972,16 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
         display: none;
     }
 
+    .banerLeft {
+        display: none;
+
+    }
+
     main.mainIndex {
-        width: 82%;
+        width: 100%;
         top: 11vh !important;
-        margin-right: 4px !important;
+        margin-right: 8px !important;
+        margin-left: 8px !important;
     }
 
     .banerLeft {

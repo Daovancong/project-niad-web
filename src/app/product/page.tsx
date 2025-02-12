@@ -2,13 +2,13 @@
 import React from 'react';
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
-import BannerSlider from '@/components/BannerSlider';
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
 export default function product() {
+
     const products = [
         {
             id: 1,
@@ -96,7 +96,6 @@ export default function product() {
                 </div>
             </div>
             <Navigation />
-            {/* <BannerSlider /> */}
             <section className='px-[15px] py-[3.125rem] mx-auto bg-[#f3f4f8] pb-[100px] p-12 relative overflow-hidden'>
                 <div className='container w-full max-w-[1200px] m-auto'>
                     <div className='mx-[-15px]'>
