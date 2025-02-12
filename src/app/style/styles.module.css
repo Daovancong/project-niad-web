@@ -1344,9 +1344,9 @@ main .whyBox .firstLine .content {
         margin: 0 !important;
     }
 
-    header.bannerHeader {
+    /* header.bannerHeader {
         padding: 5px !important;
-    }
+    } */
 
 }
 
@@ -1980,8 +1980,8 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
     main.mainIndex {
         width: 100%;
         top: 11vh !important;
-        margin-right: 8px !important;
-        margin-left: 8px !important;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
     }
 
     .banerLeft {

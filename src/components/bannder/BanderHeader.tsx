@@ -106,7 +106,7 @@ export default function BanderHeader() {
                 {extendedBanners.map((banner, index) => (
                     <div
                         key={index}
-                        className="relative w-full flex-shrink-0 overflow-hidden px-2"
+                        className="relative w-full flex-shrink-0 overflow-hidden"
                     >
                         <Image
                             className={`${style.bannerG} object-cover max-h-full h-[14vh] w-full`}
