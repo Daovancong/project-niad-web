@@ -9,48 +9,48 @@ export default function BanderHeader() {
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
-        {
-            id: 2,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        },
-        {
-            id: 3,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 4,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 5,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 6,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 7,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 8,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 9,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 10,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        },
+        // {
+        //     id: 2,
+        //     imageSrc: '/banner/banner-top-20012025.png',
+        //     imgAlt: 'Banner Top 2025',
+        // },
+        // {
+        //     id: 3,
+        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+        //     imgAlt: 'Global AI Summit',
+        // },
+        // {
+        //     id: 4,
+        //     imageSrc: '/banner/banner-top-20012025.png',
+        //     imgAlt: 'Banner Top 2025',
+        // }, {
+        //     id: 5,
+        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+        //     imgAlt: 'Global AI Summit',
+        // },
+        // {
+        //     id: 6,
+        //     imageSrc: '/banner/banner-top-20012025.png',
+        //     imgAlt: 'Banner Top 2025',
+        // }, {
+        //     id: 7,
+        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+        //     imgAlt: 'Global AI Summit',
+        // },
+        // {
+        //     id: 8,
+        //     imageSrc: '/banner/banner-top-20012025.png',
+        //     imgAlt: 'Banner Top 2025',
+        // }, {
+        //     id: 9,
+        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+        //     imgAlt: 'Global AI Summit',
+        // },
+        // {
+        //     id: 10,
+        //     imageSrc: '/banner/banner-top-20012025.png',
+        //     imgAlt: 'Banner Top 2025',
+        // },
     ];
 
     // Tạo mảng có phần tử clone
@@ -66,7 +66,7 @@ export default function BanderHeader() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => prevIndex + 1); // Tăng index liên tục
-        }, 3000); // Thời gian chuyển động slider (3 giây)
+        }, 300000); // Thời gian chuyển động slider (3 giây)
 
         return () => clearInterval(interval);
     }, []);
