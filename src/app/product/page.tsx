@@ -5,6 +5,7 @@ import Navigation from '@/components/navigation';
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
+import Instruct from '@/components/instruct';
 import Footer from "@/components/Footer";
 
 export default function product() {
@@ -97,29 +98,7 @@ export default function product() {
             </div>
             <Navigation />
             <section className='px-[15px] py-[3.125rem] mx-auto bg-[#f3f4f8] pb-[100px] p-12 relative overflow-hidden'>
-                <div className='container w-full max-w-[1200px] m-auto'>
-                    <div className='mx-[-15px]'>
-                        <div className='m-auto relative min-h-0.5 px-4 w-[70%] float-left max-930:w-full'>
-                            <h1 className='text-lg mb-12 font-bold'>
-                                Dịch vụ sản phẩm tài liệu và hướng dẫn
-                            </h1>
-                            <p className='text-sm mb-5 font-medium'>
-                                MobiFone Cloud Managed Service cung cấp công cụ giám sát 24/24 tài nguyên tải CPU, tải RAM, Disk IO, Network của toàn bộ các máy ảo mà khách hàng quản lý thông qua giao diện đồ họa. Hơn thế nữa, khách hàng có thể thiết lập các ngưỡng cảnh báo và nhận cảnh báo khi các tham số/tải vượt ngưỡng thông qua đa dạng các kênh như Email, SMS hoặc Telegram.
-                            </p>
-                            <div className='mt-12 mr-[-15px]'>
-                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                                    Download now
-                                </button>
-                                <button className="bg-white hover:bg-slate-200 text-slate-500 font-bold py-2 px-4 rounded-full">
-                                    video hướng dẫn
-                                </button>
-                            </div>
-                        </div>
-                        <div className='text-center relative min-h-0.5 px-4 w-[30%] m-auto float-right max-930:w-full'>
-                            <Image width={300} height={300} src={'/product/slider.png'} alt='' />
-                        </div>
-                    </div>
-                </div>
+                <Instruct />
             </section>
             <section className={`${style.mainIntro} py-[3.125rem]`}>
                 <div className={`${style.container}`}>
