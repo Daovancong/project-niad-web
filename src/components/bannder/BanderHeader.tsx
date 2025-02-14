@@ -9,48 +9,48 @@ export default function BanderHeader() {
             imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
             imgAlt: 'Global AI Summit',
         },
-        // {
-        //     id: 2,
-        //     imageSrc: '/banner/banner-top-20012025.png',
-        //     imgAlt: 'Banner Top 2025',
-        // },
-        // {
-        //     id: 3,
-        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-        //     imgAlt: 'Global AI Summit',
-        // },
-        // {
-        //     id: 4,
-        //     imageSrc: '/banner/banner-top-20012025.png',
-        //     imgAlt: 'Banner Top 2025',
-        // }, {
-        //     id: 5,
-        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-        //     imgAlt: 'Global AI Summit',
-        // },
-        // {
-        //     id: 6,
-        //     imageSrc: '/banner/banner-top-20012025.png',
-        //     imgAlt: 'Banner Top 2025',
-        // }, {
-        //     id: 7,
-        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-        //     imgAlt: 'Global AI Summit',
-        // },
-        // {
-        //     id: 8,
-        //     imageSrc: '/banner/banner-top-20012025.png',
-        //     imgAlt: 'Banner Top 2025',
-        // }, {
-        //     id: 9,
-        //     imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-        //     imgAlt: 'Global AI Summit',
-        // },
-        // {
-        //     id: 10,
-        //     imageSrc: '/banner/banner-top-20012025.png',
-        //     imgAlt: 'Banner Top 2025',
-        // },
+        {
+            id: 2,
+            imageSrc: '/banner/banner-top-20012025.png',
+            imgAlt: 'Banner Top 2025',
+        },
+        {
+            id: 3,
+            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 4,
+            imageSrc: '/banner/banner-top-20012025.png',
+            imgAlt: 'Banner Top 2025',
+        }, {
+            id: 5,
+            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 6,
+            imageSrc: '/banner/banner-top-20012025.png',
+            imgAlt: 'Banner Top 2025',
+        }, {
+            id: 7,
+            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 8,
+            imageSrc: '/banner/banner-top-20012025.png',
+            imgAlt: 'Banner Top 2025',
+        }, {
+            id: 9,
+            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 10,
+            imageSrc: '/banner/banner-top-20012025.png',
+            imgAlt: 'Banner Top 2025',
+        },
     ];
 
     // Tạo mảng có phần tử clone
@@ -65,8 +65,8 @@ export default function BanderHeader() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => prevIndex + 1); // Tăng index liên tục
-        }, 300000); // Thời gian chuyển động slider (3 giây)
+            setCurrentIndex((prevIndex) => prevIndex + 1);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
@@ -92,7 +92,7 @@ export default function BanderHeader() {
 
     return (
         <header
-            className={`${style.bannerHeader} bg-white overflow-hidden flex fixed top-0 left-0 w-full z-[9999] h-[15%]`}
+            className={`${style.bannerHeader} bg-white overflow-hidden flex fixed top-0 left-0 w-full z-[9999] h-[20%]`}
         >
             <div
                 className="flex"
@@ -109,7 +109,7 @@ export default function BanderHeader() {
                         className="relative w-full flex-shrink-0 overflow-hidden"
                     >
                         <Image
-                            className={`${style.bannerG} object-cover max-h-full h-[14vh] w-full`}
+                            className={`${style.bannerG} object-cover max-h-full h-[18vh] w-full`}
                             width={800}
                             height={50}
                             src={banner.imageSrc}

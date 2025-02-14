@@ -57,7 +57,7 @@ export default function Home() {
     items[(currentIndex + 1) % items.length],
   ];
   return (
-    <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15vh] flex flex-col shadow-md`}>
+    <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[20vh] flex flex-col shadow-md`}>
       <div className='w-full h-10 bg-[#005db2] flex items-center'>
         <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
           <ul className='p-0 m-0 h-full list-none flex items-center'>
@@ -115,15 +115,15 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
           </div>
-          <div className="flex justify-center items-center max-w-[1170px] w-full m-auto overflow-hidden relative">
+          <div className="w-full max-500:flex-shrink-0 p-5 transition-transform duration-700 ease-in-out">
             <div
-              className={`${style.mediaFlx} flex w-[calc(100%+30px)] max-500:w-full transition-all duration-500 ease-in-out`}
+              className={`${style.mediaFlx} flex w-full max-500:w-full`}
               style={{
                 // transform: `translateX(-${currentIndex * 100}%)`,
               }}
             >
               {visibleItems.map((item) => (
-                <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-5 w-full transition-transform duration-700 ease-in-out`}>
+                <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-5 transition-transform duration-700 w-1/4 ease-in-out`}>
                   <div className={`${style.inNiad} bg-[#ffffff] hover:scale-y-105 transform transition-transform duration-300 ease-in-out`}>
                     <div className="flex justify-center text-center">
                       <Image

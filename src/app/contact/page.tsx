@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function contact() {
     return (
-        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[15.5vh] flex flex-col shadow-md`}>
+        <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[20vh] flex flex-col shadow-md`}>
             <div className='w-full h-10 bg-[#005db2] flex items-center'>
                 <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
                     <ul className='p-0 m-0 h-full list-none flex items-center'>
@@ -21,7 +21,7 @@ export default function contact() {
                                 </svg>
                             </Link>
                         </li>
-                    </ul>
+                    </ul> 
                 </div>
             </div>
             <Navigation />

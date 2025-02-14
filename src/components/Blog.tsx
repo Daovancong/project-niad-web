@@ -4,12 +4,32 @@ import Image from "next/image";
 import style from "@/app/style/styles.module.css";
 import Link from 'next/link';
 export default function Blog() {
-    const images = [
-        "/blog/img-itTP-01.png",
-        "/blog/img-itTP-02.png",
-        "/blog/img-itTP-03.png",
-        "/blog/img-itTP-04.png",
-        "/blog/img-itTP-05.png",
+    const technologys = [
+        {
+            id: 1,
+            src: "/blog/img-itTP-01.png",
+            alt: "Big Data",
+        },
+        {
+            id: 2,
+            src: "/blog/img-itTP-02.png",
+            alt: "IoT",
+        },
+        {
+            id: 3,
+            src: "/blog/img-itTP-03.png",
+            alt: "Blockchain",
+        },
+        {
+            id: 4,
+            src: "/blog/img-itTP-04.png",
+            alt: "AR/VR",
+        },
+        {
+            id: 5,
+            src: "/blog/img-itTP-05.png",
+            alt: "AI",
+        }
     ]
 
     const getActiveTab = () => {
@@ -59,17 +79,17 @@ export default function Blog() {
                 <div className="relative py-6">
                     {/* <div className="absolute inset-0 bg-gradient-to-t from-red-600 to-transparent h-2/3"></div> */}
                     <div className="max-w-6xl mx-auto grid grid-cols-5 gap-4">
-                        {images.map((src, index) => (
-                            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md z-20">
+                        {technologys.map((technology, index) => (
+                            <div key={technology.id} className="relative bg-white rounded-lg overflow-hidden shadow-md z-20">
                                 <Image
-                                    src={src}
+                                    src={technology.src}
                                     alt={`Technology ${index + 1}`}
                                     width={300}
                                     height={300}
                                     className="w-full h-auto object-cover"
                                 />
-                                <div className='group-hover:!flex' style={{ display: 'none', position: 'absolute', background: '##000000B2', width: '100%', top: '0', height: '100%', padding: '0.5rem' }}>
-                                    <p className='text-white font-[500] ml-4'> Cái gì đó </p>
+                                <div className='absolute top-0 w-full h-full p-2 flex items-end'>
+                                    <p className='text-white'>{technology.alt}</p>
                                 </div>
                             </div>
                         ))}

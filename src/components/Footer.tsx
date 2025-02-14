@@ -81,7 +81,7 @@ export default function Footer() {
                 <div className={`${style.container} flex !justify-around`}>
                     <div className={`${style.logo}`}>
                         <Link href={'#'}>
-                            <Image width={150} height={150} src="/logo.png" alt="Logo" />
+                            <Image width={150} height={150} src="/logo-removebg.png" alt="Logo" />
                         </Link>
                     </div>
                     <div className={`${style.infoNiad}`}>
