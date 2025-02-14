@@ -47,14 +47,16 @@ export default function Home() {
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % items.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 11) % items.length);
   };
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 2 + items.length) % items.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
   const visibleItems = [
     items[currentIndex],
     items[(currentIndex + 1) % items.length],
+    items[(currentIndex + 2) % items.length],
+    items[(currentIndex + 3) % items.length],
   ];
   return (
     <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[20vh] flex flex-col shadow-md`}>
@@ -123,11 +125,11 @@ export default function Home() {
               }}
             >
               {visibleItems.map((item) => (
-                <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-5 transition-transform duration-700 w-1/4 ease-in-out`}>
+                <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-1 transition-transform duration-700 w-1/4 ease-in-out`}>
                   <div className={`${style.inNiad} bg-[#ffffff] hover:scale-y-105 transform transition-transform duration-300 ease-in-out`}>
                     <div className="flex justify-center text-center">
                       <Image
-                        className='w-full max-h-[300px]'
+                        className='w-full max-h-[139px]'
                         src={item.image}
                         width={300}
                         height={300}
