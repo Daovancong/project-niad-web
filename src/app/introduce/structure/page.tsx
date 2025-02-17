@@ -50,6 +50,9 @@ export default function page() {
                                 <li className={pathname === "/introduce/structure" ? `${style.active}` : ""}>
                                     <Link href={'/introduce/structure'}>Cơ cấu tổ chức</Link>
                                 </li>
+                                <li className={pathname === "/introduce/whychooose" ? `${style.active}` : ""}>
+                                    <Link href={'/introduce/whychooose'}>Tại sao nên chọn XTP</Link>
+                                </li>
                                 <li className={pathname === "/introduce/corevalues" ? `${style.active}` : ""}>
                                     <Link href={'/introduce/corevalues'}>Giá trị cố lõi</Link>
                                 </li>
@@ -66,23 +69,24 @@ export default function page() {
                             </p>
                         </div>
                         <div className={`${style.contentIntro}`}>
-                            <Image width={600} height={600} src={'/structure.png'} alt='structure' /><br />
+                            <Image width={600} height={600} src={'/structure.jpg'} alt='structure' /><br />
                             <p className='!mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
-                                    MobiFone được thành lập ngày 16/04/1993 với tên gọi ban đầu là Công ty thông tin di động. Ngày 01/12/2014, Công ty được chuyển đổi thành Tổng công ty Viễn thông MobiFone, kinh doanh trong các lĩnh vực: dịch vụ viễn thông truyền thống, VAS, Data, Internet & truyền hình IPTV/cable TV, sản phẩm khách hàng doanh nghiệp, dịch vụ công nghệ thông tin, bán lẻ và phân phối và đầu tư nước ngoài.
+                                    <b>XTP VIỆT NAM</b> với tên gọi là Công ty TNHH công nghệ pharmacy Việt nam, kinh doanh trong các lĩnh vực: Phần mềm quản trị Bệnh viện, Tài chính, Hành chính công, nhà máy khu công nghiệp, VAS, Data, sản phẩm khách hàng doanh nghiệp, dịch vụ công nghệ thông tin, bán lẻ và phân phối và đầu tư nước ngoài.
                                 </span>
                             </p>
                             <p className='!mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'> <em>Công ty Cổ Phần Và Đầu Tư Ngân Lực</em>  </strong> <br />
+                                <strong className='text-[#005db2]'> <em>XTP VIỆT NAM </em>  </strong> <br />
 
                             </p>
                             <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
-                                    Địa chỉ: Số 263, Đường Cầu Giấy,P.Dịch Vọng,Q.Cầu Giấy,Hà Nội
+                                    Địa chỉ văn phòng: Tòa nhà N09B2 Đường Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, TP Hà Nội.
                                 </span>
                             </p>
                             <p className='!mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'> <em>Các Công ty Dịch vụ MobiFone Khu vực 1, 2, 3,  4</em>  </strong>
+                                <strong className='text-[#005db2]'> <em>Các Công ty Dịch vụ phần mềm Khu vực 1, 2, 3, 4
+                                </em>  </strong>
                             </p>
                             <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
@@ -91,44 +95,45 @@ export default function page() {
                             </p>
 
                             <p className='ml-6 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ MobiFone Khu vực 1</em></strong>
+                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ  Khu vực 1</em></strong>
                             </p>
                             <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
                                     Trụ sở chính tại TP. Hà Nội. <br />
-                                    Địa chỉ: Tòa nhà MobiFone, số 5/82 Phố Duy Tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, TP. Hà Nội. <br />
-                                    Địa bàn kinh doanh tại TP. Hà Nội.
+                                    Địa chỉ: Tòa nhà Galaxy 6 Số 69 P.Tố Hữu, Vạn Phúc,Q Hà Đông, TP. Hà Nội
                                 </span>
                             </p>
                             <p className='ml-6 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ MobiFone Khu vực 2</em></strong>
+                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ  Khu vực 2</em></strong>
                             </p>
                             <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
-                                    Trụ sở chính tại TP. Hồ Chí Minh. <br />
-                                    Địa chỉ: Tòa nhà MobiFone - MM 18, đường Trường Sơn, phường 14, Quận 10, TP. Hồ Chí Minh. <br />
+                                    Trụ sở chính tại TP. Hà Nội.<br />
+                                    Địa chỉ: Tòa nhà BIDV Số 263 Cầu Giấy, P. Dịch Vọng, Q. Cầu Giấy, TP. Hà Nội
+                                </span>
+                            </p>
+                            <p className='ml-6 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
+                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ  Khu vực 3</em></strong>
+                            </p>
+                            <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
+                                <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
+                                    Trụ sở chính tại TP. Hồ Chí Minh.<br />
+                                    Địa chỉ: Tòa nhà số 255 , đường Nguyễn Thị Minh Khai, phường 5, Quận 3, TP. Hồ Chí Minh. <br />
                                     Địa bàn kinh doanh tại TP. Hồ Chí Minh.
                                 </span>
                             </p>
                             <p className='ml-6 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ MobiFone Khu vực 3</em></strong>
+                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ Khu vực 4</em></strong>
                             </p>
                             <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
                                 <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
-                                    Trụ sở chính tại TP. Ðà Nẵng <br />
-                                    Địa chỉ: Số 586 Nguyễn Hữu Thọ, phường Khuê Trung, quận Cẩm Lệ, TP. Đà Nẵng. <br />
-                                    Địa bàn kinh doanh tại các tỉnh/TP: Đà Nẵng, Quảng Trị, Thừa Thiên Huế, Quảng Nam, Quảng Ngãi, Bình Định.
-                                </span>
-                            </p>
-                            <p className='ml-6 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <strong className='text-[#005db2]'><em>Công ty Dịch vụ MobiFone Khu vực 4</em></strong>
-                            </p>
-                            <p className='ml-10 !mr-0 !text-justify !leading-7 text-sm text-[#2d2d2d]'>
-                                <span className='text-sm' style={{ fontFamily: "Arial,Helvetica,sans-serif" }}>
-                                    Trụ sở chính tại Phú Thọ <br />
-                                    Địa chỉ: Tòa nhà MobiFone - Khu Đồng Mạ, đường Nguyễn Tất Thành, phường Tiên Cát, TP. Việt Trì, tỉnh Phú Thọ. <br />
-                                    Địa bàn kinh doanh tại các tỉnh/TP: Đà Nẵng, Quảng Trị, Thừa Thiên Huế, Quảng Nam, Quảng Ngãi, Bình Định. <br />
-                                    Địa bàn kinh doanh tại các tỉnh: Lào Cai, Lai Châu, Điện Biên, Yên Bái, Sơn La, Phú Thọ, Hòa Bình, Hà Nam, Nam Định, Ninh Bình, Vĩnh Phúc, Hà Giang, Tuyên Quang.
+                                    Trụ sở chính tại Phú Thọ
+                                    <br />
+                                    Địa chỉ: Tòa nhà Số 22 - Khu Đồng Mạ, đường Nguyễn Tất Thành, phường Tiên Cát, TP. Việt Trì, tỉnh Phú Thọ.
+                                    <br />
+                                    <b>Trung tâm Công nghệ Thông tin
+                                    </b> <br />
+                                    Trụ sở chính tại TP.Hà Nội, có nhiệm vụ Quản lý, nghiên cứu, sản xuất, phát triển mới và kinh doanh các sản phẩm phần mềm, dịch vụ, giải pháp công nghệ thông tin phục vụ khách hàng trong và ngoài nước; Phân tích và khai phá dữ liệu lớn để thực hiện phát triển, sản xuất sản phẩm, dịch vụ Công nghệ thông tin ; Tư vấn và hỗ trợ kỹ thuật đối với các sản phẩm, dịch vụ, giải pháp công nghệ thông tin cho khách hàng bên ngoài Tổng công ty; Quản lý, vận hành, khai thác các hệ thống công nghệ thông tin phục vụ kinh doanh bên ngoài Tổng công ty; Phát triển, quản lý, khai thác và kinh doanh các sản phẩm, dịch vụ, giải pháp Big Data, Iot, Blockchain, AR/VR, AI.
                                 </span>
                             </p>
                         </div>

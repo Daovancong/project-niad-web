@@ -50,6 +50,9 @@ export default function Introduce() {
                                 <li className={pathname === "/introduce/structure" ? `${style.active}` : ""}>
                                     <Link href={'/introduce/structure'}>Cơ cấu tổ chức</Link>
                                 </li>
+                                <li className={pathname === "/introduce/whychooose" ? `${style.active}` : ""}>
+                                    <Link href={'/introduce/whychooose'}>Tại sao nên chọn XTP</Link>
+                                </li>
                                 <li className={pathname === "/introduce/corevalues" ? `${style.active}` : ""}>
                                     <Link href={'/introduce/corevalues'}>Giá trị cố lõi</Link>
                                 </li>

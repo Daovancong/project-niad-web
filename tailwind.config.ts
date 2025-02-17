@@ -21,6 +21,11 @@ export default {
         'max-600': { 'max': '600px' },
         'max-700': { 'max': '700px' },
         'max-500': { 'max': '500px' },
+        'max-480': { 'max': '480px' },
+        'max-400': { 'max': '400px' },
+        'max-320': { 'max': '320px' },
+        'max-280': { 'max': '280px' },
+        'max-240': { 'max': '240px' },
       }
     },
   },

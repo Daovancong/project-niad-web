@@ -127,9 +127,9 @@ export default function Home() {
               {visibleItems.map((item) => (
                 <div key={item.id} className={`${style.cloud} max-500:flex-shrink-0 p-1 transition-transform duration-700 w-1/4 ease-in-out`}>
                   <div className={`${style.inNiad} bg-[#ffffff] hover:scale-y-105 transform transition-transform duration-300 ease-in-out`}>
-                    <div className="flex justify-center text-center">
+                    <div className="flex justify-center text-center w-full">
                       <Image
-                        className='w-full max-h-[139px]'
+                        className='w-full max-h-[160px] h-auto min-h-[160px] max-500:min-h-[300px]'
                         src={item.image}
                         width={300}
                         height={300}

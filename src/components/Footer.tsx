@@ -89,16 +89,20 @@ export default function Footer() {
                             Công ty cổ phần và đầu tư phát triển ngân lực
                         </h4>
                         <p className='pb-[10px] text-xs'>
-                            <strong>Địa chỉ:</strong>
-                            &nbsp;&nbsp;Tầng 6, Số 263, Đường Cầu Giấy,P.Dịch Vọng,Q.Cầu Giấy,Hà Nội
+                            <strong>Địa chỉ Hà Nội:</strong>
+                            &nbsp;&nbsp;Tòa nhà N09B2 Đường Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, TP Hà Nội
                         </p>
+                        {/* <p className='pb-[10px] text-xs'>
+                            <strong>Địa chỉ TP. Hồ Chí Minh:</strong>
+                            &nbsp;&nbsp; Tòa nhà số 255 , đường Nguyễn Thị Minh Khai, phường 5, Quận 3, TP. Hồ Chí Minh.
+                        </p> */}
                         <p className='pb-[10px] text-xs'>
                             <strong>Điện thoại</strong>
-                            &nbsp;&nbsp;0983306912 / 0988176899
+                            &nbsp;&nbsp; ( +84)437.656.899 - 0988176899
                         </p>
                         <p className='text-sx'>
                             <strong>Email:</strong>
-                            &nbsp;&nbsp;hotro@nganluc.vn
+                            &nbsp;&nbsp;support.xtp@ai.vn
                         </p>
                     </div>
                     <div className={`${style.social} ml-2`}>

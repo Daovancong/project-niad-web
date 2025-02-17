@@ -89,7 +89,7 @@ export default function Blog() {
                                     className="w-full h-auto object-cover"
                                 />
                                 <div className='absolute top-0 w-full h-full p-2 flex items-end'>
-                                    <p className='text-white'>{technology.alt}</p>
+                                    <p className='text-white max-700:text-xs max-400:text-[7px]'>{technology.alt}</p>
                                 </div>
                             </div>
                         ))}
