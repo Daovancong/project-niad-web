@@ -20,18 +20,18 @@ export default function RootLayout({
   const getMetadata = (path: string) => {
     if (path === "/") {
       return {
-        title: "Trang Chủ - NiDA Giải Pháp Kiosk Y Tế Thông Minh",
-        description: "CTCP Đầu Tư Và Phát Triển Ngân Lực",
+        title: "Trang Chủ - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        description: "CTY công nghệ Pharmacy Việt Nam",
       };
     }
     if (path === "/introduce") {
       return {
-        title: "Giới Thiệu - NiDA Giải Pháp Kiosk Y Tế Thông Minh",
+        title: "Giới Thiệu - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
       };
     }
     const commonMeta = {
-      title: "Giới Thiệu - NiDA Giải Pháp Kiosk Y Tế Thông Minh",
+      title: "Giới Thiệu - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
       description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
     };
 
@@ -45,8 +45,8 @@ export default function RootLayout({
     }
 
     return {
-      title: "NiDA Giải Pháp Kiosk Y Tế Thông Minh",
-      description: "CTCP Đầu Tư Và Phát Triển Ngân Lực",
+      title: "Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+      description: "CTY công nghệ Pharmacy Việt Nam",
     };
   };
   const metadata = getMetadata(pathname);

@@ -1047,10 +1047,6 @@ main .whyBox .firstLine .content {
     margin-top: 20px;
 }
 
-.blog .proContent .item:first-child .content {
-    padding-left: 100px;
-}
-
 .blog .proContent .item .date {
     width: 56px;
     height: 67px;
