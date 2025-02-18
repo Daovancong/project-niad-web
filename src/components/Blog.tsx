@@ -140,194 +140,194 @@ export default function Blog() {
                                         rel="noopener noreferrer"
                                         className='flex'>
                                         <h4> Phần mềm quản trị bệnh viện His-List </h4>
-                                </Link>
-                                <div className={`${style.summary}`}>
-                                    <p className='leading-[26px] text-justify overflow-hidden'>Với tổng giá trị giải thưởng lên đến hơn 4,7 tỷ đồng, MobiFone mang đến chương trình siêu khuyến mại “Vui tiêu dùng, rinh quà khủng"...</p>
+                                    </Link>
+                                    <div className={`${style.summary}`}>
+                                        <p className='leading-[26px] text-justify overflow-hidden'>Với tổng giá trị giải thưởng lên đến hơn 4,7 tỷ đồng, MobiFone mang đến chương trình siêu khuyến mại “Vui tiêu dùng, rinh quà khủng"...</p>
+                                    </div>
                                 </div>
+                            </article>
                         </div>
-                    </article>
-                </div>
-                <div className={`${style.item}`}>
-                    <article>
-                        <div className={`${style.img}`}>
-                            <Link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex' href={'https://www.youtube.com/watch?v=LElUuLqic9Q'}
-                            >
-                                <Image className='w-[480px]' width={380} height={380} src="/blog/XTP-he-thong-quan-ly-hs-do-than-nhiey-bang-khuan-mat.jpg" alt="blog" />
-                            </Link>
-                        </div>
-                        <div className={`${style.content}`}>
-                            <Link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex' href={'https://www.youtube.com/watch?v=LElUuLqic9Q'}
-                            >
-                                <h5> XTP Hệ thống quản lý học sinh và đo thân nhiệt bằng nhận diện khuôn mặt</h5>
-                            </Link>
-                            {/* <div className={`${style.summary}`}>
+                        <div className={`${style.item}`}>
+                            <article>
+                                <div className={`${style.img}`}>
+                                    <Link
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='flex' href={'https://www.youtube.com/watch?v=LElUuLqic9Q'}
+                                    >
+                                        <Image className='w-[480px]' width={380} height={380} src="/blog/XTP-he-thong-quan-ly-hs-do-than-nhiey-bang-khuan-mat.jpg" alt="blog" />
+                                    </Link>
+                                </div>
+                                <div className={`${style.content}`}>
+                                    <Link
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='flex' href={'https://www.youtube.com/watch?v=LElUuLqic9Q'}
+                                    >
+                                        <h5> XTP Hệ thống quản lý học sinh và đo thân nhiệt bằng nhận diện khuôn mặt</h5>
+                                    </Link>
+                                    {/* <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
                                     </div> */}
-                        </div>
-                    </article>
-                    <article>
-                        <div className={`${style.img}`}>
-                            <Link
-                                className='flex' href={'https://www.youtube.com/watch?v=XWfgOHXdgPQ'}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Image className='w-[480px]' width={380} height={380} src="/blog/XTP-software-trien-khai-pahn-mem-quan-ly-bejnh-vien.jpg" alt="blog" />
-                            </Link>
-                        </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div className={`${style.img}`}>
+                                    <Link
+                                        className='flex' href={'https://www.youtube.com/watch?v=XWfgOHXdgPQ'}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Image className='w-[480px]' width={380} height={380} src="/blog/XTP-software-trien-khai-pahn-mem-quan-ly-bejnh-vien.jpg" alt="blog" />
+                                    </Link>
+                                </div>
 
-                        <div className={`${style.content}`}>
-                            <Link
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex' href={'https://www.youtube.com/watch?v=XWfgOHXdgPQ'}>
-                                <h5> XTP Triển khai phần mềm quản lý bệnh viện thông minh XTP HIS - LIS</h5>
-                            </Link>
-                            <div className={`${style.meta}`}>
-                            </div>
-                            {/* <div className={`${style.summary}`}>
+                                <div className={`${style.content}`}>
+                                    <Link
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='flex' href={'https://www.youtube.com/watch?v=XWfgOHXdgPQ'}>
+                                        <h5> XTP Triển khai phần mềm quản lý bệnh viện thông minh XTP HIS - LIS</h5>
+                                    </Link>
+                                    <div className={`${style.meta}`}>
+                                    </div>
+                                    {/* <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
                                     </div> */}
+                                </div>
+                            </article>
                         </div>
-                    </article>
+                    </div>
+                    <div id='blog-technology' className={`${style.proContent} mt-9 hidden`} style={{ display: "none" }} >
+                        <div className={`${style.item}`}>
+                            <article>
+                                <div className={`${style.img}`}>
+                                    <Link href={'#'}>
+                                        <Image width={500} height={200} src="/sale/technology-blog-26122014.png" alt="technology" />
+                                    </Link>
+                                </div>
+                                <div className={`${style.content}`}>
+                                    <div className={`${style.date}`}>
+                                        <span>
+                                            23
+                                        </span>
+                                        <span className='text-xs text-white'>Jun 2024</span>
+                                    </div>
+                                    <h4> Chọn thuê VPS hay Shared hosting để lưu trữ? </h4>
+                                    <div className={`${style.meta}`}>
+                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
+                                            <li>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
+                                                </svg>
+                                                360
+                                            </li>
+                                            <li className='ml-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
+                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                                                </svg>
+                                                Admin
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className={`${style.summary}`}>
+                                        <p className='leading-[26px] text-justify overflow-hidden'>Thuê VPS giá rẻ hay chọn Shared hosting để trở thành giải pháp tốt nhất cho doanh nghiệp trong việc tối ưu lưu trữ Web?.....</p>
+                                    </div>
+                                    <Link className={`${style.view}`} href={'#'}>
+                                        Xem thêm
+                                        <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
+                                    </Link>
+                                </div>
+                            </article>
+                        </div>
+                        <div className={`${style.item}`}>
+                            <article>
+                                <div className={`${style.img}`}>
+                                    <Link className='flex' href={'#'}>
+                                        <Image className='w-[480px]' width={380} height={380} src="/Sale/blog-sale-bidv-niad-26122024.png" alt="blog" />
+                                    </Link>
+                                </div>
+                                <div className={`${style.content}`}>
+                                    <div className={`${style.date} absolute left-[15px]`}>
+                                        <span>
+                                            24
+                                        </span>
+                                        <span className='text-xs text-white'>Sun 2024</span>
+                                    </div>
+                                    <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
+                                    <div className={`${style.meta}`}>
+                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
+                                            <li>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
+                                                </svg>
+                                                360
+                                            </li>
+                                            <li className='ml-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
+                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                                                </svg>
+                                                Admin
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className={`${style.summary}`}>
+                                        <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
+                                    </div>
+                                    <Link className={`${style.view}`} href={'#'}>
+                                        Xem thêm
+                                        <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
+                                    </Link>
+                                </div>
+                            </article>
+                            <article>
+                                <div className={`${style.img}`}>
+                                    <Link className='flex' href={'#'}>
+                                        <Image className='w-[480px]' width={380} height={380} src="/Sale/blog-sale-bidv-niad-26122024.png" alt="blog" />
+                                    </Link>
+                                </div>
+                                <div className={`${style.content}`}>
+                                    <div className={`${style.date} absolute left-[15px]`}>
+                                        <span>
+                                            24
+                                        </span>
+                                        <span className='text-xs text-white'>Sun 2024</span>
+                                    </div>
+                                    <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
+                                    <div className={`${style.meta}`}>
+                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
+                                            <li>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
+                                                </svg>
+                                                360
+                                            </li>
+                                            <li className='ml-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
+                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
+                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
+                                                </svg>
+                                                Admin
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className={`${style.summary}`}>
+                                        <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
+                                    </div>
+                                    <Link className={`${style.view}`} href={'#'}>
+                                        Xem thêm
+                                        <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
+                                    </Link>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id='blog-technology' className={`${style.proContent} mt-9 hidden`} style={{ display: "none" }} >
-                <div className={`${style.item}`}>
-                    <article>
-                        <div className={`${style.img}`}>
-                            <Link href={'#'}>
-                                <Image width={500} height={200} src="/sale/technology-blog-26122014.png" alt="technology" />
-                            </Link>
-                        </div>
-                        <div className={`${style.content}`}>
-                            <div className={`${style.date}`}>
-                                <span>
-                                    23
-                                </span>
-                                <span className='text-xs text-white'>Jun 2024</span>
-                            </div>
-                            <h4> Chọn thuê VPS hay Shared hosting để lưu trữ? </h4>
-                            <div className={`${style.meta}`}>
-                                <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                            <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                        </svg>
-                                        360
-                                    </li>
-                                    <li className='ml-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                            <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                        </svg>
-                                        Admin
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={`${style.summary}`}>
-                                <p className='leading-[26px] text-justify overflow-hidden'>Thuê VPS giá rẻ hay chọn Shared hosting để trở thành giải pháp tốt nhất cho doanh nghiệp trong việc tối ưu lưu trữ Web?.....</p>
-                            </div>
-                            <Link className={`${style.view}`} href={'#'}>
-                                Xem thêm
-                                <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
-                            </Link>
-                        </div>
-                    </article>
-                </div>
-                <div className={`${style.item}`}>
-                    <article>
-                        <div className={`${style.img}`}>
-                            <Link className='flex' href={'#'}>
-                                <Image className='w-[480px]' width={380} height={380} src="/Sale/blog-sale-bidv-niad-26122024.png" alt="blog" />
-                            </Link>
-                        </div>
-                        <div className={`${style.content}`}>
-                            <div className={`${style.date} absolute left-[15px]`}>
-                                <span>
-                                    24
-                                </span>
-                                <span className='text-xs text-white'>Sun 2024</span>
-                            </div>
-                            <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
-                            <div className={`${style.meta}`}>
-                                <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                            <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                        </svg>
-                                        360
-                                    </li>
-                                    <li className='ml-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                            <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                        </svg>
-                                        Admin
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={`${style.summary}`}>
-                                <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
-                            </div>
-                            <Link className={`${style.view}`} href={'#'}>
-                                Xem thêm
-                                <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
-                            </Link>
-                        </div>
-                    </article>
-                    <article>
-                        <div className={`${style.img}`}>
-                            <Link className='flex' href={'#'}>
-                                <Image className='w-[480px]' width={380} height={380} src="/Sale/blog-sale-bidv-niad-26122024.png" alt="blog" />
-                            </Link>
-                        </div>
-                        <div className={`${style.content}`}>
-                            <div className={`${style.date} absolute left-[15px]`}>
-                                <span>
-                                    24
-                                </span>
-                                <span className='text-xs text-white'>Sun 2024</span>
-                            </div>
-                            <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
-                            <div className={`${style.meta}`}>
-                                <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                    <li>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                            <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                        </svg>
-                                        360
-                                    </li>
-                                    <li className='ml-2'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                            <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                            <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                        </svg>
-                                        Admin
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={`${style.summary}`}>
-                                <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
-                            </div>
-                            <Link className={`${style.view}`} href={'#'}>
-                                Xem thêm
-                                <Image className='ml-[10px]' width={25} height={25} src="/icon/iconLeft.png" alt="" />
-                            </Link>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
             </div >
         </section >
     )

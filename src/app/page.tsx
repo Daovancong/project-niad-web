@@ -44,6 +44,36 @@ export default function Home() {
       cpu: 'Intel® Xeon® E5-26XX',
       image: '/home-slider-images05.jpg'
     },
+    {
+      id: 6,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images06.jpg'
+    },
+    {
+      id: 7,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images07.jpg'
+    },
+    {
+      id: 8,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images08.jpg'
+    },
+    {
+      id: 9,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images09.jpg'
+    },
+    {
+      id: 10,
+      title: 'Product 03',
+      cpu: 'Intel® Xeon® E5-26XX',
+      image: '/home-slider-images10.jpg'
+    }
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
