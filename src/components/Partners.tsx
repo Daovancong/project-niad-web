@@ -18,13 +18,13 @@ export default function Partners() {
                 <div className={`${style.swiperContainer} mt-[30px] w-full h-full`}>
                     <div className={`${style.swiperWrapper}`} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'nowrap' }}>
                         <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                            <Image width={10000} height={60} src="/partners/Hanotours_taodichvu_nhannucuoi.png" alt="partners 01" />
+                            <Image width={10000} height={60} src="/partners/Logo-hanh-chinh-cong.jpg" alt="partners 01" />
                         </div>
                         <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                            <Image width={10000} height={60} src="/partners/Trananh_Group.png" alt="partners 02" />
+                            <Image width={10000} height={60} src="/partners/bo-y-te.png" alt="partners 02" />
                         </div>
                         <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                            <Image width={10000} height={60} src="/partners/vianmik_vietnam.png" alt="partners 03" />
+                            <Image width={10000} height={60} src="/partners/logo-giao-duc-2.jpg" alt="partners 03" />
                         </div>
                         <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
                             <Image width={10000} height={60} src="/partners/Hmore_realLife&realValue.png" alt="partners 04" />
