@@ -24,10 +24,22 @@ export default function RootLayout({
         description: "CTY công nghệ Pharmacy Việt Nam",
       };
     }
+    if (path === "/product") {
+      return {
+        title: "Sản phẩm Ai trong hệ thống quản trị - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        description: "CTY công nghệ Pharmacy Việt Nam",
+      };
+    }
     if (path === "/introduce") {
       return {
         title: "Giới Thiệu - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
+      };
+    }
+    if (path === "/introduce/structure") {
+      return {
+        title: "Cơ cấu tổ chức - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        description: "Xem cấu trúc của giải pháp y tế thông minh của chúng tôi.",
       };
     }
     const commonMeta = {

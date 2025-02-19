@@ -54,7 +54,37 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href={'#'}>
-                                    Giải pháp bảo mật CSDL
+                                    kiost tự phục vụ thông minh
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'#'}>
+                                    Big Data
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'#'}>
+                                    Giải pháp bảo mật cơ sở dữ liệu
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={`${style.item}`}>
+                        <h4> Công tin thành viên </h4>
+                        <ul>
+                            <li>
+                                <Link href={'#'}>
+                                    Hitech
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'#'}>
+                                    Bảo hiểm BIC
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'#'}>
+                                    Đặt vé máy bay
                                 </Link>
                             </li>
                         </ul>

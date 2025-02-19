@@ -2,82 +2,83 @@
 import React from 'react';
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
-import BannerSlider from '@/components/BannerSlider';
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
+import Instruct from '@/components/instruct';
 import Footer from "@/components/Footer";
 
-export default function online_patient_care() {
-    const products = [
-        {
-            id: 1,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 01',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '2 Cores',
-            hdd: '20 GB',
-            ram: '2 GB',
-            ip: '1',
-            price: "500.000",
-        },
-        {
-            id: 2,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 02',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '3 Cores',
-            hdd: '40 GB',
-            ram: '4 GB',
-            ip: '1',
-            price: "550.000",
-        },
-        {
-            id: 3,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 03',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '2 Cores',
-            hdd: '60 GB',
-            ram: '6 GB',
-            ip: '1',
-            price: "1000.000",
-        },
-        {
-            id: 4,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 04',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '2 Cores',
-            hdd: '80 GB',
-            ram: '8 GB',
-            ip: '1',
-            price: "1500.000",
-        },
-        {
-            id: 5,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 05',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '1 Cores',
-            hdd: '128 GB',
-            ram: '12 GB',
-            ip: '1',
-            price: "2000.000",
-        },
-        {
-            id: 6,
-            image: '/Cloud_Service.png',
-            title: 'Product AI 06',
-            cpu: 'Intel® Xeon® E5-26XX',
-            core: '3 Cores',
-            hdd: '256 GB',
-            ram: '16 GB',
-            ip: '1',
-            price: "2500.000",
-        }
-    ];
+export default function product() {
+
+    // const products = [
+    //     {
+    //         id: 1,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 01',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '2 Cores',
+    //         hdd: '20 GB',
+    //         ram: '2 GB',
+    //         ip: '1',
+    //     },
+    //     {
+    //         id: 2,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 02',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '3 Cores',
+    //         hdd: '40 GB',
+    //         ram: '4 GB',
+    //         ip: '1',
+    //         price: "500.000",
+    //     },
+    //     {
+    //         id: 3,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 03',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '2 Cores',
+    //         hdd: '60 GB',
+    //         ram: '6 GB',
+    //         ip: '1',
+    //         price: "1000.000",
+    //     },
+    //     {
+    //         id: 4,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 04',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '2 Cores',
+    //         hdd: '80 GB',
+    //         ram: '8 GB',
+    //         ip: '1',
+    //         price: "1500.000",
+    //     },
+    //     {
+    //         id: 5,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 05',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '1 Cores',
+    //         hdd: '128 GB',
+    //         ram: '12 GB',
+    //         ip: '1',
+    //         price: "2000.000",
+    //     },
+    //     {
+    //         id: 6,
+    //         image: '/Cloud_Service.png',
+    //         title: 'Product AI 06',
+    //         cpu: 'Intel® Xeon® E5-26XX',
+    //         core: '3 Cores',
+    //         hdd: '256 GB',
+    //         ram: '16 GB',
+    //         ip: '1',
+    //         price: "2500.000",
+    //     }
+    // ];
     const pathname = usePathname();
+
     return (
         <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[20vh] flex flex-col shadow-md`}>
             <div className='w-full h-10 bg-[#005db2] flex items-center'>
@@ -96,8 +97,54 @@ export default function online_patient_care() {
                 </div>
             </div>
             <Navigation />
-            <BannerSlider />
-            <section className={`${style.mainIntro} py-[3.125rem]`}>
+            <section className='py-[3.125rem] bg-[#f3f4f8] pb-[100px] p-12 relative overflow-hidden'>
+                <Instruct />
+            </section>
+            <div className='py-[60px] overflow-hidden bg-white'>
+                <div className='w-full max-w-[1200px] m-auto container'>
+                    <div className='px-[65px] text-center'> <h2 className='text-4xl font-bold text-[#005db2] text-left leading-[1.33]' style={{ fontStretch: 'normal', fontStyle: 'normal', textTransform: 'uppercase', fontFamily: 'VIE-HandelGothic,sans-serif' }}> Lợi Ích</h2></div>
+                    <div className='px-[65px] mt-5'>
+                        <div className='relative min-h-[1px] px-4 w-full float-left'>
+                            <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
+                                <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
+                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
+                                </div>
+                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                    <div>
+                                        <h5 className='text-sm my-2'>Tích kiệm chi phí</h5>
+                                        <br />
+                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='relative min-h-[1px] px-4 w-full float-left mt-5'>
+                            <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
+                                <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
+                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
+                                </div>
+                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                    <div>
+                                        <h5 className='text-sm my-2'>
+                                            Đảm bảo tính sẵn sàng của hệ thống
+                                        </h5>
+                                        <br />
+                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* <section className={`${style.mainIntro} py-[3.125rem]`}>
                 <div className={`${style.container}`}>
                     <div className={`${style.leftIntro}`}>
                         <div className={`${style.textIntro} bg-[#005db2]`}>
@@ -116,7 +163,7 @@ export default function online_patient_care() {
                                     <Link className='!text-lg' href={'/product/hospital'}>Phần quản trị bệnh viện</Link>
                                 </li>
                                 <li className={pathname === "/product/online-patient-care" ? `${style.active}` : ""} style={{ paddingLeft: "15px" }}>
-                                    <Link className='!text-lg' href={'/product/online-patient-care'}>Phần chăm sóc bệnh nhân online</Link>
+                                    <Link className='!text-lg' href={'/product/online-patient-care'}>phần chăm sóc bệnh nhân online</Link>
                                 </li>
                                 <li className={pathname === "/product/security-CSDL" ? `${style.active}` : ""} style={{ paddingLeft: "15px" }}>
                                     <Link className='!text-lg' href={'/product/security-CSDL'}>Giải pháp bảo mật CSDL</Link>
@@ -133,14 +180,13 @@ export default function online_patient_care() {
                     >
                         <div className={`${style.breadcrumb}`}>
                             <p>
-                                <span>Trang chủ</span> / <span>Sản phẩm</span> / <span>Phần chăm sóc bệnh nhân online</span>
+                                <span>Trang chủ</span> / <span>Sản phẩm</span> / <span>( AI ) Trong hệ thống quản trị</span>
                             </p>
                         </div>
                         <div className='mt-4 ml-[-15px]'>
                             <div className='flex flex-wrap'>
-                                {/* items  */}
                                 {products.map((product) => (
-                                    <div key={product.id} className='relative rounded-xl items-center justify-between w-1/3 group'>
+                                    <div key={product.id} className='relative rounded-xl items-center justify-between w-1/3 max-500:w-full group'>
                                         <div className='p-4 w-full'>
                                             <div className='rounded-md' style={{ border: "1px solid #ececec" }}>
                                                 <div className='flex items-center'>
@@ -261,13 +307,13 @@ export default function online_patient_care() {
                                         </div>
                                     </div>
                                 ))}
-                                {/* end */}
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <Footer />
-        </main>
+        </main >
+
     )
 }

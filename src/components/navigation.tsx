@@ -48,12 +48,12 @@ export default function Navigation() {
                             </ul>
                         </li>
                         <li className='pb-7 pt-7 cursor-pointer'>
-                            <Link href="/product" className="hover:text-blue-700 transition duration-300 font-bold">
+                            <Link href="/product/ai-in-management" className="hover:text-blue-700 transition duration-300 font-bold">
                                 Sản phẩm
                             </Link>
                             <ul className={`${style.subMenu} z-[99999]`}>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white justify-between !text-left' href={'/product'}> (AI) Trong hệ thống quản trị
+                                    <Link className='text-white justify-between !text-left' href={'/product/ai-in-management'}> (AI) Trong hệ thống quản trị
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
@@ -86,7 +86,7 @@ export default function Navigation() {
                                             <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital'}>Bệnh viện thông minh HIS & LIS</Link>
+                                            <Link className='text-white !text-left' href={'/product/smart-hospital'}>Bệnh viện thông minh HIS & LIS</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
@@ -113,7 +113,7 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>
+                                    <Link className='text-white !text-left' href={'/product/payment-kiosk'}>
                                         Kios tự phục vụ thông minh
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -121,10 +121,10 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
+                                            <Link className='text-white !text-left' href={'/product/payment-kiosk'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Kiosk tự động phục vụ hành chính công</Link>
+                                            <Link className='text-white !text-left' href={'/product/public-self-service-kiosk'}>Kiosk tự động phục vụ hành chính công</Link>
                                         </li>
                                     </ul>
                                 </li>
