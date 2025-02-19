@@ -8,17 +8,18 @@ export default function Tbaleniad() {
         <section className={`${style.tbaleNiad} !p-0 w-full`}>
             <div className={`${style.containeTb} max-w-[1170px]`}>
                 <div className={`${style.listTb} flex mr-[23px]`}>
+                    {/* Giám Giám sát sản xuất */}
                     <div className={`${style.item}`}>
                         <div className={`${style.in}`}>
                             <div className={`${style.hot}`}>
                                 <span>hot</span>
                             </div>
                             <div className={`${style.img}`}>
-                                <Image width={80} height={80} src="/product/procut_01.png" alt="product" />
+                                <Image width={800} height={800} src="/product/Giam-sat-san-xuat.png" alt="product" />
                             </div>
                             <div className={`${style.detail}`}>
                                 <form action="">
-                                    <h4> Product 01 </h4>
+                                    <h4> Giám Giám sát sản xuất </h4>
                                     <ul className="m-0 p-0 lists">
                                         <li>CPU: Intel® Xeon® E5-26XX</li>
                                         <li>CORE: 4 cores</li>
@@ -26,10 +27,33 @@ export default function Tbaleniad() {
                                         <li>RAM: 4GB</li>
                                         <li>IP: 01</li>
                                     </ul>
-                                    <div className={`${style.gia}`}>
-                                        <span>770.000 ₫</span>
-                                        <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
-                                    </div>
+                                    <Link className={`${style.viewGia}`} href="#">
+                                        <span className="ml-[50px]">Đặt mua</span>
+                                        <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
+                                    </Link>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    {/*Bệnh viện thông minh his và lis */}
+                    <div className={`${style.item}`}>
+                        <div className={`${style.in}`}>
+                            <div className={`${style.hot}`}>
+                                <span>hot</span>
+                            </div>
+                            <div className={`${style.img}`}>
+                                <Image width={300} height={300} src="/product/benh-vien-thong-minh-his-lis.png" alt="product" />
+                            </div>
+                            <div className={`${style.detail}`}>
+                                <form action="">
+                                    <h4> Bệnh viện thông minh His và Lis </h4>
+                                    <ul className="m-0 p-0 lists">
+                                        <li>CPU: Intel® Xeon® E5-26XX</li>
+                                        <li>CORE: 4 cores</li>
+                                        <li>HDD: 100GB</li>
+                                        <li>RAM: 4GB</li>
+                                        <li>IP: 01</li>
+                                    </ul>
                                     <Link className={`${style.viewGia}`} href="#">
                                         <span className="ml-[50px]">Đặt mua</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
@@ -44,11 +68,11 @@ export default function Tbaleniad() {
                                 <span>hot</span>
                             </div>
                             <div className={`${style.img}`}>
-                                <Image width={80} height={80} src="/product/procut_01.png" alt="product" />
+                                <Image width={300} height={300} src="/product/kiost-tu-phuc-vu-hanh-chinh-cong.png" alt="product" />
                             </div>
                             <div className={`${style.detail}`}>
                                 <form action="">
-                                    <h4> Product 02 </h4>
+                                    <h4> Kiost tự phục vụ hành chính công </h4>
                                     <ul className="m-0 p-0 lists">
                                         <li>CPU: Intel® Xeon® E5-26XX</li>
                                         <li>CORE: 4 cores</li>
@@ -56,40 +80,6 @@ export default function Tbaleniad() {
                                         <li>RAM: 4GB</li>
                                         <li>IP: 01</li>
                                     </ul>
-                                    <div className={`${style.gia}`}>
-                                        <span>770.000 ₫</span>
-                                        <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
-                                    </div>
-                                    <Link className={`${style.viewGia}`} href="#">
-                                        <span className="ml-[50px]">Đặt mua</span>
-                                        <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
-                                    </Link>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${style.item}`}>
-                        <div className={`${style.in}`}>
-                            <div className={`${style.hot}`}>
-                                <span>hot</span>
-                            </div>
-                            <div className={`${style.img}`}>
-                                <Image width={80} height={80} src="/product/procut_01.png" alt="product" />
-                            </div>
-                            <div className={`${style.detail}`}>
-                                <form action="">
-                                    <h4> Product 03 </h4>
-                                    <ul className="m-0 p-0 lists">
-                                        <li>CPU: Intel® Xeon® E5-26XX</li>
-                                        <li>CORE: 4 cores</li>
-                                        <li>HDD: 100GB</li>
-                                        <li>RAM: 4GB</li>
-                                        <li>IP: 01</li>
-                                    </ul>
-                                    <div className={`${style.gia}`}>
-                                        <span>770.000 ₫</span>
-                                        <Image className="ml-3" width={30} height={30} src="/icon/iconLeft.png" alt="gia" />
-                                    </div>
                                     <Link className={`${style.viewGia}`} href="#">
                                         <span className="ml-[50px]">Đặt mua</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
@@ -109,8 +99,8 @@ export default function Tbaleniad() {
                             Gói dịch vụ
                         </h3>
                     </div>
-                    <p className="!leading-[26px] text-justify"> Hệ thống cung cấp dịch vụ Cloud của Niad được được xây dựng và phát triển trên nền tảng điện toán đám mây OpenStack.
-                        Đây là giải pháp được rất nhiều hãng công nghệ hàng đầu trên thế giới sử dụng để cung cấp hạ tầng về máy chủ.
+                    <p className="!leading-[26px] text-justify">
+                        Hệ thống cung cấp dịch vụ của XTP – AI, Big Data được được xây dựng và phát triển trên nền tảng mã nguồn mở. Đây là giải pháp được rất nhiều nền tảng lõi hãng công nghệ hàng đầu trên thế giới cung cấp, kết hợp.
                     </p>
                     <ul>
                         <li>

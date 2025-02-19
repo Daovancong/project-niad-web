@@ -107,12 +107,37 @@ export default function product() {
                         <div className='relative min-h-[1px] px-4'>
                             <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
                                 <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
-                                    <Image width={300} height={300} src={''} alt='' />
+                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
                                 </div>
-                                <div></div>
+                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                    <div>
+                                        <h5 className='text-sm my-2'>Tích kiệm chi phí</h5>
+                                        <br />
+                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                        </p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className='relative min-h-[1px] px-4'></div>
+                        <div className='relative min-h-[1px] px-4'>
+                            <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
+                                <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
+                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
+                                </div>
+                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                    <div>
+                                        <h5 className='text-sm my-2'>Tích kiệm chi phí</h5>
+                                        <br />
+                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

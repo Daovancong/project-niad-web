@@ -594,16 +594,14 @@ main .whyBox .firstLine .content {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
-    visibility: hidden;
-    opacity: 0;
     transition: 0.3s;
     text-indent: -40px;
 }
 
-.tbaleNiad .listTb .item:hover .viewGia {
+/* .tbaleNiad .listTb .item:hover .viewGia {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .tbaleNiad .listTb .item .view img {
     width: 25px;

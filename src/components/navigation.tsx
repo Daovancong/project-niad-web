@@ -86,7 +86,7 @@ export default function Navigation() {
                                             <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm quản lý bệnh nhân,bệnh án điện tử</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital'}>Bệnh viện thông minh HIS & LIS</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
