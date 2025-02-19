@@ -118,6 +118,9 @@ export default function product() {
                             <p className='text-sm mb-5 font-medium'>
                                 <span>Phần mềm quản lý bệnh viện đầu và cuối <b className="ml-7">HIS</b></span> <br />
                                 <span>Phần mềm quản lý máy y tế <b className="ml-7">LIS</b></span> <br />
+                                <span>Phần mềm quản lý thông tin chuẩn đoán hình ảnh <b className="ml-7">PACS</b></span> <br />
+                                <span>Phần mềm bệnh án điện tử <b className="ml-7">EMR</b></span> <br />
+                                <span>Phần mềm xếp hạng tự động <b className="ml-7">QMS</b></span> <br />
 
                             </p>
                             <div className='mt-12 mr-[-15px]'>
@@ -158,7 +161,7 @@ export default function product() {
                             </div>
                         </div>
                         <div className='text-center relative min-h-0.5 px-4 w-[45%] m-auto float-right max-930:w-full'>
-                            <Image className='w-full h-full' width={300} height={300} src={'/product/kiost-tron-y-te-thong-minh.png'} alt='' />
+                            <Image className='w-full h-full' width={300} height={300} src={'/product/benh-vien-thong-minh-his-lis.png'} alt='' />
                         </div>
                     </div>
                 </div>

@@ -123,8 +123,8 @@ export default function product() {
                                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-2 max-750:w-full max-750:mt-5"
                                     onClick={() => {
                                         const link = document.createElement("a");
-                                        link.href = "/file/Small.pdf";
-                                        link.download = "OFFICIAL HỆ THỐNG Bệnh Viện Thông Minh His Và Lis.pdf";
+                                        link.href = "/file/hanh-chinh-cong.pdf";
+                                        link.download = "OFFICIAL HỆ THỐNG KIOST HANH CHINH CONG.pdf";
                                         document.body.appendChild(link);
                                         link.click();
                                         document.body.removeChild(link);
