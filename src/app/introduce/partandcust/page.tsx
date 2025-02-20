@@ -9,12 +9,12 @@ import Image from 'next/image';
 
 export default function page() {
     const partners = [
-        { src: "/BIDV-logo.png", alt: "bidv", },
-        { src: "/BIC-logo.jpg", alt: "bic", },
-        { src: "/Niad-logo.jpg", alt: "niad", },
-        { src: "/BIDV-logo.png", alt: "bidv", },
-        { src: "/BIC-logo.jpg", alt: "bic", },
-        { src: "/Niad-logo.jpg", alt: "niad", },
+        { src: "/partners/Logo-hanh-chinh-cong.jpg", alt: "bidv", },
+        { src: "/partners/bo-y-te.png", alt: "bic", },
+        { src: "/partners/logo-giao-duc-2.jpg", alt: "niad", },
+        { src: "/partners/bidv-logo.png", alt: "bidv", },
+        { src: "/partners/niad-logo-2.jpg", alt: "bic", },
+        { src: "/partners/virtnam-post-logo.png", alt: "niad", },
     ]
     const pathname = usePathname();
     return (

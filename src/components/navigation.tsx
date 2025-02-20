@@ -69,7 +69,7 @@ export default function Navigation() {
                                             <Link className='text-white !text-left' href={'/product/online-patient-care'}>Giám sát ra vào</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Giám sát sản xuất</Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/online-patient-care'}>Giám sát sản xuất</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -86,7 +86,7 @@ export default function Navigation() {
                                             <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/smart-hospital'}>Bệnh viện thông minh HIS & LIS</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital/smart-hospital'}>Bệnh viện thông minh HIS & LIS</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
@@ -121,10 +121,10 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/payment-kiosk'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
+                                            <Link className='text-white !text-left' href={'/product/self-service-kios/payment-kiosk'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/public-self-service-kiosk'}>Kiosk tự động phục vụ hành chính công</Link>
+                                            <Link className='text-white !text-left' href={'/product/self-service-kios/public-self-service-kiosk'}>Kiosk tự động phục vụ hành chính công</Link>
                                         </li>
                                     </ul>
                                 </li>

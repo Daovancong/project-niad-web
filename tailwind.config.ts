@@ -26,6 +26,7 @@ export default {
         'max-320': { 'max': '320px' },
         'max-280': { 'max': '280px' },
         'max-240': { 'max': '240px' },
+        'min-992': { 'min': '992px' }
       }
     },
   },

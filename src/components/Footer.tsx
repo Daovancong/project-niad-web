@@ -116,7 +116,7 @@ export default function Footer() {
                     </div>
                     <div className={`${style.infoNiad}`}>
                         <h4>
-                            Công ty cổ phần và đầu tư phát triển ngân lực
+                            CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM
                         </h4>
                         <p className='pb-[10px] text-xs'>
                             <strong>Địa chỉ Hà Nội:</strong>

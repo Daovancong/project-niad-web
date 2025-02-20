@@ -36,8 +36,8 @@ export default function instruct() {
                             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full m-2"
                             onClick={() => {
                                 const link = document.createElement("a");
-                                link.href = "/file/OFFICIAL HỆ THỐNG KIOSK TỰ PHỤC NIAD  20.11.24 (1).pdf";
-                                link.download = "OFFICIAL HỆ THỐNG KIOSK TỰ PHỤC NIAD  20.11.24 (1).pdf";
+                                link.href = "/file/giam-sat-san-xaut.pdf";
+                                link.download = "OFFICIAL CAMER AI GIÁM SÁT SẢN XUẤT XTP (1).pdf";
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);

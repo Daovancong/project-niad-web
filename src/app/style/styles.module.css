@@ -1772,7 +1772,6 @@ main.mainIndex .contactPage .container ul li .img {
     width: 68px;
     height: 68px;
     border-radius: 10px;
-    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     display: flex;
     justify-content: center;

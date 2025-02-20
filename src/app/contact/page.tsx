@@ -21,15 +21,15 @@ export default function contact() {
                                 </svg>
                             </Link>
                         </li>
-                    </ul> 
+                    </ul>
                 </div>
             </div>
             <Navigation />
             <div className={`${style.contactPage}`}>
                 <div className={`${style.container} px-5`}>
-                    <h3> TỔNG CÔNG TY CP VÀ DT NGÂN LỰC </h3>
+                    <h3> CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM </h3>
                     <ul className=''>
-                        <li className='w-[41%]'>
+                        <li className='w-[40%]'>
                             <div className={`${style.img}`}>
                                 <Image
                                     src={'/contact/loacll-icon.png'}
@@ -42,7 +42,8 @@ export default function contact() {
                                 <div className={`${style.title}`}>
                                     Địa chỉ
                                 </div>
-                                <p>Số 263, Đường Cầu Giấy,P.Dịch Vọng,Q.Cầu Giấy,Hà Nội</p>
+                                <p className='text-xs'>Tòa nhà N09B2 Đường Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội
+                                </p>
                             </div>
                         </li>
                         <li className='w-[27.5%]'>
@@ -58,10 +59,11 @@ export default function contact() {
                                 <div className={`${style.title}`}>
                                     Địên thoại
                                 </div>
-                                <p>(84+) 988176899</p>
+                                <p>( +84) 437.656.899 – 0988176899
+                                </p>
                             </div>
                         </li>
-                        <li className='w-[30.5%]'>
+                        <li className='w-[30%]'>
                             <div className={`${style.img}`}>
                                 <Image
                                     src={'/contact/send-icon.png'}
@@ -74,7 +76,7 @@ export default function contact() {
                                 <div className={`${style.title}`}>
                                     Mail
                                 </div>
-                                <p> hotro@nganluc.vn</p>
+                                <p> support.xtp@ai.vn</p>
                             </div>
                         </li>
                     </ul>

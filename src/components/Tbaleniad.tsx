@@ -21,11 +21,9 @@ export default function Tbaleniad() {
                                 <form action="">
                                     <h4> Giám Giám sát sản xuất </h4>
                                     <ul className="m-0 p-0 lists">
-                                        <li>CPU: Intel® Xeon® E5-26XX</li>
-                                        <li>CORE: 4 cores</li>
-                                        <li>HDD: 100GB</li>
-                                        <li>RAM: 4GB</li>
-                                        <li>IP: 01</li>
+                                        <li>1. Quản lý hệ thống camera tập trung</li>
+                                        <li>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
+                                        <li>3. Cảnh báo giám...</li>
                                     </ul>
                                     <Link className={`${style.viewGia}`} href="#">
                                         <span className="ml-[50px]">Đặt mua</span>
@@ -68,20 +66,18 @@ export default function Tbaleniad() {
                                 <span>hot</span>
                             </div>
                             <div className={`${style.img}`}>
-                                <Image width={300} height={300} src="/product/kiost-tu-phuc-vu-hanh-chinh-cong.png" alt="product" />
+                                <Image width={300} height={300} src="/product/kiost-tron-y-te-thong-minh.png" alt="product" />
                             </div>
                             <div className={`${style.detail}`}>
                                 <form action="">
-                                    <h4> Kiost tự phục vụ hành chính công </h4>
+                                    <h4> Kiost quản lý thanh toán không tiền mặt </h4>
                                     <ul className="m-0 p-0 lists">
-                                        <li>CPU: Intel® Xeon® E5-26XX</li>
-                                        <li>CORE: 4 cores</li>
-                                        <li>HDD: 100GB</li>
-                                        <li>RAM: 4GB</li>
-                                        <li>IP: 01</li>
+                                        <li className='!leading-[1.93]'> Kiosk Y tế thông minh hỗ trợ bệnh viện đón tiếp bệnh nhân, nhằm đưa những tiện ích vào
+                                            đề án 06 triển khai chuyển đổi số Quốc Gia, thanh toán không tiền mặt cho các cơ sở Y tế
+                                        </li>
                                     </ul>
                                     <Link className={`${style.viewGia}`} href="#">
-                                        <span className="ml-[50px]">Đặt mua</span>
+                                        <span className="ml-[50px]">xem thêm</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
                                     </Link>
                                 </form>
