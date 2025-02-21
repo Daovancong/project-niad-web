@@ -147,11 +147,11 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
             </svg>
           </div>
-          <div className="w-full max-500:flex-shrink-0 p-5 transition-transform duration-700 ease-in-out">
+          <div className="w-full max-500:flex-shrink-0 p-5 relative overflow-hidden">
             <div
-              className={`${style.mediaFlx} flex w-full max-500:w-full`}
+              className={`${style.mediaFlx} flex w-full max-500:w-full overflow-hidden transition-transform duration-[900ms] ease-in-out`}
               style={{
-                // transform: `translateX(-${currentIndex * 100}%)`,
+                // transform: `translateX(-${currentIndex * 25}%)`,
               }}
             >
               {visibleItems.map((item) => (

@@ -28,13 +28,14 @@ export default function contact() {
             <div className={`${style.contactPage}`}>
                 <div className={`${style.container} px-5`}>
                     <h3> CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM </h3>
-                    <ul className=''>
-                        <li className='w-[40%]'>
+                    <ul className='max-1200:flex-col'>
+                        <li className='w-[40%] max-1200:w-full max-800:py-4'>
                             <div className={`${style.img}`}>
                                 <Image
+                                    className='w-8'
                                     src={'/contact/loacll-icon.png'}
-                                    width={30}
-                                    height={30}
+                                    width={300}
+                                    height={300}
                                     alt='logo'
                                 />
                             </div>
@@ -46,12 +47,13 @@ export default function contact() {
                                 </p>
                             </div>
                         </li>
-                        <li className='w-[27.5%]'>
+                        <li className='w-[27.5%] max-1200:w-full max-800:py-4'>
                             <div className={`${style.img}`}>
                                 <Image
+                                    className='w-8'
                                     src={'/contact/phone-ringing-icon.png'}
-                                    width={30}
-                                    height={30}
+                                    width={300}
+                                    height={300}
                                     alt='logo'
                                 />
                             </div>
@@ -63,12 +65,13 @@ export default function contact() {
                                 </p>
                             </div>
                         </li>
-                        <li className='w-[30%]'>
+                        <li className='w-[30%] max-1200:w-full max-800:py-4'>
                             <div className={`${style.img}`}>
                                 <Image
+                                    className='w-8'
                                     src={'/contact/send-icon.png'}
-                                    width={30}
-                                    height={30}
+                                    width={300}
+                                    height={300}
                                     alt='logo'
                                 />
                             </div>

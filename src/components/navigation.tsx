@@ -60,13 +60,13 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}> Giám sát an ninh </Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/security-monitoring'}> Giám sát an ninh </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Chấm công tính lương</Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/timekeeping'}>Chấm công tính lương</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Giám sát ra vào</Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/monitor-entry-and-exit'}>Giám sát ra vào</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/ai-in-management/online-patient-care'}>Giám sát sản xuất</Link>
@@ -74,7 +74,7 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white justify-between !text-left' href={'/product/hospital'}>
+                                    <Link className='text-white justify-between !text-left' href={'/product/hospital/smart-hospital'}>
                                         phần mềm quản trị bệnh viện
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -83,18 +83,18 @@ export default function Navigation() {
 
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital'}> Phần mềm quản thiết bị, vật tư y tế </Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital/device-management'}> Phần mềm quản thiết bị, vật tư y tế </Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/hospital/smart-hospital'}>Bệnh viện thông minh HIS & LIS</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital'}>Phần mềm đăng ký khám online</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital/medical-registration-software'}>Phần mềm đăng ký khám online</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white justify-between !text-left' href={'/product/hospital'}>
+                                    <Link className='text-white justify-between !text-left' href={'/product/patient-care'}>
                                         phần mềm chăm sóc bệnh nhân online
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -102,13 +102,13 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}> Chat AI tư vấn bệnh nhân </Link>
+                                            <Link className='text-white !text-left' href={'/product/patient-care/chat-ai'}> Chat AI tư vấn bệnh nhân </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Đăng ký khám từ xa</Link>
+                                            <Link className='text-white !text-left' href={'/product/patient-care/remote-registration'}>Đăng ký khám từ xa</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}>Đăng ký nhập viện online</Link>
+                                            <Link className='text-white !text-left' href={'/product/patient-care/online-hospital-registration'}>Đăng ký nhập viện online</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -129,25 +129,17 @@ export default function Navigation() {
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
-                                    <Link className='text-white justify-between !text-left' href={'/product/online-patient-care'}>Big data <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                                    <Link className='text-white justify-between !text-left' href={'/product/big-data/security-CSDL'}>Big data <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                     </svg></Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/online-patient-care'}> Bảo mật an toàn TT cơ sở dữ liệu </Link>
+                                            <Link className='text-white !text-left' href={'/product/big-data/security-CSDL'}> Bảo mật an toàn TT cơ sở dữ liệu </Link>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <Link className='text-white !text-left' href={'/product/online-patient-care'}>Giải pháp bảo mật cơ sở dữ liệu</Link>
-                                </li>
                             </ul>
                         </li>
-                        {/* <li className='pb-7 pt-7 cursor-pointer'>
-                            <Link href="#" className="hover:text-blue-700 transition duration-300 font-bold">
-                                Công ty liên danh
-                            </Link>
-                        </li> */}
                         <li className='pb-7 pt-7 cursor-pointer'>
                             <Link href="/partner" className="hover:text-blue-700 transition duration-300 font-bold">
                                 Công ty thành viên
@@ -198,6 +190,5 @@ export default function Navigation() {
                 </div>
             </div>
         </nav >
-
     )
 }

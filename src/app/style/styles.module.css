@@ -1770,6 +1770,7 @@ main.mainIndex .contactPage .container ul li {
 
 main.mainIndex .contactPage .container ul li .img {
     width: 68px;
+    min-width: 68px;
     height: 68px;
     border-radius: 10px;
     background-color: #ffffff;
