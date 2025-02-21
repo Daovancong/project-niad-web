@@ -50,12 +50,21 @@ export default function product() {
                                 PHẦN MỀM QUẢN LÝ BỆNH VIỆN THÔNG MINH
                             </h1>
                             <p className='text-sm mb-5 font-medium'>
-                                <span>Phần mềm quản lý bệnh viện đầu và cuối <b className="ml-7">HIS</b></span> <br />
-                                <span>Phần mềm quản lý máy y tế <b className="ml-7">LIS</b></span> <br />
-                                <span>Phần mềm quản lý thông tin chuẩn đoán hình ảnh <b className="ml-7">PACS</b></span> <br />
-                                <span>Phần mềm bệnh án điện tử <b className="ml-7">EMR</b></span> <br />
-                                <span>Phần mềm xếp hạng tự động <b className="ml-7">QMS</b></span> <br />
-
+                                <span>Phần mềm quản lý bệnh viện đầu và cuối <b>HIS</b></span> <br />
+                                <span>Phần mềm quản lý máy y tế <b>LIS</b></span> <br />
+                                <span>Phần mềm quản lý thông tin chuẩn đoán hình ảnh <b>PACS</b></span> <br />
+                                <span>Phần mềm bệnh án điện tử <b>EMR</b></span> <br />
+                                <span>Phần mềm xếp hạng tự động <b>QMS</b></span> <br />
+                            </p>
+                            <p className='text-sm mb-5 font-medium'>
+                                <b>PHẦN MỀM TÍCH CỰC KHÁC</b> <br />
+                            </p>
+                            <p className='text-sm mb-5 font-medium'>
+                                <span>Phần mềm quản lý văn bản <b>IOFFICE</b></span> <br />
+                                <span>Phần mềm quản lý trạng thái y tế <b>MMME</b></span> <br />
+                                <span>Phần mềm hóa đơn điện tử <b>E-INVOICE</b></span> <br />
+                                <span>Phần mềm telemedicine <b>TELEMEDICINE</b></span> <br />
+                                <span>Kết nối thanh toán không tiền mặt <b>EPAYMENTS</b></span>
                             </p>
                             <div className='mt-12 mr-[-15px]'>
                                 <button

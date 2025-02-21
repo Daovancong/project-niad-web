@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
 import Footer from "@/components/Footer";
@@ -7,6 +7,23 @@ import BannerSlider from '@/components/BannerSlider';
 import Link from "next/link";
 
 export default function recruitment() {
+    const [showForm, setShowForm] = useState(false);
+    const handleClick = () => {
+        setShowForm(true);
+    };
+    const handleClickOf = () => {
+        setShowForm(false);
+    };
+    useEffect(() => {
+        if (showForm) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [showForm]);
     const reacuitments = [
         {
             id: 1,
@@ -35,9 +52,6 @@ export default function recruitment() {
             <div className='w-full h-10 bg-[#005db2] flex items-center'>
                 <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
                     <ul className='p-0 m-0 h-full list-none flex items-center'>
-                        {/* <li className='cursor-pointer h-full items-center py-4 relative' >
-              <Link href={'#'}>  </Link>
-            </li> */}
                         <li className='cursor-pointer h-full items-center py-2 relative mr-4'>
                             <Link href={'#'} className='whitespace-nowrap font-sans text-lg text-left flex items-center' id='login' style={{ fontFamily: 'inherit', lineHeight: '1.29', letterSpacing: 'normal', fontWeight: 'normal', fontStretch: 'normal', color: '#ffffff', textDecoration: 'none', }}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
@@ -114,15 +128,56 @@ export default function recruitment() {
                                         </div>
                                     </div>
                                     <div className='justify-center flex-col flex '>
-                                        <Link href={'#'} className='w-full block no-underline p-3 my-auto text-white text-center whitespace-nowrap' style={{ background: '#db0d0d', maxWidth: '200px', minWidth: '100px', borderRadius: '24px' }}>
+                                        <button
+                                            className='w-full block no-underline p-3 my-auto text-white text-center whitespace-nowrap' style={{ background: '#2690eb', maxWidth: '200px', minWidth: '100px', borderRadius: '24px' }}
+                                            onClick={handleClick}
+                                        >
                                             Ứng tuyển
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
+            </section>
+            <div id='bgForm' className={`${showForm ? "!block" : "hidden"} fixed top-[0] left-0 w-full h-full bg-[#000000] opacity-50 z-[9999]`}></div>
+            <section id='formUT' className={`${showForm ? "!flex" : "hidden"} h-[95%] top-[150px] w-[600px] border-t-4 border-solid border-[#2680eb] min-h-48 max-h-[74%] fixed left-1/2 bg-white rounded-lg shadow-[0_2px_8px_rgba(0,0,0,.16)] overflow-y-hidden z-[99999] p-6 flex-col`} style={{ transform: 'translateX(-50%)' }}>
+                <div className='flex absolute w-[calc(100%-48px)] justify-between'>
+                    <div className='text-base font-bold absolute'> Nộp hồ sơ </div>
+                    <div className='absolute top-0 right-2 cursor-pointer' onClick={handleClickOf}> X </div>
+                </div>
+                <div className='mt-8 overflow-y-auto overflow-x-hidden max-h-full flex-[1]'>
+                    <div className='w-[98%] h-auto'>
+                        <div className='w-full mb-4'>
+                            <div className='flex'>
+                                <label className='mb-2'>CV/Sơ yếu lí lịch</label>
+                                <span className='text-red-500 ml-1'>*</span>
+                            </div>
+                            <div className='w-full'>
+                                <div id='CV'>
+                                    <div className='h-full relative text-center items-center border-[1px] border-dashed border-[#2970f6] bg-clip-padding cursor-pointer'>
+                                        <div className='text-[#2680eb] mt-5'>
+                                            Tải lên CV/Sơ yếu lí lịch của bạn
+                                        </div>
+                                        <div className='text-[#9e9e9e]'>
+                                            Chấp nhận định dạng .dpf, .doc, .png, .jpeg và jpeg và .jpg
+                                        </div>
+                                        <div className='mt-10'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span className='hidden text-red-500'> Không được để trống phần này</span>
+                        </div>
+                        <div className='w-full mb-4'></div>
+                        <div className='w-full mb-4'></div>
+                        <div className='w-full mb-4'></div>
+                        <div className='w-full mb-4'></div>
+                    </div>
+                </div>
+                <button className='h-[40px] bg-[#2690eb] leading-[40px] text-center my-4 mx-auto rounded cursor-pointer text-[#ffffff] w-full'>
+                    Nộp hồ sơ
+                </button>
             </section>
             <Footer />
         </main>

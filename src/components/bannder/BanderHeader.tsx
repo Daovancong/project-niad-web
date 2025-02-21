@@ -92,7 +92,7 @@ export default function BanderHeader() {
 
     return (
         <header
-            className={`${style.bannerHeader} bg-white overflow-hidden flex fixed top-0 left-0 w-full z-[9999] h-[20%]`}
+            className={`${style.bannerHeader} bg-white overflow-hidden flex fixed top-0 left-0 w-full z-[999] h-[20%]`}
         >
             <div
                 className="flex"

@@ -21,19 +21,20 @@ export default function Tbaleniad() {
                                 <form action="">
                                     <h4> Giám Giám sát sản xuất </h4>
                                     <ul className="m-0 p-0 lists">
-                                        <li>1. Quản lý hệ thống camera tập trung</li>
-                                        <li>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
-                                        <li>3. Cảnh báo giám...</li>
+                                        <li className='!leading-[1.93]'>1. Quản lý hệ thống camera tập trung</li>
+                                        <li className='!leading-[1.93]'>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
+                                        <li className='!leading-[1.93]'>3. Cảnh báo giám sát an toàn cho xe nâng</li>
+                                        <li className='!leading-[1.93]'>4. Đếm và quản lí số lượng...</li>
+
                                     </ul>
-                                    <Link className={`${style.viewGia}`} href="#">
-                                        <span className="ml-[50px]">Đặt mua</span>
+                                    <Link className={`${style.viewGia}`} href="/product/ai-in-management/online-patient-care">
+                                        <span className="ml-[50px]">Xem thêm</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
                                     </Link>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    {/*Bệnh viện thông minh his và lis */}
                     <div className={`${style.item}`}>
                         <div className={`${style.in}`}>
                             <div className={`${style.hot}`}>
@@ -46,14 +47,14 @@ export default function Tbaleniad() {
                                 <form action="">
                                     <h4> Bệnh viện thông minh His và Lis </h4>
                                     <ul className="m-0 p-0 lists">
-                                        <li>CPU: Intel® Xeon® E5-26XX</li>
-                                        <li>CORE: 4 cores</li>
-                                        <li>HDD: 100GB</li>
-                                        <li>RAM: 4GB</li>
-                                        <li>IP: 01</li>
+                                        <li className='!leading-[1.93]'>Phần mềm quản lý bệnh viện đầu và cuối</li>
+                                        <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
+                                        <li className='!leading-[1.93]'>Phần mềm quản lý thông tin chuẩn đoán hình ảnh </li>
+                                        <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử </li>
+                                        <li className='!leading-[1.93]'>Phần mềm xếp hạng tự động </li>
                                     </ul>
-                                    <Link className={`${style.viewGia}`} href="#">
-                                        <span className="ml-[50px]">Đặt mua</span>
+                                    <Link className={`${style.viewGia}`} href="/product/hospital/smart-hospital">
+                                        <span className="ml-[50px]">Xem thêm</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
                                     </Link>
                                 </form>
@@ -76,7 +77,7 @@ export default function Tbaleniad() {
                                             đề án 06 triển khai chuyển đổi số Quốc Gia, thanh toán không tiền mặt cho các cơ sở Y tế
                                         </li>
                                     </ul>
-                                    <Link className={`${style.viewGia}`} href="#">
+                                    <Link className={`${style.viewGia}`} href="/product/self-service-kios/payment-kiosk">
                                         <span className="ml-[50px]">xem thêm</span>
                                         <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
                                     </Link>

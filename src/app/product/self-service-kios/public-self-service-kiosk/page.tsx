@@ -21,73 +21,6 @@ export default function product() {
             document.body.style.overflow = "auto";
         };
     }, [showVideo]);
-    // const products = [
-    //     {
-    //         id: 1,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 01',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '2 Cores',
-    //         hdd: '20 GB',
-    //         ram: '2 GB',
-    //         ip: '1',
-    //     },
-    //     {
-    //         id: 2,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 02',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '3 Cores',
-    //         hdd: '40 GB',
-    //         ram: '4 GB',
-    //         ip: '1',
-    //         price: "500.000",
-    //     },
-    //     {
-    //         id: 3,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 03',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '2 Cores',
-    //         hdd: '60 GB',
-    //         ram: '6 GB',
-    //         ip: '1',
-    //         price: "1000.000",
-    //     },
-    //     {
-    //         id: 4,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 04',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '2 Cores',
-    //         hdd: '80 GB',
-    //         ram: '8 GB',
-    //         ip: '1',
-    //         price: "1500.000",
-    //     },
-    //     {
-    //         id: 5,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 05',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '1 Cores',
-    //         hdd: '128 GB',
-    //         ram: '12 GB',
-    //         ip: '1',
-    //         price: "2000.000",
-    //     },
-    //     {
-    //         id: 6,
-    //         image: '/Cloud_Service.png',
-    //         title: 'Product AI 06',
-    //         cpu: 'Intel® Xeon® E5-26XX',
-    //         core: '3 Cores',
-    //         hdd: '256 GB',
-    //         ram: '16 GB',
-    //         ip: '1',
-    //         price: "2500.000",
-    //     }
-    // ];
     const pathname = usePathname();
 
     return (
@@ -148,7 +81,7 @@ export default function product() {
                                                 ✖
                                             </button>
                                             <div className="aspect-w-16 aspect-h-9">
-                                                <iframe width="560" height="315" className='w-full' src="https://www.youtube.com/embed/Ec77hS0xhAY?si=6_eT0h16MCIbq6mL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                                <iframe width="560" height="315" className="w-full" src="https://www.youtube.com/embed/Ec77hS0xhAY?si=LfgVQ6-P3uuU6ITe" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                             </div>
                                         </div>
                                     </div>
