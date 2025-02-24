@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import style from "@/app/style/styles.module.css";
-
+// https://bic.vn/dmsp-cn/bao-hiem-ca-nhan.html lấy 3 cái ảnh đầu tiên
 export default function BannderRight() {
     return (
         <aside className={`${style.banerRight} w-[15%] top-[20vh] bg-gray-100 fixed right-0 h-[85%] z-[999]`}>

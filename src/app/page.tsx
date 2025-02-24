@@ -300,25 +300,24 @@ export default function Home() {
         </div>
       </section>
       <section className={`${style.tbaleNiad} !p-0 w-full`}>
-        <div className={`${style.containeTb} max-w-[1170px]`}>
-          <div className={`${style.listTb} flex mr-[23px]`}>
+        <div className={`${style.containeTb} max-w-[1170px] `}>
+          <div className={`${style.listTb} flex mr-[3px] items-stretch`}>
             {/* Giám Giám sát sản xuất */}
-            <div className={`${style.item}`}>
-              <div className={`${style.in}`}>
-                <div className={`${style.hot}`}>
+            <div className={`${style.item} h-full`}>
+              <div className={`${style.in} h-full flex flex-col`}>
+                <div className={`${style.hot} flex-1`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>
                   <Image width={800} height={800} src="/product/Giam-sat-san-xuat.png" alt="product" />
                 </div>
-                <div className={`${style.detail}`}>
+                <div className={`${style.detail} min-h-[250px] flex flex-col justify-between h-full`}>
                   <form action="">
                     <h4> Giám Giám sát sản xuất </h4>
-                    <ul className="m-0 p-0 lists">
+                    <ul className="m-0 p-0 lists flex-1">
                       <li className='!leading-[1.93]'>1. Quản lý hệ thống camera tập trung</li>
                       <li className='!leading-[1.93]'>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
-                      <li className='!leading-[1.93]'>3. Cảnh báo giám sát an toàn cho xe nâng</li>
-                      <li className='!leading-[1.93]'>4. Đếm và quản lí số lượng...</li>
+                      <li className='!leading-[1.93]'>3. Cảnh báo giám sát an toàn ...</li>
 
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/ai-in-management/online-patient-care">
@@ -329,23 +328,22 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={`${style.item}`}>
-              <div className={`${style.in}`}>
-                <div className={`${style.hot}`}>
+            <div className={`${style.item} h-full`}>
+              <div className={`${style.in} h-full flex flex-col`}>
+                <div className={`${style.hot} flex-1`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>
                   <Image width={300} height={300} src="/product/benh-vien-thong-minh-his-lis.png" alt="product" />
                 </div>
-                <div className={`${style.detail}`}>
+                <div className={`${style.detail} flex flex-col justify-between h-full`}>
                   <form action="">
-                    <h4> Bệnh viện thông minh His và Lis </h4>
-                    <ul className="m-0 p-0 lists">
-                      <li className='!leading-[1.93]'>Phần mềm quản lý bệnh viện đầu và cuối</li>
+                    <h4> Bệnh viện thông minh HIS và LIS </h4>
+                    <ul className="m-0 p-0 lists flex-1">
+                      <li className='!leading-[1.93]'>Phần mềm quản lý bệnh viện đầu và cuối </li>
                       <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
                       <li className='!leading-[1.93]'>Phần mềm quản lý thông tin chuẩn đoán hình ảnh </li>
-                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử </li>
-                      <li className='!leading-[1.93]'>Phần mềm xếp hạng tự động </li>
+                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử...</li>
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/hospital/smart-hospital">
                       <span className="ml-[50px]">Xem thêm</span>
@@ -355,20 +353,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={`${style.item}`}>
-              <div className={`${style.in}`}>
-                <div className={`${style.hot}`}>
+            <div className={`${style.item} h-full`}>
+              <div className={`${style.in} h-full flex flex-col`}>
+                <div className={`${style.hot} flex-1`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>
                   <Image width={300} height={300} src="/product/kiost-tron-y-te-thong-minh.png" alt="product" />
                 </div>
-                <div className={`${style.detail}`}>
+                <div className={`${style.detail} flex flex-col justify-between h-full`}>
                   <form action="">
-                    <h4> Kiost quản lý thanh toán không tiền mặt </h4>
-                    <ul className="m-0 p-0 lists">
+                    <h4> Kiosk quản lý thanh toán không tiền mặt </h4>
+                    <ul className="m-0 p-0 lists flex-1">
                       <li className='!leading-[1.93]'> Kiosk Y tế thông minh hỗ trợ bệnh viện đón tiếp bệnh nhân, nhằm đưa những tiện ích vào
-                        đề án 06 triển khai chuyển đổi số Quốc Gia, thanh toán không tiền mặt cho các cơ sở Y tế
+                        đề án 06 triển khai chuyển đổi số Quốc Gia, thanh ...
                       </li>
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/self-service-kios/payment-kiosk">

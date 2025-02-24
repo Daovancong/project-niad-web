@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 import style from "@/app/style/styles.module.css";
-
+// https://bic.vn/index.html lấy 3 cái ở tin tức
 export default function BannderLeft() {
     return (
         <aside className={`${style.banerLeft} w-[15%] top-[20vh] bg-gray-100 fixed left-0 h-[100vh] z-[99]`}>
