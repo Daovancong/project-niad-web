@@ -743,12 +743,12 @@ main .whyBox .firstLine .content {
     position: relative;
     border-radius: 6px;
     border: solid 5px #ffffff;
-    padding: 50px;
+    padding: 30px;
     width: 750px;
 }
 
 .contact ul {
-    width: 551px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -778,7 +778,7 @@ main .whyBox .firstLine .content {
 }
 
 .contact ul li:nth-child(1) {
-    width: 80% !important;
+    width: 100% !important;
 }
 
 .contact ul li:nth-child(2) {

@@ -53,40 +53,35 @@ export default function BanderHeader() {
         },
     ];
 
-    // Tạo mảng có phần tử clone
     const extendedBanners = [
-        banerTop[banerTop.length - 1], // Clone phần tử cuối vào đầu
+        banerTop[banerTop.length - 1],
         ...banerTop,
-        banerTop[0], // Clone phần tử đầu vào cuối
+        banerTop[0],
     ];
 
-    const [currentIndex, setCurrentIndex] = useState(1); // Bắt đầu từ phần tử thực đầu tiên
-    const [isTransitioning, setIsTransitioning] = useState(true); // Kiểm soát hiệu ứng chuyển động
-
+    const [currentIndex, setCurrentIndex] = useState(1);
+    const [isTransitioning, setIsTransitioning] = useState(true);
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => prevIndex + 1);
-        }, 3000);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, []);
-
-    // Xử lý logic vòng lặp
     useEffect(() => {
         if (currentIndex === 0) {
-            // Khi đến phần tử clone đầu, nhảy ngay về phần tử thực cuối
             setTimeout(() => {
-                setIsTransitioning(false); // Tắt hiệu ứng chuyển động
-                setCurrentIndex(extendedBanners.length - 2); // Chuyển đến phần tử thực cuối
-            }, 100); // Đồng bộ với thời gian animation
+                setIsTransitioning(false);
+                setCurrentIndex(extendedBanners.length - 2);
+            }, 100);
         } else if (currentIndex === extendedBanners.length - 1) {
-            // Khi đến phần tử clone cuối, nhảy ngay về phần tử thực đầu
+
             setTimeout(() => {
-                setIsTransitioning(false); // Tắt hiệu ứng chuyển động
-                setCurrentIndex(1); // Chuyển đến phần tử thực đầu
+                setIsTransitioning(false);
+                setCurrentIndex(1);
             }, 100);
         } else {
-            setIsTransitioning(true); // Bật lại hiệu ứng chuyển động
+            setIsTransitioning(true);
         }
     }, [currentIndex, extendedBanners.length]);
 

@@ -3,12 +3,8 @@ import { useState } from 'react';
 import Image from "next/image";
 import style from "@/app/style/styles.module.css";
 import Navigation from "@/components/navigation";
-import Boxcpn from "@/components/Boxcpn";
 import Link from "next/link";
 import BannerSlider from "@/components/BannerSlider";
-import Partners from "@/components/Partners";
-import Tbaleniad from "@/components/Tbaleniad";
-import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 
@@ -88,23 +84,58 @@ export default function Home() {
     items[(currentIndex + 2) % items.length],
     items[(currentIndex + 3) % items.length],
   ];
+  // xác thực OTP
+  const [email, setEmail] = useState("");
+  const [otp, setOtp] = useState("");
+  const [otpSent, setOtpSent] = useState(false);
+  const [message, setMessage] = useState("");
+  // Gửi OTP đến email
+  const sendOtp = async () => {
+    setMessage("");
+    try {
+      const res = await fetch("/api/send-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setOtpSent(true);
+        setMessage("OTP đã được gửi!");
+      } else {
+        setMessage(data.error);
+      }
+    } catch (error) {
+      setMessage("Lỗi khi gửi OTP!");
+    }
+  };
+  // Xác thực OTP
+  const verifyOtp = async () => {
+    setMessage("");
+    try {
+      const res = await fetch("/api/verify-otp", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, otp }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setMessage("OTP hợp lệ!");
+      } else {
+        setMessage(data.error);
+      }
+    } catch (error) {
+      setMessage("Lỗi khi xác thực OTP!");
+    }
+  };
   return (
     <main className={`${style.mainIndex} w-[70%] bg-white ml-[15%] mr-[15%] relative top-[20vh] flex flex-col shadow-md`}>
       <div className='w-full h-10 bg-[#005db2] flex items-center'>
         <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
           <ul className='p-0 m-0 h-full list-none flex items-center'>
-            {/* <li className='cursor-pointer h-full items-center py-4 relative' >
-              <Link href={'#'}>  </Link>
-            </li> */}
             <li className='cursor-pointer h-full items-center py-2 relative mr-4'>
-              <Link href={'#'} className='whitespace-nowrap font-sans text-lg text-left flex items-center' id='login' style={{ fontFamily: 'inherit', lineHeight: '1.29', letterSpacing: 'normal', fontWeight: 'normal', fontStretch: 'normal', color: '#ffffff', textDecoration: 'none', }}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                </svg>Đăng Nhập<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 ml-2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                </svg>
-
-              </Link>
             </li>
           </ul>
         </div>
@@ -189,10 +220,345 @@ export default function Home() {
           </div>
         </div>
       </section >
-      <Boxcpn />
-      <Tbaleniad />
-      <Partners />
-      <Contact />
+      <section className={`${style.whyBox} mt-[50px]`} >
+        <div className={`${style.firstLine} `}>
+          <div className={`${style.container} flex justify-between items-center mt-[-60px] max-w-[1170px] w-full m-auto`}>
+            <div className="text-[40px] ml-[2px]">
+              <div className="flex w-[30%] h-[2.9px]">
+                <div className="flex-[2] bg-[#e91e1e]"></div>
+                <div className="flex-[8] bg-[#f8b133]"></div>
+              </div>
+              <br />
+              <h2 className="ml-[10px]">
+                Vì sao chọn XTP - AI, BIG DATA?
+              </h2>
+            </div>
+            <div className={`${style.content} mr-6`}>
+              <Image width={100} height={100} src={'/asset1.png'} alt="asset" />
+              <div className="cmt leading-[26px] text-justify font-[Roboto] font-[14px]">
+                XTP – AI, Big Data  được cung ứng dụng rộng rãi trong ngành Y tế - nhà cung cấp giải pháp quản trị tiên phong tại Việt Nam với uy tín thương hiệu lâu đời, chất lượng chăm sóc khách hàng vượt trội cùng với những ưu điểm nổi bật của dịch vụ như:
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div className={`${style.whyBox}`}>
+          <div className={`${style.container} max-w-[1170px] w-full m-auto`}>
+            <div className={`${style.inside} flex w-[calc(100% +60px)]`}>
+              <div className={`${style.items}`}>
+                <div className={`${style.jay} p-[20px]`}>
+                  <div className={`${style.img}`}>
+                    <Image className="h-[60px] w-[60px]" width={60} height={60} src={'/iconitems/technologyIcon.png'} alt="icon item" />
+                  </div>
+                  <div className={`${style.content}`}>
+                    <h5>Công nghệ hiện đại</h5>
+                    <p className="cmt leading-[21px] text-justify font-[Roboto] text-[14px]">Công nghệ được ứng dụng rất rộng rãi và nổi tiếng như OpenStack và xây dựng theo mô hình Self-service giúp mềm dẻo trong cung cấp dịch vụ công nghệ riêng.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${style.items}`}>
+                <div className={`${style.jay} p-[20px]`}>
+                  <div className={`${style.img}`}>
+                    <Image className="h-[60px] w-[60px]" width={60} height={60} src={'/iconitems/safeIcon.png'} alt="icon item" />
+                  </div>
+                  <div className={`${style.content}`}>
+                    <h5>An toàn đáng tin cậy</h5>
+                    <p className="cmt leading-[21px] text-justify font-[Roboto] text-[14px]">Hệ thống bảo mật An toàn thông tin máy chủ được đặt tại Trung tâm dữ liệu lớn, đáp ứng theo chuẩn quốc tế. Cam kết ổn định, an toàn, bảo mật, tiết kiệm thời gian.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={`${style.items}`}>
+                <div className={`${style.jay} p-[20px]`}>
+                  <div className={`${style.img}`}>
+                    <Image className="h-[60px] w-[50px]" width={60} height={60} src={'/iconitems/qualityIcon.png'} alt="icon item" />
+                  </div>
+                  <div className={`${style.content}`}>
+                    <h5>Chất lượng cao</h5>
+                    <p className="cmt leading-[21px] text-justify font-[Roboto] text-[14px]">Dịch vụ cung cấp các giải pháp quản trị phần mềm của XTP – AI, Big Data được phát triển trên các cụm máy chủ phiến chuyên dụng cho hạ tầng đám mây giúp tối ưu hoá tốc độ truy xuất.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={`${style.items}`}>
+                <div className={`${style.jay} p-[20px]`}>
+                  <div className={`${style.img}`}>
+                    <Image className="h-[60px] w-[60px]" width={60} height={60} src={'/iconitems/likeIcon.png'} alt="icon item" />
+
+                  </div>
+                  <div className={`${style.content}`}>
+                    <h5>Chuyên nghiệp</h5>
+                    <p className="cmt leading-[21px] text-justify font-[Roboto] text-[14px]">Đội ngũ hỗ trợ kỹ thuật trực tuyến 24/24 luôn có mặt giải quyết các thắc mắc của khách hàng sớm nhất. Chuyên nghiệp và thân thiện.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`${style.tbaleNiad} !p-0 w-full`}>
+        <div className={`${style.containeTb} max-w-[1170px]`}>
+          <div className={`${style.listTb} flex mr-[23px]`}>
+            {/* Giám Giám sát sản xuất */}
+            <div className={`${style.item}`}>
+              <div className={`${style.in}`}>
+                <div className={`${style.hot}`}>
+                  <span>hot</span>
+                </div>
+                <div className={`${style.img}`}>
+                  <Image width={800} height={800} src="/product/Giam-sat-san-xuat.png" alt="product" />
+                </div>
+                <div className={`${style.detail}`}>
+                  <form action="">
+                    <h4> Giám Giám sát sản xuất </h4>
+                    <ul className="m-0 p-0 lists">
+                      <li className='!leading-[1.93]'>1. Quản lý hệ thống camera tập trung</li>
+                      <li className='!leading-[1.93]'>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
+                      <li className='!leading-[1.93]'>3. Cảnh báo giám sát an toàn cho xe nâng</li>
+                      <li className='!leading-[1.93]'>4. Đếm và quản lí số lượng...</li>
+
+                    </ul>
+                    <Link className={`${style.viewGia}`} href="/product/ai-in-management/online-patient-care">
+                      <span className="ml-[50px]">Xem thêm</span>
+                      <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
+                    </Link>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className={`${style.item}`}>
+              <div className={`${style.in}`}>
+                <div className={`${style.hot}`}>
+                  <span>hot</span>
+                </div>
+                <div className={`${style.img}`}>
+                  <Image width={300} height={300} src="/product/benh-vien-thong-minh-his-lis.png" alt="product" />
+                </div>
+                <div className={`${style.detail}`}>
+                  <form action="">
+                    <h4> Bệnh viện thông minh His và Lis </h4>
+                    <ul className="m-0 p-0 lists">
+                      <li className='!leading-[1.93]'>Phần mềm quản lý bệnh viện đầu và cuối</li>
+                      <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
+                      <li className='!leading-[1.93]'>Phần mềm quản lý thông tin chuẩn đoán hình ảnh </li>
+                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử </li>
+                      <li className='!leading-[1.93]'>Phần mềm xếp hạng tự động </li>
+                    </ul>
+                    <Link className={`${style.viewGia}`} href="/product/hospital/smart-hospital">
+                      <span className="ml-[50px]">Xem thêm</span>
+                      <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
+                    </Link>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className={`${style.item}`}>
+              <div className={`${style.in}`}>
+                <div className={`${style.hot}`}>
+                  <span>hot</span>
+                </div>
+                <div className={`${style.img}`}>
+                  <Image width={300} height={300} src="/product/kiost-tron-y-te-thong-minh.png" alt="product" />
+                </div>
+                <div className={`${style.detail}`}>
+                  <form action="">
+                    <h4> Kiost quản lý thanh toán không tiền mặt </h4>
+                    <ul className="m-0 p-0 lists">
+                      <li className='!leading-[1.93]'> Kiosk Y tế thông minh hỗ trợ bệnh viện đón tiếp bệnh nhân, nhằm đưa những tiện ích vào
+                        đề án 06 triển khai chuyển đổi số Quốc Gia, thanh toán không tiền mặt cho các cơ sở Y tế
+                      </li>
+                    </ul>
+                    <Link className={`${style.viewGia}`} href="/product/self-service-kios/payment-kiosk">
+                      <span className="ml-[50px]">xem thêm</span>
+                      <Image className="ml-3" width={28} height={28} src="/icon/iconLeft-witth.png" alt="gia" />
+                    </Link>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={`${style.infoTb} w-[291px]`}>
+            <div className="text-[40px] ml-[2px] mt-12">
+              <div className={`${style.mobile} flex w-[55%] h-[3.9px]`}>
+                <div className="flex-[3] bg-[#e91e1e]"></div>
+                <div className="flex-[7] bg-[#f8b133]"></div>
+              </div>
+              <h3 className="mt-3">
+                Gói dịch vụ
+              </h3>
+            </div>
+            <p className="!leading-[26px] text-justify">
+              Hệ thống cung cấp dịch vụ của XTP – AI, Big Data được được xây dựng và phát triển trên nền tảng mã nguồn mở. Đây là giải pháp được rất nhiều nền tảng lõi hãng công nghệ hàng đầu trên thế giới cung cấp, kết hợp.
+            </p>
+            <ul>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-6 mr-4"
+                  style={{ color: '#7FB3D5' }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Cam kết uptime 99.99%
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-6 mr-4"
+                  style={{ color: '#7FB3D5' }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                khởi tạo nhanh, dễ dàng nâng cấp
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="size-6 mr-4"
+                  style={{ color: '#7FB3D5' }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                An toàn và bảo mật dữ liệu
+              </li>
+            </ul>
+            <Link className={`${style.view} w-[196px] h-[45.9px] flex items-center justify-center`} href="#">
+              <span className="ml-[50px]">
+                xem tất cả
+              </span>
+              <Image className="ml-[0.75rem]" width={30} height={30} src="/icon/iconLeft-witth.png" alt="xem tat ca" />
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className={`${style.partners} p-0`}>
+        <div className={`${style.customers} max-w-[1170px] w-full m-auto`}>
+          <div className={`${style.title} text-[40px] ml-[2px] mt-11`}>
+            <div className="flex w-[30%] h-[2.9px]">
+              <div className="flex-[4] bg-[#e91e1e]"></div>
+              <div className="flex-[6] bg-[#f8b133]"></div>
+            </div>
+            <h2 className="mt-4">
+              ĐỐI TÁC & KHÁCH HÀNG
+            </h2>
+          </div>
+          <div className={`${style.swiperContainer} mt-[30px] w-full h-full`}>
+            <div className={`${style.swiperWrapper}`} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'nowrap' }}>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={10000} height={60} className='!w-[60%]' src="/partners/Logo-hanh-chinh-cong.jpg" alt="partners 01" />
+              </div>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={10000} height={60} className='!w-[60%]' src="/partners/bo-y-te.png" alt="partners 02" />
+              </div>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={10000} height={60} src="/partners/logo-giao-duc-2.jpg" alt="partners 03" />
+              </div>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={10000} height={60} src="/partners/bidv-logo.png" alt="partners 04" />
+              </div>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={10000} height={60} src="/partners/niad-logo-2.jpg" alt="partners 05" />
+              </div>
+              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
+                <Image width={1000} height={60} src="/partners/virtnam-post-logo.png" alt="partners 06" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`${style.contact} py-[1.125rem] overflow-hidden relative`}>
+        <div className={`${style.container} max-w-[1170px] w-full !ml-[38px]`}>
+          <div className={`${style.title} text-[40px] ml-[2px] mt-10`}>
+            <div className="flex w-[20%] h-[2.9px]">
+              <div className="flex-[5] bg-[#e91e1e]"></div>
+              <div className="flex-[5] bg-[#f8b133]"></div>
+            </div>
+            <h2 className="mt-4"> LIÊN HỆ VỚI CHÚNG TÔI </h2>
+          </div>
+          <div className={`${style.form} relative`}>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <ul className='space-y-4'>
+                <li> <input type="text" placeholder="Họ Và Tên(*)" required /> </li>
+                <li> <input type="text" placeholder="Số điện thoại(*)" maxLength={10} required /> </li>
+                <li>
+                  <input type="email" placeholder="Email(*)" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                  <button type="button" onClick={sendOtp} className="mt-2 bg-blue-500 text-white px-2 py-1 rounded">
+                    Gửi OTP
+                  </button>
+                </li>
+                <li> <input type="text" placeholder="Nội dung" /> </li>
+                {otpSent && (
+                  <li>
+                    <input
+                      type="text"
+                      placeholder="Nhập mã OTP"
+                      value={otp}
+                      onChange={(e) => setOtp(e.target.value)}
+                      required
+                    />
+                    <button type="button" onClick={verifyOtp} className="ml-2 bg-green-500 text-white px-2 py-1 rounded">
+                      Xác thực
+                    </button>
+                  </li>
+                )}
+                <li><p className="text-red-500">{message}</p></li>
+
+                <li className="flex items-center justify-between">
+                  <div className={`${style.item}`}>
+                    <button type="submit" className={`${style.view}`}>
+                      Nhận tư vấn
+                      <Image className="ml-4" width={30} height={30} src="/icon/iconLeft-witth.png" alt="tu van" />
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </form>
+            {/* hotline */}
+            {/* <div className={`${style.hotline} w-[360px] absolute right-[-130px] top-[-125px] bg-white p-4 shadow-md rounded-md border border-gray-200`}>
+              <h3 className="text-[16px] font-semibold text-gray-700 mb-1">Hotline</h3>
+              <h2 className="text-[28px] font-bold text-blue-600 mb-2">
+                (+84) 931.101.101
+              </h2>
+              <p className="!text-[13px] text-gray-600 leading-5 mb-4">
+                CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM
+              </p>
+              <p>
+                Số 01 Phạm Văn Bạch, Yên Hoà, Cầu Giấy, Hà Nội
+              </p>
+              <Link
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex no-underline text-[14px] items-center text-blue-500 mt-2"
+              >
+                <Image width={50} height={50} src="/vitri-niad.png" alt="" className="mr-2" />
+                Xem trên Google Map
+              </Link>
+            </div> */}
+          </div>
+        </div>
+      </section>
       <Blog />
       <Footer />
     </main >

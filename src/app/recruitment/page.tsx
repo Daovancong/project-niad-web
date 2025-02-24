@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
 import Footer from "@/components/Footer";
@@ -24,6 +24,33 @@ export default function recruitment() {
             document.body.style.overflow = "auto";
         };
     }, [showForm]);
+
+    const UploadCV = () => {
+        const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+        const handleClick = () => {
+            if (fileInputRef.current) {
+                fileInputRef.current.click();
+            }
+        };
+
+        const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+            const file = event.target.files?.[0];
+
+            if (file) {
+                const allowedTypes = ["pdf", "doc", "png", "jpeg", "jpg"];
+                const fileExtension = file.name.split(".").pop()?.toLowerCase();
+
+                if (!fileExtension || !allowedTypes.includes(fileExtension)) {
+                    alert("Vui lòng chọn file đúng định dạng: .pdf, .doc, .png, .jpeg, .jpg");
+                    return;
+                }
+
+                alert(`Bạn đã chọn file: ${file.name}`);
+                // TODO: Xử lý upload file lên server nếu cần
+            }
+        };
+    }
     const reacuitments = [
         {
             id: 1,
@@ -151,28 +178,55 @@ export default function recruitment() {
                     <div className='w-[98%] h-auto'>
                         <div className='w-full mb-4'>
                             <div className='flex'>
-                                <label className='mb-2'>CV/Sơ yếu lí lịch</label>
+                                <label htmlFor="cvUpload" className='mb-2'>CV/Sơ yếu lí lịch</label>
                                 <span className='text-red-500 ml-1'>*</span>
                             </div>
-                            <div className='w-full'>
-                                <div id='CV'>
-                                    <div className='h-full relative text-center items-center border-[1px] border-dashed border-[#2970f6] bg-clip-padding cursor-pointer'>
-                                        <div className='text-[#2680eb] mt-5'>
-                                            Tải lên CV/Sơ yếu lí lịch của bạn
-                                        </div>
-                                        <div className='text-[#9e9e9e]'>
-                                            Chấp nhận định dạng .dpf, .doc, .png, .jpeg và jpeg và .jpg
-                                        </div>
-                                        <div className='mt-10'></div>
+                            <div className="w-full">
+                                <div id="CV" onClick={handleClick}>
+                                    <div className="h-full relative text-center items-center border-[1px] border-dashed border-[#2970f6] bg-clip-padding cursor-pointer p-5">
+                                        <div className="text-[#2680eb] mt-5">Tải lên CV/Sơ yếu lí lịch của bạn</div>
+                                        <div className="text-[#9e9e9e]">Chấp nhận định dạng <strong>.pdf, .doc, .png, .jpeg, .jpg</strong></div>
+                                        <input
+                                            type="file"
+                                            // ref={fileInputRef}
+                                            // className="hidden"
+                                            // accept=".pdf, .doc, .png, .jpeg, .jpg"
+                                            // onChange={handleFileChange}
+                                        />
+                                        <div className="mt-10"></div>
                                     </div>
                                 </div>
                             </div>
                             <span className='hidden text-red-500'> Không được để trống phần này</span>
                         </div>
-                        <div className='w-full mb-4'></div>
-                        <div className='w-full mb-4'></div>
-                        <div className='w-full mb-4'></div>
-                        <div className='w-full mb-4'></div>
+                        <div className='w-full mb-4'>
+                            <div className='flex'>
+                                <label className='mb-2'> Họ và tên </label>
+                                <span className='text-red-500 ml-1'>*</span>
+                            </div>
+                            <div className='w-full'>
+                                <input type="text" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
+                            </div>
+                        </div>
+                        <div className='w-full mb-4'>
+                            <div className='flex'>
+                                <label className='mb-2'>Email</label>
+                                <span className='text-red-500 ml-1'>*</span>
+                            </div>
+                            <div className='w-full'>
+                                <input type="email" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
+                            </div>
+                        </div>
+                        <div className='w-full mb-4'>
+                            <div className='flex'>
+                                <label className='mb-2'>Số điện thoại</label>
+                                <span className='text-red-500 ml-1'>*</span>
+                            </div>
+                            <div className='w-full'>
+                                <input type="tel" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
+                            </div>
+                        </div>
+                        {/* <div className='w-full mb-4'></div> */}
                     </div>
                 </div>
                 <button className='h-[40px] bg-[#2690eb] leading-[40px] text-center my-4 mx-auto rounded cursor-pointer text-[#ffffff] w-full'>

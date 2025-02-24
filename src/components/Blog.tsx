@@ -77,7 +77,6 @@ export default function Blog() {
                     </h1>
                 </div>
                 <div className="relative py-6">
-                    {/* <div className="absolute inset-0 bg-gradient-to-t from-red-600 to-transparent h-2/3"></div> */}
                     <div className="max-w-6xl mx-auto grid grid-cols-5 gap-4">
                         {technologys.map((technology, index) => (
                             <div key={technology.id} className="relative bg-white rounded-lg overflow-hidden shadow-md z-20">
@@ -166,9 +165,6 @@ export default function Blog() {
                                     >
                                         <h5> XTP Hệ thống quản lý học sinh và đo thân nhiệt bằng nhận diện khuôn mặt</h5>
                                     </Link>
-                                    {/* <div className={`${style.summary}`}>
-                                        <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
-                                    </div> */}
                                 </div>
                             </article>
                             <article>
@@ -191,9 +187,6 @@ export default function Blog() {
                                     </Link>
                                     <div className={`${style.meta}`}>
                                     </div>
-                                    {/* <div className={`${style.summary}`}>
-                                        <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
-                                    </div> */}
                                 </div>
                             </article>
                         </div>
@@ -207,30 +200,8 @@ export default function Blog() {
                                     </Link>
                                 </div>
                                 <div className={`${style.content}`}>
-                                    <div className={`${style.date}`}>
-                                        <span>
-                                            23
-                                        </span>
-                                        <span className='text-xs text-white'>Jun 2024</span>
-                                    </div>
                                     <h4> Chọn thuê VPS hay Shared hosting để lưu trữ? </h4>
                                     <div className={`${style.meta}`}>
-                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                                </svg>
-                                                360
-                                            </li>
-                                            <li className='ml-2'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                                </svg>
-                                                Admin
-                                            </li>
-                                        </ul>
                                     </div>
                                     <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Thuê VPS giá rẻ hay chọn Shared hosting để trở thành giải pháp tốt nhất cho doanh nghiệp trong việc tối ưu lưu trữ Web?.....</p>
@@ -250,31 +221,7 @@ export default function Blog() {
                                     </Link>
                                 </div>
                                 <div className={`${style.content}`}>
-                                    <div className={`${style.date} absolute left-[15px]`}>
-                                        <span>
-                                            24
-                                        </span>
-                                        <span className='text-xs text-white'>Sun 2024</span>
-                                    </div>
                                     <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
-                                    <div className={`${style.meta}`}>
-                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                                </svg>
-                                                360
-                                            </li>
-                                            <li className='ml-2'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                                </svg>
-                                                Admin
-                                            </li>
-                                        </ul>
-                                    </div>
                                     <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
                                     </div>
@@ -291,31 +238,7 @@ export default function Blog() {
                                     </Link>
                                 </div>
                                 <div className={`${style.content}`}>
-                                    <div className={`${style.date} absolute left-[15px]`}>
-                                        <span>
-                                            24
-                                        </span>
-                                        <span className='text-xs text-white'>Sun 2024</span>
-                                    </div>
                                     <h5> Nghe nhạc cực đã với các gói dât của mobifone </h5>
-                                    <div className={`${style.meta}`}>
-                                        <ul className='flex p-0 m-0 mt-[10px] list-none'>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path d="M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
-                                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clipRule="evenodd" />
-                                                </svg>
-                                                360
-                                            </li>
-                                            <li className='ml-2'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 text-orange-400 mr-1">
-                                                    <path fillRule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clipRule="evenodd" />
-                                                    <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
-                                                </svg>
-                                                Admin
-                                            </li>
-                                        </ul>
-                                    </div>
                                     <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Spotity data đang là gói cước thu hút sự quan tâm của nhiều khách hàng trẻ. Phục vụ nhu cầu nghe nhạc trên nền tảng..</p>
                                     </div>
