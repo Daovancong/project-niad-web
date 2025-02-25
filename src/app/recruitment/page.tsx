@@ -188,10 +188,10 @@ export default function recruitment() {
                                         <div className="text-[#9e9e9e]">Chấp nhận định dạng <strong>.pdf, .doc, .png, .jpeg, .jpg</strong></div>
                                         <input
                                             type="file"
-                                            // ref={fileInputRef}
-                                            // className="hidden"
-                                            // accept=".pdf, .doc, .png, .jpeg, .jpg"
-                                            // onChange={handleFileChange}
+                                        // ref={fileInputRef}
+                                        // className="hidden"
+                                        // accept=".pdf, .doc, .png, .jpeg, .jpg"
+                                        // onChange={handleFileChange}
                                         />
                                         <div className="mt-10"></div>
                                     </div>

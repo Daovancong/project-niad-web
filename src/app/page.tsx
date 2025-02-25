@@ -71,6 +71,14 @@ export default function Home() {
       image: '/home-slider-images10.jpg'
     }
   ];
+  const [logos] = useState([
+    "/partners/Logo-hanh-chinh-cong.jpg",
+    "/partners/bo-y-te.png",
+    "/partners/logo-giao-duc-2.jpg",
+    "/partners/bidv-logo.png",
+    "/partners/niad-logo-2.jpg",
+    "/partners/virtnam-post-logo.png",
+  ])
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 11) % items.length);
@@ -315,9 +323,13 @@ export default function Home() {
                   <form action="">
                     <h4> Giám Giám sát sản xuất </h4>
                     <ul className="m-0 p-0 lists flex-1">
-                      <li className='!leading-[1.93]'>1. Quản lý hệ thống camera tập trung</li>
-                      <li className='!leading-[1.93]'>2. Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
-                      <li className='!leading-[1.93]'>3. Cảnh báo giám sát an toàn ...</li>
+                      <li className='!leading-[1.93]'>
+                        Quản lý hệ thống camera tập trung
+                        Quản lý, giám sát an toàn những vùng cấm trong nhà máy
+                        Cảnh báo giám sát an toàn toàn cho xe nâng Đếm...
+                      </li>
+                      {/* <li className='!leading-[1.93]'>2.Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
+                      <li className='!leading-[1.93]'>Cảnh báo giám sát an toàn ...</li> */}
 
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/ai-in-management/online-patient-care">
@@ -340,10 +352,15 @@ export default function Home() {
                   <form action="">
                     <h4> Bệnh viện thông minh HIS và LIS </h4>
                     <ul className="m-0 p-0 lists flex-1">
-                      <li className='!leading-[1.93]'>Phần mềm quản lý bệnh viện đầu và cuối </li>
-                      <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
+                      <li className='!leading-[1.93]'>
+                        Phần mềm quản lý bệnh viện đầu và cuối
+                        Phần mềm quản lý máy y tế
+                        Phần mềm quản lý thông tin chuẩn đoán hình ảnh
+                        Phần mềm bệnh án điện tử...
+                      </li>
+                      {/* <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
                       <li className='!leading-[1.93]'>Phần mềm quản lý thông tin chuẩn đoán hình ảnh </li>
-                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử...</li>
+                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử...</li> */}
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/hospital/smart-hospital">
                       <span className="ml-[50px]">Xem thêm</span>
@@ -366,7 +383,7 @@ export default function Home() {
                     <h4> Kiosk quản lý thanh toán không tiền mặt </h4>
                     <ul className="m-0 p-0 lists flex-1">
                       <li className='!leading-[1.93]'> Kiosk Y tế thông minh hỗ trợ bệnh viện đón tiếp bệnh nhân, nhằm đưa những tiện ích vào
-                        đề án 06 triển khai chuyển đổi số Quốc Gia, thanh ...
+                        đề án 06 triển khai chuyển đổi số Quốc Gia...
                       </li>
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/self-service-kios/payment-kiosk">
@@ -463,24 +480,28 @@ export default function Home() {
           </div>
           <div className={`${style.swiperContainer} mt-[30px] w-full h-full`}>
             <div className={`${style.swiperWrapper}`} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'nowrap' }}>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={10000} height={60} className='!w-[60%]' src="/partners/Logo-hanh-chinh-cong.jpg" alt="partners 01" />
+              <div className="w-full overflow-hidden bg-white py-4 relative">
+                <div className="flex gap-2 animate-slide">
+                  {[...logos, ...logos].map((logo, index) => (
+                    <div key={index} className="flex-shrink-0 w-[calc(100%/6)]">
+                      <Image width={300} height={300} className='!w-[50%]' src={logo} alt={`Logo ${index + 1}`} />
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={10000} height={60} className='!w-[60%]' src="/partners/bo-y-te.png" alt="partners 02" />
-              </div>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={10000} height={60} src="/partners/logo-giao-duc-2.jpg" alt="partners 03" />
-              </div>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={10000} height={60} src="/partners/bidv-logo.png" alt="partners 04" />
-              </div>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={10000} height={60} src="/partners/niad-logo-2.jpg" alt="partners 05" />
-              </div>
-              <div className={`${style.swiperSlider} `} style={{ flex: '0 0 calc(80% / 6)' }}>
-                <Image width={1000} height={60} src="/partners/virtnam-post-logo.png" alt="partners 06" />
-              </div>
+              <style>
+                {`
+                          @keyframes slide {
+                              from { transform: translateX(0); }
+                              to { transform: translateX(-100%); }
+                          }
+                          .animate-slide {
+                              display: flex;
+                              white-space: nowrap;
+                              animation: slide 20s linear infinite;
+                          }
+                `}
+              </style>
             </div>
           </div>
         </div>
@@ -505,7 +526,7 @@ export default function Home() {
                     Gửi OTP
                   </button>
                 </li>
-                <li> <input type="text" placeholder="Nội dung" /> </li>
+                <li> <input type="text" placeholder="Nội dung" /></li>
                 {otpSent && (
                   <li>
                     <input
@@ -532,28 +553,6 @@ export default function Home() {
                 </li>
               </ul>
             </form>
-            {/* hotline */}
-            {/* <div className={`${style.hotline} w-[360px] absolute right-[-130px] top-[-125px] bg-white p-4 shadow-md rounded-md border border-gray-200`}>
-              <h3 className="text-[16px] font-semibold text-gray-700 mb-1">Hotline</h3>
-              <h2 className="text-[28px] font-bold text-blue-600 mb-2">
-                (+84) 931.101.101
-              </h2>
-              <p className="!text-[13px] text-gray-600 leading-5 mb-4">
-                CÔNG TY TNHH CÔNG NGHỆ PHARMACY VIỆT NAM
-              </p>
-              <p>
-                Số 01 Phạm Văn Bạch, Yên Hoà, Cầu Giấy, Hà Nội
-              </p>
-              <Link
-                href="https://www.google.com/maps"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex no-underline text-[14px] items-center text-blue-500 mt-2"
-              >
-                <Image width={50} height={50} src="/vitri-niad.png" alt="" className="mr-2" />
-                Xem trên Google Map
-              </Link>
-            </div> */}
           </div>
         </div>
       </section>
