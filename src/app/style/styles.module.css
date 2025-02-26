@@ -521,7 +521,7 @@ main .whyBox .firstLine .content {
     letter-spacing: normal;
     text-align: left;
     color: #6d6d6d;
-    margin: 30px 0px;
+    margin: 4px 0px;
     margin-top: 20px;
 }
 
@@ -576,7 +576,7 @@ main .whyBox .firstLine .content {
     width: 156px;
     height: 45.9px;
     display: flex;
-    top: 209px;
+    /* top: 209px; */
     align-items: center;
     justify-content: center;
     border-radius: 23px;
@@ -1502,6 +1502,7 @@ main .whyBox .firstLine .content {
 
     .tbaleNiad .containeTb {
         flex-wrap: wrap !important;
+        margin-top: 12px;
     }
 
     .tbaleNiad .listTb {

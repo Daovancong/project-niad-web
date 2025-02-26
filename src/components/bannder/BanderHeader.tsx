@@ -6,50 +6,18 @@ export default function BanderHeader() {
     const banerTop = [
         {
             id: 1,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imageSrc: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
             id: 2,
-            imageSrc: '/banner/banner-top-20012025.png',
+            imageSrc: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
             imgAlt: 'Banner Top 2025',
         },
         {
             id: 3,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
+            imageSrc: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
             imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 4,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 5,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 6,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 7,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 8,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
-        }, {
-            id: 9,
-            imageSrc: '/banner/Global-AI-Summit-Banner.jpg',
-            imgAlt: 'Global AI Summit',
-        },
-        {
-            id: 10,
-            imageSrc: '/banner/banner-top-20012025.png',
-            imgAlt: 'Banner Top 2025',
         },
     ];
 
@@ -105,8 +73,8 @@ export default function BanderHeader() {
                     >
                         <Image
                             className={`${style.bannerG} object-cover max-h-full h-[18vh] w-full`}
-                            width={800}
-                            height={50}
+                            width={1000}
+                            height={300}
                             src={banner.imageSrc}
                             alt={banner.imgAlt}
                         />

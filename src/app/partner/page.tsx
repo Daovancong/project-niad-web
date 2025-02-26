@@ -41,7 +41,7 @@ export default function partner() {
                         <div className="flex gap-2 animate-slide">
                             {[...logos, ...logos].map((logo, index) => (
                                 <div key={index} className="flex-shrink-0 w-[calc(100%/6)]">
-                                    <Image width={300} height={300} className='!w-[50%]' src={logo} alt={`Logo ${index + 1}`} />
+                                    <Image width={1000} height={300} className='w-auto h-auto max-w-[80%] max-h-[100%] min-w-[60%] min-h-[80%]' src={logo} alt={`Logo ${index + 1}`} />
                                 </div>
                             ))}
                         </div>

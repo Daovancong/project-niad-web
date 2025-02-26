@@ -321,7 +321,7 @@ export default function Home() {
                 </div>
                 <div className={`${style.detail} min-h-[250px] flex flex-col justify-between h-full`}>
                   <form action="">
-                    <h4> Giám Giám sát sản xuất </h4>
+                    <h4>Sản phẩm giám sát sản xuất</h4>
                     <ul className="m-0 p-0 lists flex-1">
                       <li className='!leading-[1.93]'>
                         Quản lý hệ thống camera tập trung
@@ -396,7 +396,7 @@ export default function Home() {
             </div>
           </div>
           <div className={`${style.infoTb} w-[291px]`}>
-            <div className="text-[40px] ml-[2px] mt-12">
+            <div className="text-[40px] ml-[2px] mt-4">
               <div className={`${style.mobile} flex w-[55%] h-[3.9px]`}>
                 <div className="flex-[3] bg-[#e91e1e]"></div>
                 <div className="flex-[7] bg-[#f8b133]"></div>
@@ -484,7 +484,7 @@ export default function Home() {
                 <div className="flex gap-2 animate-slide">
                   {[...logos, ...logos].map((logo, index) => (
                     <div key={index} className="flex-shrink-0 w-[calc(100%/6)]">
-                      <Image width={300} height={300} className='!w-[50%]' src={logo} alt={`Logo ${index + 1}`} />
+                      <Image width={1000} height={300} className='w-auto h-auto max-w-[80%] max-h-[100%] min-w-[60%] min-h-[80%]' src={logo} alt={`Logo ${index + 1}`} />
                     </div>
                   ))}
                 </div>
