@@ -20,30 +20,30 @@ export default function RootLayout({
   const getMetadata = (path: string) => {
     if (path === "/") {
       return {
-        title: "Trang Chủ - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        title: "Trang Chủ - Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "CTY công nghệ Pharmacy Việt Nam",
       };
     }
     if (path === "/product") {
       return {
-        title: "Sản phẩm Ai trong hệ thống quản trị - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        title: "Sản phẩm Ai trong hệ thống quản trị - Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "CTY công nghệ Pharmacy Việt Nam",
       };
     }
     if (path === "/introduce") {
       return {
-        title: "Giới Thiệu - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        title: "Giới Thiệu - Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
       };
     }
     if (path === "/introduce/structure") {
       return {
-        title: "Cơ cấu tổ chức - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+        title: "Cơ cấu tổ chức - Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
         description: "Xem cấu trúc của giải pháp y tế thông minh của chúng tôi.",
       };
     }
     const commonMeta = {
-      title: "Giới Thiệu - Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+      title: "Giới Thiệu - Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
       description: "Tìm hiểu về các giải pháp y tế thông minh của chúng tôi.",
     };
 
@@ -55,9 +55,9 @@ export default function RootLayout({
     if (validPaths.includes(path)) {
       return commonMeta;
     }
-    
+
     return {
-      title: "Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
+      title: "Medtechai.vn Giải Pháp Kiosk Y Tế Thông Minh",
       description: "CTY công nghệ Pharmacy Việt Nam",
     };
   };
