@@ -311,9 +311,9 @@ export default function Home() {
         <div className={`${style.containeTb} max-w-[1170px] `}>
           <div className={`${style.listTb} flex mr-[3px] items-stretch`}>
             {/* Giám Giám sát sản xuất */}
-            <div className={`${style.item} h-full`}>
-              <div className={`${style.in} h-full flex flex-col`}>
-                <div className={`${style.hot} flex-1`}>
+            <div className={`${style.item}`}>
+              <div className={`${style.in} `}>
+                <div className={`${style.hot}`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>
@@ -340,9 +340,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={`${style.item} h-full`}>
-              <div className={`${style.in} h-full flex flex-col`}>
-                <div className={`${style.hot} flex-1`}>
+            <div className={`${style.item}`}>
+              <div className={`${style.in}`}>
+                <div className={`${style.hot}`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>
@@ -370,9 +370,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={`${style.item} h-full`}>
-              <div className={`${style.in} h-full flex flex-col`}>
-                <div className={`${style.hot} flex-1`}>
+            <div className={`${style.item}`}>
+              <div className={`${style.in}`}>
+                <div className={`${style.hot}`}>
                   <span>hot</span>
                 </div>
                 <div className={`${style.img}`}>

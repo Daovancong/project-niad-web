@@ -576,6 +576,7 @@ main .whyBox .firstLine .content {
     width: 156px;
     height: 45.9px;
     display: flex;
+    top: 209px;
     align-items: center;
     justify-content: center;
     border-radius: 23px;
@@ -1518,11 +1519,11 @@ main .whyBox .firstLine .content {
     }
 
     .tbaleNiad .listTb .item .in h4 {
-        text-align: center;
+        text-align: left;
     }
 
     .tbaleNiad .listTb .item .in ul li {
-        text-align: center;
+        text-align: left;
     }
 
     .tbaleNiad .containeTb .infoTb {

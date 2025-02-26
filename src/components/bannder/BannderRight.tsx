@@ -5,14 +5,14 @@ import style from "@/app/style/styles.module.css";
 // https://bic.vn/dmsp-cn/bao-hiem-ca-nhan.html lấy 3 cái ảnh đầu tiên
 export default function BannderRight() {
     return (
-        <aside className={`${style.banerRight} w-[15%] top-[20vh] bg-gray-100 fixed right-0 h-[85%] z-[999]`}>
+        <aside className={`${style.banerRight} w-[15%] top-[20vh] bg-gray-100 fixed right-0 h-[100vh] z-[999]`}>
             <div>
                 <div className='p-2 !pt-0 mb-2'>
                     <Link href={'#'}>
                         <Image className='w-full h-[20vh]' width={700} height={70} src="/banner/bic-smart-care-bao-hiem-suc-khoe-cao-cap.jpg" alt="image banner left" />
                         <div className='mt-3'>
-                            <div className='text-sm text-gray-500 mb-2'>18.02.2025</div>
-                            <p className='text-ellipsis overflow-hidden text-base text-black'>
+                            <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>18.02.2025</div>
+                            <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
                                 BIC Smart Care - Bảo hiểm sức khỏe cao cấp - Sống đẳng cấp, trịn an tâm
                             </p>
                         </div>
@@ -22,8 +22,8 @@ export default function BannderRight() {
                     <Link href={'#'}>
                         <Image className='w-full h-[20vh]' width={700} height={70} src="/banner/bao-hiem-y-te-bo-tro.jpg" alt="image banner left" />
                         <div className='mt-3'>
-                            <div className='text-sm text-gray-500 mb-2'>18.02.2025</div>
-                            <p className='text-ellipsis overflow-hidden text-base text-black'>
+                            <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>18.02.2025</div>
+                            <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
                                 Bảo hiểm y tế hỗ trợ - Gạt bỏ lo âu, an âm điều trị
                             </p>
                         </div>

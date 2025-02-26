@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       animation: {
-        scroll: "scroll 20s linear infinite",
+        scroll: "scroll 50s linear infinite",
       },
       keyframes: {
         scroll: {
@@ -22,7 +22,9 @@ export default {
         },
       },
       screens: {
+        'max-1316': { 'max': '1316px' },
         'max-1200': { 'max': '1200px' },
+        'max-1083': { 'max': '1083px' },
         'max-930': { 'max': '930px' },
         'max-800': { 'max': '800px' },
         'max-750': { 'max': '750px' },

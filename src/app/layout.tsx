@@ -55,7 +55,7 @@ export default function RootLayout({
     if (validPaths.includes(path)) {
       return commonMeta;
     }
-
+    
     return {
       title: "Medtecha.vn Giải Pháp Kiosk Y Tế Thông Minh",
       description: "CTY công nghệ Pharmacy Việt Nam",
