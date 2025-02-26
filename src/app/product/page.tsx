@@ -5,7 +5,6 @@ import Navigation from '@/components/navigation';
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
 import Image from "next/image";
-import Instruct from '@/components/instruct';
 import Footer from "@/components/Footer";
 
 export default function product() {
@@ -98,52 +97,51 @@ export default function product() {
             </div>
             <Navigation />
             <section className='py-[3.125rem] bg-[#f3f4f8] pb-[100px] p-12 relative overflow-hidden'>
-                <Instruct />
-            </section>
-            <div className='py-[60px] overflow-hidden bg-white'>
-                <div className='w-full max-w-[1200px] m-auto container'>
-                    <div className='px-[65px] text-center'> <h2 className='text-4xl font-bold text-[#005db2] text-left leading-[1.33]' style={{ fontStretch: 'normal', fontStyle: 'normal', textTransform: 'uppercase', fontFamily: 'VIE-HandelGothic,sans-serif' }}> Lợi Ích</h2></div>
-                    <div className='px-[65px] mt-5'>
-                        <div className='relative min-h-[1px] px-4 w-full float-left'>
-                            <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
-                                <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
-                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
-                                </div>
-                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
-                                    <div>
-                                        <h5 className='text-sm my-2'>Tích kiệm chi phí</h5>
-                                        <br />
-                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
-                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
-                                        </p>
 
+                <div className='py-[60px] overflow-hidden bg-white'>
+                    <div className='w-full max-w-[1200px] m-auto container'>
+                        <div className='px-[65px] text-center'> <h2 className='text-4xl font-bold text-[#005db2] text-left leading-[1.33]' style={{ fontStretch: 'normal', fontStyle: 'normal', textTransform: 'uppercase', fontFamily: 'VIE-HandelGothic,sans-serif' }}> Lợi Ích</h2></div>
+                        <div className='px-[65px] mt-5'>
+                            <div className='relative min-h-[1px] px-4 w-full float-left'>
+                                <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
+                                    <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
+                                        <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
+                                    </div>
+                                    <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                        <div>
+                                            <h5 className='text-sm my-2'>Tích kiệm chi phí</h5>
+                                            <br />
+                                            <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                                XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                            </p>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='relative min-h-[1px] px-4 w-full float-left mt-5'>
-                            <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
-                                <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
-                                    <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
-                                </div>
-                                <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
-                                    <div>
-                                        <h5 className='text-sm my-2'>
-                                            Đảm bảo tính sẵn sàng của hệ thống
-                                        </h5>
-                                        <br />
-                                        <p className='text-base' style={{ margin: '0 0 10px' }}>
-                                            XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
-                                        </p>
+                            <div className='relative min-h-[1px] px-4 w-full float-left mt-5'>
+                                <div className='rounded-sm bg-white mb-8 mx-[15px] m-0' style={{ boxShadow: '0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54)' }}>
+                                    <div className='p-0 relative min-h-[1px] w-1/4 float-left'>
+                                        <Image width={300} height={300} src={'/product/data-transfer.svg'} alt='' />
+                                    </div>
+                                    <div className='p-3 w-3/4 float-left relative min-h-[1px]'>
+                                        <div>
+                                            <h5 className='text-sm my-2'>
+                                                Đảm bảo tính sẵn sàng của hệ thống
+                                            </h5>
+                                            <br />
+                                            <p className='text-base' style={{ margin: '0 0 10px' }}>
+                                                XIP - AI, BIG DATA giúp tiết kiệm chi phí đầu tư công cụ quản trị, nhân sự vận hành hệ thống, đây là công cụ hiệu quả cho các doanh nghiệp không đủ nhân sự vận hành hoặc muốn tiết kiệm chi phí và tối ưu nguồn lực vận hành trên hạ tầng điện toán đám mây.
+                                            </p>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </section>
             {/* <section className={`${style.mainIntro} py-[3.125rem]`}>
                 <div className={`${style.container}`}>
                     <div className={`${style.leftIntro}`}>
