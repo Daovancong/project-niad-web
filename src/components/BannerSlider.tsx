@@ -12,7 +12,7 @@ const SliderBanner = () => {
             title: "ỨNG DỤNG TRÍ TUỆ NHÂN TẠO ",
             til: "(AI) TRONG Y TẾ",
             description:
-                "Đưa công nghệ ( AI ) Trong việc quản trị các máy lâm sàn nâng cao độ chính sác, chống thất thoát",
+                "Đưa công nghệ ( AI ) Trong việc quản trị các máy lâm sàng nâng cao độ chính sác, chống thất thoát",
             bgColor: "#005DB2",
             marginTop: "-80px",
         },

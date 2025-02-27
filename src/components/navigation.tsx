@@ -60,13 +60,13 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/ai-in-management/security-monitoring'}> Giám sát an ninh </Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/security-monitoring'}>  Giám sát ngân hàng GD tiền mặt</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/ai-in-management/timekeeping'}>Chấm công tính lương</Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/ai-in-management/monitor-entry-and-exit'}>Giám sát ra vào</Link>
+                                            <Link className='text-white !text-left' href={'/product/ai-in-management/monitor-entry-and-exit'}>Giám sát xe chở tiền cho ngân hàng</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/ai-in-management/online-patient-care'}>Giám sát sản xuất</Link>
@@ -83,13 +83,10 @@ export default function Navigation() {
 
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital/device-management'}> Phần mềm quản thiết bị, vật tư y tế </Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital/device-management'}> Vật tư y tế, thiết bị </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital/smart-hospital'}>Bệnh viện thông minh HIS & LIS</Link>
-                                        </li>
-                                        <li>
-                                            <Link className='text-white !text-left' href={'/product/hospital/medical-registration-software'}>Phần mềm đăng ký khám online</Link>
+                                            <Link className='text-white !text-left' href={'/product/hospital/smart-hospital'}>Phần mềm HIS & LIS</Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -102,29 +99,26 @@ export default function Navigation() {
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-10px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/patient-care/chat-ai'}> Chat AI tư vấn bệnh nhân </Link>
+                                            <Link className='text-white !text-left' href={'/product/patient-care/chat-ai'}>Tư vấn bệnh nhân</Link>
                                         </li>
                                         <li>
                                             <Link className='text-white !text-left' href={'/product/patient-care/remote-registration'}>Đăng ký khám từ xa</Link>
-                                        </li>
-                                        <li>
-                                            <Link className='text-white !text-left' href={'/product/patient-care/online-hospital-registration'}>Đăng ký nhập viện online</Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className={`relative ${style.Menu} group`}>
                                     <Link className='text-white !text-left' href={'/product/payment-kiosk'}>
-                                        Kios tự phục vụ thông minh
+                                        Kiosk tự phục vụ Đề án 06/CP
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </Link>
                                     <ul className={`${style.subMenu} absolute !left-[216px] !top-[-11px] !w-[225px] !hidden group-hover:!block`} >
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/self-service-kios/payment-kiosk'}> Kiosk quản lý thanh toán không dùng tiền mặt </Link>
+                                            <Link className='text-white !text-left' href={'/product/self-service-kios/payment-kiosk'}>Quản lý thanh toán không tiền mặt bệnh viện </Link>
                                         </li>
                                         <li>
-                                            <Link className='text-white !text-left' href={'/product/self-service-kios/public-self-service-kiosk'}>Kiosk tự động phục vụ hành chính công</Link>
+                                            <Link className='text-white !text-left' href={'/product/self-service-kios/public-self-service-kiosk'}>Tự phục vụ công dân & đăng ký online</Link>
                                         </li>
                                     </ul>
                                 </li>

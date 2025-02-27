@@ -86,7 +86,7 @@ export default function page() {
                             </div>
                         </div>
                         <div className='text-center relative min-h-0.5 px-4 w-[45%] m-auto float-right max-930:w-full'>
-                            <Image className='w-full h-full' width={300} height={300} src={'/product/Giam-sat-san-xuat.png'} alt='' />
+                            <Image className='w-full h-full' width={300} height={300} src={'/product/cham-cong-tinh-luong-removebg-preview.png'} alt='' />
                         </div>
                     </div>
                 </div>

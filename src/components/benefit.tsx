@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function benefit() {
     return (
-        <div className='blog py-14 overflow-hidden bg-[#fff]'>
+        <div className='blog py-14 bg-[#fff]'>
             <div className='container max-w-[1200px] m-auto px-4'>
                 <div className='section-title mx-[-15px] text-center'>
                     <h2 className='text-5xl font-[VIE-HandelGothic,sans-serif] font-bold leading-[1.33] text-left text-[#005db2] uppercase my-4 mx-10' style={{ fontStretch: 'normal', fontStyle: 'normal', letterSpacing: 'normal' }}>Lợi ích</h2>

@@ -395,7 +395,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={`${style.infoTb} w-[291px]`}>
+          <div className={`${style.infoTb} w-[291px] mt-5`}>
             <div className="text-[40px] ml-[2px] mt-4">
               <div className={`${style.mobile} flex w-[55%] h-[3.9px]`}>
                 <div className="flex-[3] bg-[#e91e1e]"></div>
@@ -458,12 +458,12 @@ export default function Home() {
                 An toàn và bảo mật dữ liệu
               </li>
             </ul>
-            <Link className={`${style.view} w-[196px] h-[45.9px] flex items-center justify-center`} href="#">
+            {/* <Link className={`${style.view} w-[196px] h-[45.9px] flex items-center justify-center`} href="#">
               <span className="ml-[50px]">
                 xem tất cả
               </span>
               <Image className="ml-[0.75rem]" width={30} height={30} src="/icon/iconLeft-witth.png" alt="xem tat ca" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -484,7 +484,7 @@ export default function Home() {
                 <div className="flex gap-2 animate-slide">
                   {[...logos, ...logos].map((logo, index) => (
                     <div key={index} className="flex-shrink-0 w-[calc(100%/6)]">
-                      <Image width={1000} height={300} className='w-auto h-auto max-w-[80%] max-h-[100%] min-w-[60%] min-h-[80%]' src={logo} alt={`Logo ${index + 1}`} />
+                      <Image width={1000} height={300} className='w-full h-auto max-w-[80%] max-h-[50%] min-w-[60%] min-h-[50%]' src={logo} alt={`Logo ${index + 1}`} />
                     </div>
                   ))}
                 </div>
