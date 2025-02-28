@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
+import emailjs from "@emailjs/browser";
 import style from "@/app/style/styles.module.css";
 import Navigation from '@/components/navigation';
 import Footer from "@/components/Footer";
@@ -8,70 +9,83 @@ import Link from "next/link";
 
 export default function recruitment() {
     const [showForm, setShowForm] = useState(false);
+    const [isLocked, setIsLocked] = useState(false);
+
+    const [formData, setFormData] = useState({
+        position: '',
+        name: '',
+        university: '',
+        specialized: '',
+        studentyear: '',
+        skill: '',
+        project: '',
+        email: '',
+        phone: '',
+        message: '',
+    });
+
+    const formRef = useRef<HTMLFormElement | null>(null);
+
     const handleClick = () => {
         setShowForm(true);
+        document.body.style.overflow = "hidden"; // Chặn cuộn trang khi hiển thị form
     };
-    const handleClickOf = () => {
+
+    const handleClickOff = () => {
         setShowForm(false);
+        document.body.style.overflow = "auto"; // Khôi phục cuộn trang khi đóng form
     };
-    useEffect(() => {
-        if (showForm) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = "auto";
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (!formRef.current) {
+            console.error("Form reference is null");
+            return;
         }
-        return () => {
-            document.body.style.overflow = "auto";
-        };
-    }, [showForm]);
 
-    const UploadCV = () => {
-        const fileInputRef = useRef<HTMLInputElement | null>(null);
+        try {
+            const result = await emailjs.sendForm(
+                'service_minhcong1210',  // Thay bằng Service ID từ EmailJS
+                'template_minhcong1210',  // Thay bằng Template ID từ EmailJS
+                formRef.current,
+                'EiIFK7Uvl5wWGhO0i'     // Thay bằng Public Key từ EmailJS
+            );
 
-        const handleClick = () => {
-            if (fileInputRef.current) {
-                fileInputRef.current.click();
-            }
-        };
+            alert("Hồ sơ đã gửi thành công!");
+            setFormData({ position: '', name: '', university: '', specialized: '', skill: '', project: '', studentyear: '', email: '', phone: '', message: '' });
+            setShowForm(false);
+        } catch (error) {
+            alert("Có lỗi xảy ra, vui lòng thử lại!");
+            console.error("Lỗi gửi email:", error);
+        }
+    };
 
-        const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-            const file = event.target.files?.[0];
-
-            if (file) {
-                const allowedTypes = ["pdf", "doc", "png", "jpeg", "jpg"];
-                const fileExtension = file.name.split(".").pop()?.toLowerCase();
-
-                if (!fileExtension || !allowedTypes.includes(fileExtension)) {
-                    alert("Vui lòng chọn file đúng định dạng: .pdf, .doc, .png, .jpeg, .jpg");
-                    return;
-                }
-
-                alert(`Bạn đã chọn file: ${file.name}`);
-                // TODO: Xử lý upload file lên server nếu cần
-            }
-        };
-    }
     const reacuitments = [
         {
             id: 1,
             location: ' Intern Front End',
             wage: 'Thỏa thuận',
             address: 'Hà Nội',
-            time: ' Hạn hồ sơ 28/02/2025',
+            time: ' Hạn hồ sơ 30/03/2025',
         },
         {
             id: 2,
             location: 'Intern Back End',
             wage: 'Thỏa thuận',
             address: 'Hà Nội',
-            time: ' Hạn hồ sơ 28/02/2025',
+            time: ' Hạn hồ sơ 30/03/2025',
         },
         {
             id: 3,
             location: 'Intern Ai (Python)',
             wage: 'Thỏa thuận',
             address: 'Hà Nội',
-            time: ' Hạn hồ sơ 28/02/2025',
+            time: ' Hạn hồ sơ 30/03/2025',
         }
     ];
     return (
@@ -80,14 +94,6 @@ export default function recruitment() {
                 <div className='flex justify-end h-full max-w-[1170px] w-full m-auto'>
                     <ul className='p-0 m-0 h-full list-none flex items-center'>
                         <li className='cursor-pointer h-full items-center py-2 relative mr-4'>
-                            <Link href={'#'} className='whitespace-nowrap font-sans text-lg text-left flex items-center' id='login' style={{ fontFamily: 'inherit', lineHeight: '1.29', letterSpacing: 'normal', fontWeight: 'normal', fontStretch: 'normal', color: '#ffffff', textDecoration: 'none', }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                </svg>Đăng Nhập<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 ml-2">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                </svg>
-
-                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -169,71 +175,121 @@ export default function recruitment() {
                 </div>
             </section>
             <div id='bgForm' className={`${showForm ? "!block" : "hidden"} fixed top-[0] left-0 w-full h-full bg-[#000000] opacity-50 z-[9999]`}></div>
-            <section id='formUT' className={`${showForm ? "!flex" : "hidden"} h-[95%] top-[150px] w-[600px] border-t-4 border-solid border-[#2680eb] min-h-48 max-h-[74%] fixed left-1/2 bg-white rounded-lg shadow-[0_2px_8px_rgba(0,0,0,.16)] overflow-y-hidden z-[99999] p-6 flex-col`} style={{ transform: 'translateX(-50%)' }}>
-                <div className='flex absolute w-[calc(100%-48px)] justify-between'>
-                    <div className='text-base font-bold absolute'> Nộp hồ sơ </div>
-                    <div className='absolute top-0 right-2 cursor-pointer' onClick={handleClickOf}> X </div>
-                </div>
-                <div className='mt-8 overflow-y-auto overflow-x-hidden max-h-full flex-[1]'>
-                    <div className='w-[98%] h-auto'>
-                        <div className='w-full mb-4'>
-                            <div className='flex'>
-                                <label htmlFor="cvUpload" className='mb-2'>CV/Sơ yếu lí lịch</label>
-                                <span className='text-red-500 ml-1'>*</span>
-                            </div>
-                            <div className="w-full">
-                                <div id="CV" onClick={handleClick}>
-                                    <div className="h-full relative text-center items-center border-[1px] border-dashed border-[#2970f6] bg-clip-padding cursor-pointer p-5">
-                                        <div className="text-[#2680eb] mt-5">Tải lên CV/Sơ yếu lí lịch của bạn</div>
-                                        <div className="text-[#9e9e9e]">Chấp nhận định dạng <strong>.pdf, .doc, .png, .jpeg, .jpg</strong></div>
-                                        <input
-                                            type="file"
-                                        // ref={fileInputRef}
-                                        // className="hidden"
-                                        // accept=".pdf, .doc, .png, .jpeg, .jpg"
-                                        // onChange={handleFileChange}
-                                        />
-                                        <div className="mt-10"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <span className='hidden text-red-500'> Không được để trống phần này</span>
+            {/* tuyển dụng */}
+            {showForm && (
+                <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-[9999] left-0 w-full h-full top-[70px]">
+                    <div className="bg-white p-6 rounded-lg shadow-lg max-h-[80vh] overflow-y-auto w-[90%] md:w-[50%]">
+                        <div className='absolute w-[calc(100%-48px)] justify-between flex'>
+                            <div className='text-base font-bold absolute'>Nộp Hồ Sơ</div>
+                            <button className="absolute top-0 right-2" onClick={handleClickOff}>✖</button>
                         </div>
-                        <div className='w-full mb-4'>
-                            <div className='flex'>
-                                <label className='mb-2'> Họ và tên </label>
-                                <span className='text-red-500 ml-1'>*</span>
-                            </div>
-                            <div className='w-full'>
-                                <input type="text" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
-                            </div>
-                        </div>
-                        <div className='w-full mb-4'>
-                            <div className='flex'>
-                                <label className='mb-2'>Email</label>
-                                <span className='text-red-500 ml-1'>*</span>
-                            </div>
-                            <div className='w-full'>
-                                <input type="email" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
-                            </div>
-                        </div>
-                        <div className='w-full mb-4'>
-                            <div className='flex'>
-                                <label className='mb-2'>Số điện thoại</label>
-                                <span className='text-red-500 ml-1'>*</span>
-                            </div>
-                            <div className='w-full'>
-                                <input type="tel" className='w-full h-10 rounded border-[1px] border-solid border-[#e0e0e0] px-4' style={{ outline: 'none' }} required />
-                            </div>
-                        </div>
-                        {/* <div className='w-full mb-4'></div> */}
+                        {/* <button className="absolute top-20 left-2 text-red-500 text-lg" onClick={handleClickOff}>✖</button> */}
+                        {/* <h3 className="text-xl font-semibold mb-4 text-center">/h3> */}
+                        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-4">
+                            <select
+                                name="position"
+                                value={formData.position}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            >
+                                <option className='opacity-50' value="">Chọn vị trí tuyển dụng</option>
+                                <option value="TTS Frontend">TTS Frontend</option>
+                                <option value="TTS Backend">TTS Backend</option>
+                                <option value="TTS Fullstack">TTS Fullstack</option>
+                            </select>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Họ và tên"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            />
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Truờng đại học"
+                                value={formData.university}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            />
+                            <input
+                                type="text"
+                                name="specialized"
+                                placeholder="Chuyên nghành"
+                                value={formData.specialized}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            />
+                            <select
+                                name="studentyear"
+                                value={formData.studentyear}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            >
+                                <option className='opacity-50' value="">Sinh viên năm</option>
+                                <option value="TTS Frontend">Năm 3</option>
+                                <option value="TTS Backend">Năm 4</option>
+                                <option value="TTS Fullstack">Năm cuối</option>
+                            </select>
+                            <textarea
+                                name="skill"
+                                placeholder="Kỹ năng"
+                                value={formData.skill}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md h-28"
+                            />
+                            <textarea
+                                name="project"
+                                placeholder="Dự án cá nhân"
+                                value={formData.project}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md h-28"
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            />
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Số điện thoại"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md"
+                            />
+                            <textarea
+                                name="message"
+                                placeholder="Giới thiệu bản thân"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                                className="p-2 border border-gray-300 rounded-md h-28"
+                            />
+                            <button
+                                type="submit"
+                                className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition-all"
+                            >
+                                Gửi hồ sơ
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <button className='h-[40px] bg-[#2690eb] leading-[40px] text-center my-4 mx-auto rounded cursor-pointer text-[#ffffff] w-full'>
-                    Nộp hồ sơ
-                </button>
-            </section>
+            )}
             <Footer />
-        </main>
+        </main >
     )
 }

@@ -28,8 +28,7 @@ export default function product() {
                         height={500}
                         className="w-full h-auto object-cover rounded-lg"
                         alt="Background giám sát ngân hàng"
-                    />
-                    {/* Nút bấm giữ cố định vị trí */}
+                    />                 
                     <div className="absolute top-[77%] left-[2%] transform -translate-y-1/2">
                         <button
                             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full mr-4 text-[clamp(12px,1.5vw,14px)]"
