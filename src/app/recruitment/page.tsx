@@ -175,119 +175,195 @@ export default function recruitment() {
                 </div>
             </section>
             <div id='bgForm' className={`${showForm ? "!block" : "hidden"} fixed top-[0] left-0 w-full h-full bg-[#000000] opacity-50 z-[9999]`}></div>
-            {/* tuyển dụng */}
             {showForm && (
-                <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-[9999] left-0 w-full h-full top-[70px]">
-                    <div className="bg-white p-6 rounded-lg shadow-lg max-h-[80vh] overflow-y-auto w-[90%] md:w-[50%]">
-                        <div className='absolute w-[calc(100%-48px)] justify-between flex'>
-                            <div className='text-base font-bold absolute'>Nộp Hồ Sơ</div>
-                            <button className="absolute top-0 right-2" onClick={handleClickOff}>✖</button>
-                        </div>
-                        {/* <button className="absolute top-20 left-2 text-red-500 text-lg" onClick={handleClickOff}>✖</button> */}
-                        {/* <h3 className="text-xl font-semibold mb-4 text-center">/h3> */}
-                        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-4">
-                            <select
-                                name="position"
-                                value={formData.position}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            >
-                                <option className='opacity-50' value="">Chọn vị trí tuyển dụng</option>
-                                <option value="TTS Frontend">TTS Frontend</option>
-                                <option value="TTS Backend">TTS Backend</option>
-                                <option value="TTS Fullstack">TTS Fullstack</option>
-                            </select>
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Họ và tên"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            />
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Truờng đại học"
-                                value={formData.university}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            />
-                            <input
-                                type="text"
-                                name="specialized"
-                                placeholder="Chuyên nghành"
-                                value={formData.specialized}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            />
-                            <select
-                                name="studentyear"
-                                value={formData.studentyear}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            >
-                                <option className='opacity-50' value="">Sinh viên năm</option>
-                                <option value="TTS Frontend">Năm 3</option>
-                                <option value="TTS Backend">Năm 4</option>
-                                <option value="TTS Fullstack">Năm cuối</option>
-                            </select>
-                            <textarea
-                                name="skill"
-                                placeholder="Kỹ năng"
-                                value={formData.skill}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md h-28"
-                            />
-                            <textarea
-                                name="project"
-                                placeholder="Dự án cá nhân"
-                                value={formData.project}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md h-28"
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            />
-                            <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Số điện thoại"
-                                value={formData.phone}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md"
-                            />
-                            <textarea
-                                name="message"
-                                placeholder="Giới thiệu bản thân"
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                                className="p-2 border border-gray-300 rounded-md h-28"
-                            />
-                            <button
-                                type="submit"
-                                className="bg-green-500 text-white p-2 rounded-md hover:bg-green-600 transition-all"
-                            >
-                                Gửi hồ sơ
-                            </button>
-                        </form>
+                <section
+                    className="fixed h-[98%] max-h-[80%] min-h-[200px] p-6 left-1/2 bg-white flex z-[9999] w-[600px] top-[21%] rounded-lg shadow-[0_2px_8px_rgba(0,0,0,.16)] border-t-4 border-solid border-[#2680eb] overflow-y-hidden flex-col"
+                    style={{ transform: 'translateX(-50%)' }}
+                >
+                    <div className='absolute w-[calc(100%-48px)] justify-between flex'>
+                        <div className='text-base font-bold absolute'>Nộp Hồ Sơ</div>
+                        <button className="absolute top-0 right-2" onClick={handleClickOff}>✖</button>
                     </div>
-                </div>
+                    <form ref={formRef} onSubmit={handleSubmit} className="mt-8 overflow-y-auto overflow-x-hidden">
+                        <div className="mt-8 overflow-y-auto overflow-x-hidden">
+                            <div className='w-[98%] h-auto'>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Chọn vị trí ứng tuyển</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <select
+                                            name="position"
+                                            value={formData.position}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        >
+                                            <option className='opacity-50' value=""></option>
+                                            <option value="TTS Frontend">TTS Frontend</option>
+                                            <option value="TTS Backend">TTS Backend</option>
+                                            <option value="TTS Fullstack">TTS Python</option>
+                                            <option value="TTS Fullstack">TTS Fullstack</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Họ và tên</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <input
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                            type="text"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Trường đại học</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <input
+                                            type="text"
+                                            name="university"
+                                            value={formData.university}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Chuyên nghành</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <input
+                                            type="text"
+                                            value={formData.specialized}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Sinh viên năm học</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <select
+                                            name="studentyear"
+                                            value={formData.studentyear}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        >
+                                            <option className='opacity-50' value=""></option>
+                                            <option value="TTS Frontend">Năm 3</option>
+                                            <option value="TTS Backend">Năm 4</option>
+                                            <option value="TTS Fullstack">Năm cuối</option>
+                                            <option value="TTS Fullstack">Đã ra trường</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Kỹ năng</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <textarea
+                                            name="skill"
+                                            value={formData.skill}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-12 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Project</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <textarea
+                                            name="project"
+                                            placeholder=""
+                                            value={formData.project}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-12 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Email</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-full mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>Số điện thoại</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-10 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className='w-ful mb-4'>
+                                    <div className='flex'>
+                                        <label className='mb-2'>message</label>
+                                        <span className='text-red-600 ml-1'>*</span>
+                                    </div>
+                                    <div className='w-full'>
+                                        <textarea
+                                            name="message"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            required
+                                            className="px-4 h-12 border border-solid border-gray-300 rounded-[4px] outline-none w-full"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-blue-500 text-white p-2 hover:bg-blue-600 transition-all rounded cursor-pointer mt-4 leading-10 h-10"
+                        >
+                            Gửi hồ sơ
+                        </button>
+                    </form>
+                </section>
             )}
             <Footer />
         </main >
