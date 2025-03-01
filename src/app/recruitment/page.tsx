@@ -248,6 +248,7 @@ export default function recruitment() {
                                     <div className='w-full'>
                                         <input
                                             type="text"
+                                            name="specialized"
                                             value={formData.specialized}
                                             onChange={handleChange}
                                             required
