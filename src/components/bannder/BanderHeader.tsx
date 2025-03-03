@@ -6,17 +6,38 @@ export default function BanderHeader() {
     const banerTop = [
         {
             id: 1,
-            imageSrc: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+            imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+            imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
             imgAlt: 'Global AI Summit',
         },
         {
             id: 2,
-            imageSrc: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+            imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+            imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
             imgAlt: 'Banner Top 2025',
         },
         {
             id: 3,
-            imageSrc: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+            imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+            imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 1,
+            imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+            imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+            imgAlt: 'Global AI Summit',
+        },
+        {
+            id: 2,
+            imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+            imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+            imgAlt: 'Banner Top 2025',
+        },
+        {
+            id: 3,
+            imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+            imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
             imgAlt: 'Global AI Summit',
         },
     ];
@@ -69,13 +90,20 @@ export default function BanderHeader() {
                 {extendedBanners.map((banner, index) => (
                     <div
                         key={index}
-                        className="relative w-full flex-shrink-0 overflow-hidden"
+                        className="relative w-full flex flex-shrink-0 overflow-hidden"
                     >
                         <Image
-                            className={`${style.bannerG} object-cover max-h-full h-[18vh] w-full`}
+                            className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:w-full`}
                             width={1000}
                             height={300}
-                            src={banner.imageSrc}
+                            src={banner.imageSrc1}
+                            alt={banner.imgAlt}
+                        />
+                        <Image
+                            className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:hidden`}
+                            width={1000}
+                            height={300}
+                            src={banner.imageSrc2}
                             alt={banner.imgAlt}
                         />
                     </div>

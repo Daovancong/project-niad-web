@@ -50,10 +50,10 @@ export default function recruitment() {
 
         try {
             const result = await emailjs.sendForm(
-                'service_minhcong1210',  // Thay bằng Service ID từ EmailJS
-                'template_minhcong1210',  // Thay bằng Template ID từ EmailJS
-                formRef.current,
-                'EiIFK7Uvl5wWGhO0i'     // Thay bằng Public Key từ EmailJS
+                'service_465',  // Thay bằng Service ID từ EmailJS
+                'template_1210',  // Thay bằng Template ID từ EmailJS
+                formRef.current, //
+                'xK1xvHBDf9fjhLR_D',    // Thay bằng Public Key từ EmailJS
             );
 
             alert("Hồ sơ đã gửi thành công!");
@@ -203,7 +203,7 @@ export default function recruitment() {
                                             <option className='opacity-50' value=""></option>
                                             <option value="TTS Frontend">TTS Frontend</option>
                                             <option value="TTS Backend">TTS Backend</option>
-                                            <option value="TTS Fullstack">TTS Python</option>
+                                            <option value="TTS Python">TTS Python</option>
                                             <option value="TTS Fullstack">TTS Fullstack</option>
                                         </select>
                                     </div>

@@ -1331,7 +1331,7 @@ main .whyBox .firstLine .content {
     img.bannerG {
         display: flex;
         justify-content: center;
-        width: 1290px;
+        /* width: 1290px; */
         margin: 0 !important;
     }
 
