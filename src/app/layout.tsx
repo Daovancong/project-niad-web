@@ -1,19 +1,90 @@
 "use client";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import "./globals.css";
-import BanderHeader from "@/components/bannder/BanderHeader";
-import BannderLeft from "@/components/bannder/BannderLeft";
-import BannderRight from "@/components/bannder/BannderRight";
+import Image from "next/image";
+import Link from "next/link";
+import style from "@/app/style/styles.module.css";
 import Loading from "@/app/ui/loading";
 import Script from 'next/script';
 
 export default function RootLayout({
+
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const banerTop = [
+    {
+      id: 1,
+      imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      imgAlt: 'Global AI Summit',
+    },
+    {
+      id: 2,
+      imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      imgAlt: 'Banner Top 2025',
+    },
+    {
+      id: 3,
+      imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      imgAlt: 'Global AI Summit',
+    },
+    {
+      id: 1,
+      imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      imgAlt: 'Global AI Summit',
+    },
+    {
+      id: 2,
+      imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      imgAlt: 'Banner Top 2025',
+    },
+    {
+      id: 3,
+      imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      imgAlt: 'Global AI Summit',
+    },
+  ];
+
+  const extendedBanners = [
+    banerTop[banerTop.length - 1],
+    ...banerTop,
+    banerTop[0],
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(extendedBanners.length - 2);
+      }, 100);
+    } else if (currentIndex === extendedBanners.length - 1) {
+
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(1);
+      }, 100);
+    } else {
+      setIsTransitioning(true);
+    }
+  }, [currentIndex, extendedBanners.length]);
   const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -98,11 +169,95 @@ export default function RootLayout({
           <Loading />
         ) : (
           <div className="flex flex-col h-screen">
-            <BanderHeader />
+            <header
+              className={`${style.bannerHeader} bg-white overflow-hidden flex fixed top-0 left-0 w-full z-[999] h-[20%]`}
+            >
+              <div
+                className="flex"
+                style={{
+                  transform: `translateX(-${currentIndex * 100}%)`,
+                  transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
+                  width: `${extendedBanners.length * 100}%`,
+                  alignItems: 'center'
+                }}
+              >
+                {extendedBanners.map((banner, index) => (
+                  <div
+                    key={index}
+                    className="relative w-full flex flex-shrink-0 overflow-hidden"
+                  >
+                    <Image
+                      className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:w-full`}
+                      width={1000}
+                      height={300}
+                      src={banner.imageSrc1}
+                      alt={banner.imgAlt}
+                    />
+                    <Image
+                      className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:hidden`}
+                      width={1000}
+                      height={300}
+                      src={banner.imageSrc2}
+                      alt={banner.imgAlt}
+                    />
+                  </div>
+                ))}
+              </div>
+            </header>
             <div className="flex relative justify-between z-50">
-              <BannderLeft />
+              <aside className={`${style.banerLeft} w-[15%] top-[20vh] bg-gray-100 fixed left-0 h-[100vh] z-[99]`}>
+                <div>
+                  <div className='p-2 !pt-0 mb-2'>
+                    <Link href={'https://bic.vn/noi-dung/ban-tin-bic/2025-bic-vuon-minh-but-pha-huong-toi-ky-niem-20-nam-thanh-lap.html'}>
+                      <Image className='w-full h-[20vh]' width={300} height={300} src="/banner/2025-bic-vuon-minh-but-pha-huong-toi-ky-niem-20-nam-thanh-lap.png" alt="image banner left" />
+                      <div className='mt-3'>
+                        <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>18.02.2025</div>
+                        <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
+                          2025: BIC vươn mình bứt phá hướng tới kỷ niệm 20 năm thành lập.
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className='p-2 !pt-0'>
+                    <Link href={'https://bic.vn/noi-dung/ban-tin-bic/bic-tang-phong-hoc-cho-truong-mam-non-binh-luong.html'}>
+                      <Image className='w-full h-[20vh]' width={300} height={300} src="/banner/bic-tang-phong-hoc-cho-truong-mam-non-binh-luong.png" alt="image banner left" />
+                    </Link>
+                    <div className='mt-3'>
+                      <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>23.01.2025</div>
+                      <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
+                        BIC tặng phòng học cho trường Mầm non Bình Lương
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </aside >
               {children}
-              <BannderRight />
+              <aside className={`${style.banerRight} w-[15%] top-[20vh] bg-gray-100 fixed right-0 h-[100vh] z-[999]`}>
+                <div>
+                  <div className='p-2 !pt-0 mb-2'>
+                    <Link href={'#'}>
+                      <Image className='w-full h-[20vh]' width={700} height={70} src="/banner/bic-smart-care-bao-hiem-suc-khoe-cao-cap.jpg" alt="image banner left" />
+                      <div className='mt-3'>
+                        <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>18.02.2025</div>
+                        <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
+                          BIC Smart Care - Bảo hiểm sức khỏe cao cấp - Sống đẳng cấp, trịn an tâm
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className='p-2 !pt-0'>
+                    <Link href={'#'}>
+                      <Image className='w-full h-[20vh]' width={700} height={70} src="/banner/bao-hiem-y-te-bo-tro.jpg" alt="image banner left" />
+                      <div className='mt-3'>
+                        <div className='text-sm text-gray-500 mb-2 max-1316:text-sx max-1083:text-[.9rem] max-800:text-[.6rem]'>18.02.2025</div>
+                        <p className='text-ellipsis overflow-hidden text-base text-black max-1316:text-sm max-1083:text-xs max-800:text-[10px]'>
+                          Bảo hiểm y tế hỗ trợ - Gạt bỏ lo âu, an âm điều trị
+                        </p>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </aside>
             </div>
           </div>
         )}

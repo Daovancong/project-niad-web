@@ -1973,7 +1973,7 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
 
     main.mainIndex {
         width: 100%;
-        top: 11vh !important;
+        top: 18.5vh !important;
         margin-right: 0px !important;
         margin-left: 0px !important;
         overflow: hidden;
@@ -2012,7 +2012,7 @@ main.mainIndex .contactPage .container .contactUs .form form ul li input {
     }
 
     .bannerHeader {
-        height: 10%;
+        height: 19%;
     }
 
     .hdMenu .container .logo a img {

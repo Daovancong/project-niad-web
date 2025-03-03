@@ -50,10 +50,10 @@ export default function recruitment() {
 
         try {
             const result = await emailjs.sendForm(
-                'service_465',  // Thay bằng Service ID từ EmailJS
-                'template_1210',  // Thay bằng Template ID từ EmailJS
+                'service_465',  // Service ID 
+                'template_1210',  // Template 
                 formRef.current, //
-                'xK1xvHBDf9fjhLR_D',    // Thay bằng Public Key từ EmailJS
+                'xK1xvHBDf9fjhLR_D',    // Public Key
             );
 
             alert("Hồ sơ đã gửi thành công!");
@@ -177,7 +177,7 @@ export default function recruitment() {
             <div id='bgForm' className={`${showForm ? "!block" : "hidden"} fixed top-[0] left-0 w-full h-full bg-[#000000] opacity-50 z-[9999]`}></div>
             {showForm && (
                 <section
-                    className="fixed h-[98%] max-h-[80%] min-h-[200px] p-6 left-1/2 bg-white flex z-[9999] w-[600px] top-[21%] rounded-lg shadow-[0_2px_8px_rgba(0,0,0,.16)] border-t-4 border-solid border-[#2680eb] overflow-y-hidden flex-col"
+                    className="fixed h-[98%] max-h-[80%] min-h-[200px] p-6 left-1/2 bg-white flex z-[9999] w-[600px] top-[21%] rounded-lg shadow-[0_2px_8px_rgba(0,0,0,.16)] border-t-4 border-solid border-[#2680eb] overflow-y-hidden flex-col max-726:w-[90%] max-726:!h-[75%] max-726:max-h-full max-726:mx-auto max-500:top-[15%]"
                     style={{ transform: 'translateX(-50%)' }}
                 >
                     <div className='absolute w-[calc(100%-48px)] justify-between flex'>
@@ -359,7 +359,7 @@ export default function recruitment() {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-blue-500 text-white p-2 hover:bg-blue-600 transition-all rounded cursor-pointer mt-4 leading-10 h-10"
+                            className="flex justify-center items-center w-full bg-blue-500 text-white p-2 hover:bg-blue-600 transition-all rounded cursor-pointer mt-4 leading-10 h-10"
                         >
                             Gửi hồ sơ
                         </button>
