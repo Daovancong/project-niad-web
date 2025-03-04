@@ -186,6 +186,11 @@ export default function RootLayout({
                     key={index}
                     className="relative w-full flex flex-shrink-0 overflow-hidden"
                   >
+                    <div className="absolute w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b]">
+                      <span>
+                        BIC giảm 15% phí bảo hiểm TNDS xe máy tri ân khách hàng tái tục
+                      </span>
+                    </div>
                     <Image
                       className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:w-full`}
                       width={1000}
@@ -193,6 +198,11 @@ export default function RootLayout({
                       src={banner.imageSrc1}
                       alt={banner.imgAlt}
                     />
+                    <div className="absolute float-left left-1/2 w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b]">
+                      <span>
+                        Sống đẳng cấp trọn an tâm cùng BIC samrt care
+                      </span>
+                    </div>
                     <Image
                       className={`${style.bannerG} object-cover max-h-full h-[18vh] w-1/2 px-[1px] max-720:hidden`}
                       width={1000}

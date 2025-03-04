@@ -328,9 +328,6 @@ export default function Home() {
                         Quản lý, giám sát an toàn những vùng cấm trong nhà máy
                         Cảnh báo giám sát an toàn toàn cho xe nâng Đếm...
                       </li>
-                      {/* <li className='!leading-[1.93]'>2.Quản lý, giám sát an toàn những vùng cấm trong nhà máy</li>
-                      <li className='!leading-[1.93]'>Cảnh báo giám sát an toàn ...</li> */}
-
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/ai-in-management/online-patient-care">
                       <span className="ml-[50px]">Xem thêm</span>
@@ -358,9 +355,6 @@ export default function Home() {
                         Phần mềm quản lý thông tin chuẩn đoán hình ảnh
                         Phần mềm bệnh án điện tử...
                       </li>
-                      {/* <li className='!leading-[1.93]'>Phần mềm quản lý máy y tế </li>
-                      <li className='!leading-[1.93]'>Phần mềm quản lý thông tin chuẩn đoán hình ảnh </li>
-                      <li className='!leading-[1.93]'>Phần mềm bệnh án điện tử...</li> */}
                     </ul>
                     <Link className={`${style.viewGia}`} href="/product/hospital/smart-hospital">
                       <span className="ml-[50px]">Xem thêm</span>
@@ -458,12 +452,6 @@ export default function Home() {
                 An toàn và bảo mật dữ liệu
               </li>
             </ul>
-            {/* <Link className={`${style.view} w-[196px] h-[45.9px] flex items-center justify-center`} href="#">
-              <span className="ml-[50px]">
-                xem tất cả
-              </span>
-              <Image className="ml-[0.75rem]" width={30} height={30} src="/icon/iconLeft-witth.png" alt="xem tat ca" />
-            </Link> */}
           </div>
         </div>
       </section>
