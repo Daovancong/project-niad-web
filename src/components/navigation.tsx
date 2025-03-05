@@ -136,7 +136,7 @@ export default function Navigation() {
                         </li>
                         <li className='pb-7 pt-7 cursor-pointer'>
                             <Link href="/partner" className="hover:text-blue-700 transition duration-300 font-bold">
-                                Công ty liên kết
+                                Công ty liên danh
                             </Link>
                             <ul className={`${style.subMenu} z-[99999]`}>
                                 <li>
@@ -156,6 +156,14 @@ export default function Navigation() {
                                         rel="noopener noreferrer"
                                         className='text-white !text-left' href={'https://www.edreams.com/offers/flights/airline/VN/vietnam-airlines/?mktportal=bing&utm_id=bi_cmp-614041404_adg-1164384646735721_ad-72774248682417_kwd-72774729965455_dev-c_ext-_locphy-142921_mtype-e_ntw-o&utm_term=72774729965455&utm_content=1164384646735721&msclkid=76311a57fe331812ec6b7df8ca14984a&utm_source=bing&utm_medium=cpc&utm_campaign=B-E-GB-FL-AIRLINE-SEA-PC-R'}>Đặt vé máy bay vé máy bay vietnam airline
                                     </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        className='text-white !text-left'
+                                        href={'https://www.hitc.vn/'}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >Viễn thông HITC</Link>
                                 </li>
                             </ul>
                         </li>

@@ -20,36 +20,48 @@ export default function RootLayout({
       id: 1,
       imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
       imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      span1: 'BIC giảm 15% phí bảo hiểm TNDS xe máy tri ân khách hàng tái tục',
+      span2: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
       imgAlt: 'Global AI Summit',
     },
     {
       id: 2,
       imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
       imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      span1: 'Ưu đãi rộn ràng, nạn rặng đường xa',
+      span2: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
       imgAlt: 'Banner Top 2025',
     },
     {
       id: 3,
       imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
       imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      span1: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
+      span2: 'Ưu đãi rộn ràng, nạn rặng đường xa',
       imgAlt: 'Global AI Summit',
     },
     {
       id: 1,
       imageSrc1: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
       imageSrc2: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
+      span1: 'BIC giảm 15% phí bảo hiểm TNDS xe máy tri ân khách hàng tái tục',
+      span2: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
       imgAlt: 'Global AI Summit',
     },
     {
       id: 2,
       imageSrc1: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
       imageSrc2: '/banner/bic-giam-15-phi-bao-hiem-tnds-xe-may-tri-an-khach-hang-tai-tuc.jpg',
+      span1: 'Ưu đãi rộn ràng, nạn rặng đường xa',
+      span2: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
       imgAlt: 'Banner Top 2025',
     },
     {
       id: 3,
       imageSrc1: '/banner/song-dang-cap-tron-an-tam-cung-bic-smart-care.jpg',
       imageSrc2: '/banner/uu-dai-ron-rang-van-dam-binh-an.jpg',
+      span1: 'Sống đẳng cấp trọn an tâm cùng BIC samrt care',
+      span2: 'Ưu đãi rộn ràng, nạn rặng đường xa',
       imgAlt: 'Global AI Summit',
     },
   ];
@@ -186,9 +198,9 @@ export default function RootLayout({
                     key={index}
                     className="relative w-full flex flex-shrink-0 overflow-hidden"
                   >
-                    <div className="absolute w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b]">
+                    <div className="absolute w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b] max-1200:w-[250px] max-1083:text-base max-1083:w-[200px]">
                       <span>
-                        BIC giảm 15% phí bảo hiểm TNDS xe máy tri ân khách hàng tái tục
+                        {banner.span1}
                       </span>
                     </div>
                     <Image
@@ -198,9 +210,9 @@ export default function RootLayout({
                       src={banner.imageSrc1}
                       alt={banner.imgAlt}
                     />
-                    <div className="absolute float-left left-1/2 w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b]">
+                    <div className="absolute float-left left-1/2 w-[335px] h-full flex items-center ml-3 text-xl font-bold text-white drop-shadow-[1px_1px_1px_#006e3b] max-1200:w-[250px] max-1083:text-base max-1083:w-[200px] max-720:hidden">
                       <span>
-                        Sống đẳng cấp trọn an tâm cùng BIC samrt care
+                        {banner.span2}
                       </span>
                     </div>
                     <Image

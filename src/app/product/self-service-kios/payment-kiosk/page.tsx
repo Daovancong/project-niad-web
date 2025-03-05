@@ -82,7 +82,7 @@ export default function product() {
                                                 ✖
                                             </button>
                                             <div className="aspect-w-16 aspect-h-9">
-                                                <iframe width="560" height="315" className='w-full' src="https://www.youtube.com/embed/Ec77hS0xhAY?si=6_eT0h16MCIbq6mL" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                                <iframe className="w-full" width="560" height="315" src="https://www.youtube.com/embed/GV7AI9HrDJ4?si=gK4OVmVquIsAvAkY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                                             </div>
                                         </div>
                                     </div>

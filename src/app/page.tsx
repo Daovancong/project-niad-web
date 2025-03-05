@@ -158,7 +158,7 @@ export default function Home() {
               <div className="flex-[9] bg-[#f8b133]"></div>
             </div>
             <h2 className="mt-4">
-              Dự án tiêu biểu của chúng tôi
+              CÁC THỰC TẬP VIÊN ĐANG  HỌC TRÊN CÁC DỰ ÁN THỰC TẾ
             </h2>
           </div>
         </div>
@@ -247,7 +247,6 @@ export default function Home() {
                 XTP – AI, Big Data  được cung ứng dụng rộng rãi trong ngành Y tế - nhà cung cấp giải pháp quản trị tiên phong tại Việt Nam với uy tín thương hiệu lâu đời, chất lượng chăm sóc khách hàng vượt trội cùng với những ưu điểm nổi bật của dịch vụ như:
               </div>
             </div>
-
           </div>
         </div>
         <div className={`${style.whyBox}`}>
