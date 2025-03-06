@@ -82,6 +82,7 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 11) % items.length);
+    
   };
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
@@ -90,7 +91,7 @@ export default function Home() {
     items[currentIndex],
     items[(currentIndex + 1) % items.length],
     items[(currentIndex + 2) % items.length],
-    items[(currentIndex + 3) % items.length],
+    items[(currentIndex + 3) % items.length]
   ];
   // xác thực OTP
   const [email, setEmail] = useState("");

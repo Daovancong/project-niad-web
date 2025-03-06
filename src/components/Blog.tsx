@@ -138,7 +138,7 @@ export default function Blog() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className='flex'>
-                                        <h4> Phần mềm quản trị bệnh viện His-List </h4>
+                                        <h4> Phần mềm quản trị bệnh viện HIS-LIS </h4>
                                     </Link>
                                     {/* <div className={`${style.summary}`}>
                                         <p className='leading-[26px] text-justify overflow-hidden'>Với tổng giá trị giải thưởng lên đến hơn 4,7 tỷ đồng, MobiFone mang đến chương trình siêu khuyến mại “Vui tiêu dùng, rinh quà khủng"...</p>
