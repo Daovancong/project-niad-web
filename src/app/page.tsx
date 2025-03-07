@@ -81,8 +81,7 @@ export default function Home() {
   ])
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 11) % items.length);
-    
+    setCurrentIndex((prevIndex) => (prevIndex + 11) % items.length);                                   
   };
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
@@ -168,7 +167,6 @@ export default function Home() {
         <div className='w-full flex justify-center'>
           <div className="flex w-[5%] h-[3.2px]">
             <div className="flex-[10] bg-[#e91e1e]"></div>
-            {/* <div className="flex-[0] bg-[#f8b133]"></div> */}
           </div>
         </div>
         <div className={`${style.service} flex items-center justify-center  relative z-[999]`}>

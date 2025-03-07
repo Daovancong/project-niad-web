@@ -70,7 +70,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={`${style.item}`}>
-                        <h4> Công tin thành viên </h4>
+                        <h4> Công ty liên danh </h4>
                         <ul>
                             <li>
                                 <Link href={'#'}>
@@ -78,13 +78,18 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'#'}>
+                                <Link href={'https://www.bic.vn/'}>
                                     Bảo hiểm BIC
                                 </Link>
                             </li>
                             <li>
-                                <Link href={'#'}>
-                                    Đặt vé máy bay
+                                <Link href={'https://www.edreams.com/offers/flights/airline/VN/vietnam-airlines/?mktportal=bing&utm_id=bi_cmp-614041404_adg-1164384646735721_ad-72774248682417_kwd-72774729965455_dev-c_ext-_locphy-142921_mtype-e_ntw-o&utm_term=72774729965455&utm_content=1164384646735721&msclkid=76311a57fe331812ec6b7df8ca14984a&utm_source=bing&utm_medium=cpc&utm_campaign=B-E-GB-FL-AIRLINE-SEA-PC-R'}>
+                                    Đặt vé máy bay VietNam airlione
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={'https://www.hitc.vn/vi/'}>
+                                    Viễn thông HITC
                                 </Link>
                             </li>
                         </ul>
@@ -122,10 +127,6 @@ export default function Footer() {
                             <strong>Địa chỉ Hà Nội:</strong>
                             &nbsp;&nbsp;Tòa nhà N09B2 Đường Thành Thái, Phường Dịch Vọng, Quận Cầu Giấy, TP Hà Nội
                         </p>
-                        {/* <p className='pb-[10px] text-xs'>
-                            <strong>Địa chỉ TP. Hồ Chí Minh:</strong>
-                            &nbsp;&nbsp; Tòa nhà số 255 , đường Nguyễn Thị Minh Khai, phường 5, Quận 3, TP. Hồ Chí Minh.
-                        </p> */}
                         <p className='pb-[10px] text-xs'>
                             <strong>Điện thoại</strong>
                             &nbsp;&nbsp; ( +84)437.656.899 - 0988176899
